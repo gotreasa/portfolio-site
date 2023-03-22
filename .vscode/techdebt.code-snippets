@@ -1,0 +1,26 @@
+{
+	"Techdebt entry": {
+	  "scope": "markdown",
+	  "prefix": ["tde", "debt"],
+	  "body": "⚠ TD-${1:001}: ${2:title}",
+	  "description": "Techdebt entry"
+	},
+	"Techdebt todo comment with #": {
+	  "scope": "markdown",
+	  "prefix": ["tdc", "tdt"],
+	  "body": "# TODO: TD-${1:001}",
+	  "description": "# TODO: TD-001"
+	},
+	"Techdebt todo block comment": {
+		"scope": "html,xml",
+	  "prefix": ["tdc", "tdt"],
+	  "body": "$BLOCK_COMMENT_START TODO: TD-${1:001} $BLOCK_COMMENT_END",
+	  "description": "TODO: TD-001"
+	},
+	"Techdebt todo line comment": {
+	  "prefix": ["tdc", "tdt"],
+	  "body": "$LINE_COMMENT TODO: TD-${1:001}",
+	  "description": "TODO: TD-001"
+	}
+}
+  

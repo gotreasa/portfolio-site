@@ -1,0 +1,18 @@
+{
+  "grammarly.config.suggestions.OxfordComma": true,
+  "grammarly.config.suggestions.PunctuationWithQuotation": false,
+  "grammarly.files.include": [
+    "*.md",
+    "**/*.txt",
+    "content/*.md",
+    "content/**/*.md",
+    "content/*.html",
+    "content/**/*.html"
+  ],
+  "grammarly.selectors": [
+    {
+      "language": "markdown",
+      "scheme": "file"
+    }
+  ]
+}
