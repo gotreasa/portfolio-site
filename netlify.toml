@@ -1,0 +1,12 @@
+[build]
+  command = "hugo"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.110.0"
+
+[context.production]
+  command = "hugo -b https://attila.fejer.io"
+
+[context.deploy-preview]
+  command = "hugo -b $DEPLOY_PRIME_URL"
