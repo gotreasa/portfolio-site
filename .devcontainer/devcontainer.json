@@ -1,0 +1,37 @@
+{
+  "name": "Hugo (Community)",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "hugo_extended",
+      "VERSION": "latest",
+      "NODE_VERSION": "18"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "html.format.templating": true
+      },
+      "extensions": [
+        "bungcip.better-toml",
+        "davidanson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one",
+        "esbenp.prettier-vscode",
+        "DrMerfy.overtype",
+        "GitLab.gitlab-workflow",
+        "christian-kohler.path-intellisense",
+        "redhat.vscode-yaml",
+        "eliostruyf.vscode-front-matter",
+        "shuworks.vscode-table-formatter",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "znck.grammarly"
+      ]
+    }
+  },
+  "forwardPorts": [1313],
+  "postCreateCommand": "sh .devcontainer/post-create.sh",
+  "remoteUser": "node"
+}
