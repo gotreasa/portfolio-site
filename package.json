@@ -2,14 +2,29 @@
   "name": "fejer.io",
   "version": "1.0.0",
   "description": "## Resources",
+  "license": "ISC",
+  "author": "",
   "main": "index.js",
   "scripts": {
-    "precommit": "exit 0",
+    "lint:verify": "eslint .",
+    "lint:verifyfile": "eslint",
+    "precommit": "lint-staged --relative --verbose",
     "prepare": "husky install",
+    "prettier:verify": "prettier --check \"*.{js,css,scss,md,html,yml,yaml,json}\"",
+    "prettier:verifyfile": "prettier --check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:verifyfile"
+    ],
+    "*.{js,css,scss,md,html,yml,yaml,json}": [
+      "npm run prettier:verifyfile"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
     "commitlint": "^17.5.0",
@@ -18,6 +33,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "jshint": "^2.13.6",
-    "prettier": "^2.8.6"
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.6",
+    "sort-package-json": "^2.4.1"
   }
 }
