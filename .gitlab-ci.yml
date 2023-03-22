@@ -5,9 +5,30 @@
 # Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
 # Note that environment variables can be set in several places
 # See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
+image: node:18-alpine
+
 stages:
-- test
+  - prepare
+  - lint
+  - security
+
+install:
+  stage: prepare
+  script: npm install
+  artifacts:
+    paths:
+      - node_modules/
+
+eslint:
+  stage: lint
+  script: npm run lint:verify
+
+prettier:
+  stage: lint
+  script: npm run prettier:verify
+
 sast:
-  stage: test
+  stage: security
+
 include:
-- template: Security/SAST.gitlab-ci.yml
+  - template: Security/SAST.gitlab-ci.yml
