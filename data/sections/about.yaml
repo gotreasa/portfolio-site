@@ -30,6 +30,9 @@ socialLinks:
   - name: Email
     icon: fas fa-envelope
     url: attila@fejer.io
+  - name: Blog
+    icon: fas fa-pen-nib
+    url: https://rockit.zone/
   - name: GitHub
     icon: fab fa-github
     url: https://github.com/fanatixan
