@@ -1,3 +1,18 @@
 baseURL: https://attila.fejer.io/
 languageCode: en-us
-title: Attila Fejér Portfolio Site
+title: Attila Fejér Portfolio
+theme: toha
+
+enableEmoji: true
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+params:
+  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  enableBlogPost: false
+  enableTOC: false
+  newsletter:
+    enable: false
