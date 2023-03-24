@@ -1,6 +1,5 @@
 # Backlog
 
-- Skills section
 - Work experience
 - Education section
 - Publications section

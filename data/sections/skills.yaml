@@ -1,0 +1,63 @@
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+
+skills:
+  - name: Software Craftsmanship
+    logo: /images/sections/skills/tools.svg
+    summary: >-
+      Has a deep understanding of software engineering principles and best practices including agile,
+      SOLID, design patterns, hexagonal architecture, clean code, refactoring, and domain-driven design.
+
+  - name: Extreme Programming
+    logo: /images/sections/skills/xp.svg
+    summary: >-
+      Applies and trains XP techniques, such as direct client communication, pair programming, TDD,
+      BDD, CI/CD, team code ownership, and coding standards.
+
+  - name: Cloud
+    logo: /images/sections/skills/cloud.png
+    summary: >-
+      Fond of distributed architectural patterns and technologies. Worked with GCP, AWS, and IBM Cloud.
+
+  - name: Java
+    logo: /images/sections/skills/java.svg
+    summary: >-
+      Has 10+ years of experience using the Java ecosystem on client and server side. A seasoned trainer.
+      Prefers Gradle, but used Maven for years, too.
+    url: https://www.java.com/
+
+  - name: Spring
+    logo: /images/sections/skills/spring.png
+    summary: >-
+      His go-to framework in the Java world. Familiar with XML, annotation-based, and code-based configuration.
+      Has experience with Spring Boot and Spring Cloud. For years, he refused to switch from Java EE to Spring.
+      It's one of his biggest regrets.
+    url: https://spring.io/
+
+  - name: Docker
+    logo: /images/sections/skills/docker.svg
+    summary: >-
+      Builds most applications to run in containers. Prefers containerized development.
+      Experienced with multi-stage, multi-arch build process.
+    url: 'https://www.docker.com/'
+
+  - name: Linux
+    logo: /images/sections/skills/linux.png
+    summary: >-
+      Uses as main operating system for development (directly installed or WSL2).
+      Capable of writing bash/shell scripts. Has a command line sickness. It's terminal.
+
+  - name: Git
+    logo: /images/sections/skills/git.png
+    summary: >-
+      Experienced with git-based development (using the CLI). Mostly uses GitLab and GitHub.
+    url: 'https://git-scm.com/'
+
+  - name: Other technologies
+    logo: /images/sections/skills/technology.svg
+    summary: >-
+      Varying level of experience of HTML, CSS, JavaScript, TypeScript, Angular, Kotlin, and Python.
