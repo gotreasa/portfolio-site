@@ -1,7 +1,5 @@
 # Backlog
 
-- Publications section
-  - rockit.zone articles
 - Accomplishments section
 - Achievements section
 - Private section

@@ -13,6 +13,16 @@ buttons:
   - name: RockIT
     filter: rockit
 publications:
+  - title: Tech Content Creators' Responsibilities
+    publishedIn:
+      name: RockIT
+      date: 15 Mar 2023
+      url: https://rockit.zone/
+    paper:
+      summary: As online learning flourishes, it&rsquo;s easier than ever to learn new things. If we search for virtually any technology, we&rsquo;ll get remarkable amounts of results. In some sense, it&rsquo;s good, since...
+      url: https://rockit.zone/post/tech-content-creators-responsibilities/
+    categories:
+      - rockit
   - title: Code Smells
     publishedIn:
       name: Baeldung CS

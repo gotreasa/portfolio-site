@@ -1,8 +1,10 @@
-const moment = require('moment');
-const YAML = require('yaml');
 const {
   promises: { readFile, writeFile },
 } = require('fs');
+
+const { extract } = require('@extractus/feed-extractor');
+const moment = require('moment');
+const YAML = require('yaml');
 
 const postsSection = {
   section: {
@@ -20,24 +22,39 @@ const postsSection = {
   ],
 };
 
-const postFiles = [
+const baeldungPostFiles = [
   'src/wp-posts/baeldung-posts.json',
   'src/wp-posts/baeldung-cs-posts.json',
 ];
 
-function loadAllPosts() {
-  return Promise.all(postFiles.map(loadPosts)).then((posts) => posts.flat());
+const rockItRssUrl = 'https://rockit.zone/index.xml';
+
+function posts() {
+  return Promise.all([baeldungPosts(), rockItPosts()]).then(([bp, rp]) => [
+    ...bp,
+    ...rp,
+  ]);
 }
 
-function loadPosts(file) {
+function baeldungPosts() {
+  return loadAllBaeldungPosts().then(extractRelevantDataFromWp);
+}
+
+function loadAllBaeldungPosts() {
+  return Promise.all(baeldungPostFiles.map(loadBaeldungPosts)).then((posts) =>
+    posts.flat()
+  );
+}
+
+function loadBaeldungPosts(file) {
   return readFile(file).then(JSON.parse);
 }
 
-function extractRelevantData(posts) {
-  return posts.map(extractRelevantDataFromPost);
+function extractRelevantDataFromWp(posts) {
+  return posts.map(extractRelevantDataFromWpPost);
 }
 
-function extractRelevantDataFromPost(post) {
+function extractRelevantDataFromWpPost(post) {
   return {
     title: toPlainString(post.title.rendered),
     publishedIn: {
@@ -76,6 +93,32 @@ function toPlainString(s) {
     .trim();
 }
 
+function rockItPosts() {
+  return loadRockItPosts().then(extractRelevantDataFromRss);
+}
+
+function loadRockItPosts() {
+  return extract(rockItRssUrl);
+}
+
+function extractRelevantDataFromRss(rssFeed) {
+  return rssFeed.entries.map((e) => {
+    return {
+      title: toPlainString(e.title),
+      publishedIn: {
+        name: 'RockIT',
+        date: moment(e.published),
+        url: rssFeed.link,
+      },
+      paper: {
+        summary: toPlainString(e.description),
+        url: e.link,
+      },
+      categories: ['rockit'],
+    };
+  });
+}
+
 function sortByDate(posts) {
   return posts.sort(comparePosts).reverse();
 }
@@ -110,9 +153,4 @@ function write(posts) {
   return writeFile('data/sections/posts.yaml', postsYaml);
 }
 
-loadAllPosts()
-  .then(extractRelevantData)
-  .then(sortByDate)
-  .then(formatPostDates)
-  .then(write)
-  .catch(console.error);
+posts().then(sortByDate).then(formatPostDates).then(write).catch(console.error);
