@@ -21,6 +21,9 @@ params:
   #   favicon: /images/site/favicon.png
   gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
 
+  topNavbar:
+    maxVisibleSections: 7
+
   features:
     # Enable dark theme
     darkMode:

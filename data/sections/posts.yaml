@@ -1,0 +1,285 @@
+section:
+  name: Posts
+  id: posts
+  template: sections/publications.html
+  enable: true
+  weight: 6
+  showOnNavbar: true
+buttons:
+  - name: All
+    filter: all
+  - name: Baeldung
+    filter: baeldung
+  - name: RockIT
+    filter: rockit
+publications:
+  - title: Code Smells
+    publishedIn:
+      name: Baeldung CS
+      date: 27 Jun 2021
+      url: https://www.baeldung.com/cs/
+    paper:
+      summary: Explore ideas how to prevent a codebase's quality from decreasing.
+      url: https://www.baeldung.com/cs/code-smells
+    categories:
+      - baeldung
+  - title: Refactoring
+    publishedIn:
+      name: Baeldung CS
+      date: 10 May 2021
+      url: https://www.baeldung.com/cs/
+    paper:
+      summary: Learn that refactoring is a natural and essential part of a software's evolution
+      url: https://www.baeldung.com/cs/refactoring
+    categories:
+      - baeldung
+  - title: What Does It Mean to Program to Interfaces?
+    publishedIn:
+      name: Baeldung CS
+      date: 7 Mar 2021
+      url: https://www.baeldung.com/cs/
+    paper:
+      summary: A quick and practical introduction to programming to an interface.
+      url: https://www.baeldung.com/cs/program-to-interface
+    categories:
+      - baeldung
+  - title: Object-Oriented vs Functional Programming
+    publishedIn:
+      name: Baeldung CS
+      date: 8 Dec 2020
+      url: https://www.baeldung.com/cs/
+    paper:
+      summary: Learn about object-oriented and functional programming and discover that they are not mutually exclusive.
+      url: https://www.baeldung.com/cs/oop-vs-functional
+    categories:
+      - baeldung
+  - title: The General Concept of Polymorphism
+    publishedIn:
+      name: Baeldung CS
+      date: 12 Nov 2020
+      url: https://www.baeldung.com/cs/
+    paper:
+      summary: Learn what polymorphism is with examples.
+      url: https://www.baeldung.com/cs/polymorphism
+    categories:
+      - baeldung
+  - title: Difference Between when() and doXxx() Methods in Mockito
+    publishedIn:
+      name: Baeldung
+      date: 8 Sep 2020
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn the advantages and disadvantages of the configuring a mock object the when().thenXxx() or the doXxx().when() way.
+      url: https://www.baeldung.com/java-mockito-when-vs-do
+    categories:
+      - baeldung
+  - title: Object-Orientation in the Real World
+    publishedIn:
+      name: Baeldung CS
+      date: 9 Aug 2020
+      url: https://www.baeldung.com/cs/
+    paper:
+      summary: Explore the core concepts behind the object-oriented programming.
+      url: https://www.baeldung.com/cs/oop-modeling-real-world
+    categories:
+      - baeldung
+  - title: Mapping a Single Entity to Multiple Tables in JPA
+    publishedIn:
+      name: Baeldung
+      date: 27 Oct 2019
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn how to map a single Java entity to multiple database tables using JPA.
+      url: https://www.baeldung.com/jpa-mapping-single-entity-to-multiple-tables
+    categories:
+      - baeldung
+  - title: Command-Line Arguments in Java
+    publishedIn:
+      name: Baeldung
+      date: 6 Sep 2019
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore how to configure your Java applications using command-line arguments.
+      url: https://www.baeldung.com/java-command-line-arguments
+    categories:
+      - baeldung
+  - title: Composition, Aggregation, and Association in Java
+    publishedIn:
+      name: Baeldung
+      date: 3 Aug 2019
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore the properties and representation of composition, aggregation, and association in Java.
+      url: https://www.baeldung.com/java-composition-aggregation-association
+    categories:
+      - baeldung
+  - title: 'An Introduction to Epsilon GC: A No-Op Experimental Garbage Collector'
+    publishedIn:
+      name: Baeldung
+      date: 7 Mar 2019
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn how Epsilon works, and explore the common use cases.
+      url: https://www.baeldung.com/jvm-epsilon-gc-garbage-collector
+    categories:
+      - baeldung
+  - title: 'An Introduction to ZGC: A Scalable and Experimental Low-Latency JVM Garbage Collector'
+    publishedIn:
+      name: Baeldung
+      date: 9 Feb 2019
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore how Z Garbage Collector manages to keep low pause times on even multi-terabyte heaps.
+      url: https://www.baeldung.com/jvm-zgc-garbage-collector
+    categories:
+      - baeldung
+  - title: Java 8 Streams peek() API
+    publishedIn:
+      name: Baeldung
+      date: 16 Jan 2019
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn about the peek() method and explore the lifecycle of a stream.
+      url: https://www.baeldung.com/java-streams-peek-api
+    categories:
+      - baeldung
+  - title: Mapping a Dynamic JSON Object with Jackson
+    publishedIn:
+      name: Baeldung
+      date: 26 Dec 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore multiple ways of handling dynamic JSON objects with Jackson.
+      url: https://www.baeldung.com/jackson-mapping-dynamic-object
+    categories:
+      - baeldung
+  - title: Remove Leading and Trailing Characters from a String
+    publishedIn:
+      name: Baeldung
+      date: 3 Dec 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore several ways to remove leading and trailing characters from a String.
+      url: https://www.baeldung.com/java-remove-trailing-characters
+    categories:
+      - baeldung
+  - title: Many-To-Many Relationship in JPA
+    publishedIn:
+      name: Baeldung
+      date: 15 Nov 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn how to model a many-to-many relationship in Java using JPA
+      url: https://www.baeldung.com/jpa-many-to-many
+    categories:
+      - baeldung
+  - title: Heap Sort in Java
+    publishedIn:
+      name: Baeldung
+      date: 18 Oct 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn how to implement a Binary Heap and Heap Sort in Java.
+      url: https://www.baeldung.com/java-heap-sort
+    categories:
+      - baeldung
+  - title: Use Criteria Queries in a Spring Data Application
+    publishedIn:
+      name: Baeldung
+      date: 30 Aug 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: A quick tutorial to using JPA Criteria Queries using Spring Data JPA.
+      url: https://www.baeldung.com/spring-data-criteria-queries
+    categories:
+      - baeldung
+  - title: Remove All Occurrences of a Specific Value from a List
+    publishedIn:
+      name: Baeldung
+      date: 7 Aug 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: In this tutorial, we'll see multiple solutions to efficiently removing all occurrences of a value, describing the pros and cons.
+      url: https://www.baeldung.com/java-remove-value-from-list
+    categories:
+      - baeldung
+  - title: Using Spring ResponseEntity to Manipulate the HTTP Response
+    publishedIn:
+      name: Baeldung
+      date: 3 Jul 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn how to manipulate the HTTP response using the ResponseEntity class.
+      url: https://www.baeldung.com/spring-response-entity
+    categories:
+      - baeldung
+  - title: Using Spring @ResponseStatus to Set HTTP Status Code
+    publishedIn:
+      name: Baeldung
+      date: 3 Jul 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Have a look at the @ResponseStatus annotation and how to use it to set the response status code.
+      url: https://www.baeldung.com/spring-response-status
+    categories:
+      - baeldung
+  - title: Spring Core Annotations
+    publishedIn:
+      name: Baeldung
+      date: 7 Jun 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore the most commonly used Spring core annotations.
+      url: https://www.baeldung.com/spring-core-annotations
+    categories:
+      - baeldung
+  - title: Spring Scheduling Annotations
+    publishedIn:
+      name: Baeldung
+      date: 2 Jun 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore the most common Spring scheduling annotations.
+      url: https://www.baeldung.com/spring-scheduling-annotations
+    categories:
+      - baeldung
+  - title: Spring Web Annotations
+    publishedIn:
+      name: Baeldung
+      date: 1 Jun 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore the main annotations you can use to handle HTTP requests and responses in Spring MVC.
+      url: https://www.baeldung.com/spring-mvc-annotations
+    categories:
+      - baeldung
+  - title: Spring Boot Annotations
+    publishedIn:
+      name: Baeldung
+      date: 1 Jun 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Explore the Spring Boot Annotations.
+      url: https://www.baeldung.com/spring-boot-annotations
+    categories:
+      - baeldung
+  - title: Spring Data Annotations
+    publishedIn:
+      name: Baeldung
+      date: 31 May 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Learn about the most important annotations we need to handle persistence using the Spring Data project
+      url: https://www.baeldung.com/spring-data-annotations
+    categories:
+      - baeldung
+  - title: Working with Boolean in Thymeleaf
+    publishedIn:
+      name: Baeldung
+      date: 25 Apr 2018
+      url: https://www.baeldung.com/
+    paper:
+      summary: Take a look at how to work with boolean values in Thymeleaf.
+      url: https://www.baeldung.com/thymeleaf-boolean
+    categories:
+      - baeldung

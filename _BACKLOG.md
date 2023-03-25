@@ -1,7 +1,6 @@
 # Backlog
 
 - Publications section
-  - Baeldung articles
   - rockit.zone articles
 - Accomplishments section
 - Achievements section
