@@ -1,0 +1,117 @@
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+
+experiences:
+  - company:
+      name: IBM ISSC Hungary Kft.
+      url: https://ibm.com
+      location: Budapest, Hungary
+    positions:
+      - designation: Technical Advancement Lead
+        start: May 2022
+        responsibilities:
+          - Created and organized technical knowledge sharing programs
+          - Helped existing programs grow locally and globally
+          - Mentored developers in-person and remotely
+
+      - designation: Software Architect
+        start: Jul 2021
+        end: Apr 2022
+        responsibilities:
+          - Designed complex application architectures both on high- and low levels
+          - Hosted multiple trainings on company level
+          - Contributed in reaching quarterly goals of the company
+          - Nominated as a leadership talent
+
+      - designation: Lead Software Developer
+        start: Feb 2020
+        end: Jun 2021
+        responsibilities:
+          - Led Java-based project teams
+          - Designed and implemented DevOps pipelines
+          - Improved the use of Agile methodologies
+          - Redesigned a complex in-production system architecture to improve scalability and maintainability
+          - Implemented reusable system components
+          - Helped new team members to integrate to the team both personally and professionally
+          - Initiated training programs and mentoring sessions on department level
+
+  - company:
+      name: Baeldung
+      url: https://baeldung.com
+      location: Remote
+    positions:
+      - designation: Author
+        start: Apr 2018
+        end: Aug 2021
+        responsibilities:
+          - Researched and wrote technical articles for online publications
+
+  - company:
+      name: Self-employed
+      location: Budapest, Hungary
+    positions:
+      - designation: Freelance Software Engineer
+        start: Apr 2014
+        end: Feb 2020
+        responsibilities:
+          - Built, tested and deployed scalable, highly available and modular software products
+          - Gathered and defined customer requirements to develop clear specifications for creating well-organized project plans
+          - Maintained existing applications
+          - Designed and delivered new applications
+          - Advised on design, planning and implementation of software projects
+
+  - company:
+      name: Apertus Nonprofit Kft.
+      location: Budapest, Hungary
+    positions:
+      - designation: Lead Software Developer
+        start: Jul 2017
+        end: Jul 2019
+        responsibilities:
+          - Wrote Spring Boot code using IntelliJ IDEA
+          - Wrote Angular code using Visual Studio Code
+          - Unified Jenkins build and deploy pipelines
+          - Strengthened development methodologies by introducing unit testing and TDD
+          - Assessed under-performing software and identified ways that it could be improved
+          - Collaborated on all stages of systems development lifecycle, from requirements gathering to production releases
+          - Designed system architecture and integration points between loosely coupled backend applications
+
+  - company:
+      name: Budapest University of Technology and Economics
+      url: https://bme.hu
+      location: Budapest, Hungary
+    positions:
+      - designation: Demonstrator
+        start: Sep 2010
+        end: Jan 2018
+        responsibilities:
+          - Delivered presentations in computer science, information theory and digital design
+          - Led digital design laboratory courses
+
+  - company:
+      name: EPAM Academy, Pentaschool, Ruander, Masterfields, Számalk
+      location: Budapest, Hungary
+    positions:
+      - designation: Demonstrator
+        start: Jun 2013
+        end: May 2017
+        responsibilities:
+          - Developed software developer course plans
+          - Taught software development technologies in class courses
+
+  - company:
+      name: Just Another Company Kft.
+      location: Budapest, Hungary
+    positions:
+      - designation: Co-Founder, CEO, Software Engineer
+        start: Apr 2012
+        end: Jun 2015
+        responsibilities:
+          - Delivered projects to pre-determined budget, maintaining time parameters and quality standards
+          - Applied strong leadership talents and problem-solving skills to maintain team efficiency and organize workflows to meet any daily demand
+          - Worked closely with clients to establish problem specifications and system designs
+          - Evaluated project requirements and specifications and developed software applications that surpassed client expectations
