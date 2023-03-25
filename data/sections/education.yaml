@@ -1,0 +1,36 @@
+section:
+  name: Education
+  id: education
+  template: sections/education.html
+  enable: true
+  weight: 4
+  showOnNavbar: true
+
+degrees:
+  - name: M.Sc. in Electrical Engineering
+    icon: fa-graduation-cap
+    timeframe: 2012-2015
+    institution:
+      name: Budapest University of Technology and Economics
+      url: https://bme.hu/
+
+  - name: B.Sc. in Computer Engineering
+    icon: fa-graduation-cap
+    timeframe: 2008-2012
+    institution:
+      name: Budapest University of Technology and Economics
+      url: https://bme.hu/
+
+  - name: High School
+    icon: fa-university
+    timeframe: 2002-2008
+    institution:
+      name: Berzsenyi Dániel Gimnázium
+      url: https://berzsenyi.hu/
+
+  - name: High School
+    icon: fa-university
+    timeframe: 2000-2002
+    institution:
+      name: Szinyei Merse Pál Gimnázium
+      url: https://szinyeigimibp.hu/
