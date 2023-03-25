@@ -1,7 +1,5 @@
 # Backlog
 
-- Work experience
-- Education section
 - Publications section
   - Baeldung articles
   - rockit.zone articles
