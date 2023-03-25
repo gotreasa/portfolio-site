@@ -5,3 +5,4 @@
 - [ ] TD-003: Set favicon
 - [ ] TD-004: Make GitLab CI build and deploy to Netlify
 - [ ] TD-005: Make dark mode work
+- [ ] TD-006: Make RockIT post fetching incremental
