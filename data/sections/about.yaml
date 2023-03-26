@@ -49,10 +49,9 @@ socialLinks:
     icon: fab fa-facebook
     url: https://www.facebook.com/fanatixan
 
-# TODO: TD-002
-# resourceLinks:
-#   - title: 'My Resume'
-#     url: 'files/resume.pdf'
+resourceLinks:
+  - title: My Resume
+    url: /files/resume.pdf # https://www.overleaf.com/project/641f2c52a75b5b5e92aab8e2
 
 badges:
   - type: certification
