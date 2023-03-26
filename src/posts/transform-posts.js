@@ -98,7 +98,7 @@ function rockItPosts() {
 }
 
 function loadRockItPosts() {
-  return extract(rockItRssUrl);
+  return extract(rockItRssUrl, { descriptionMaxLen: 500 });
 }
 
 function extractRelevantDataFromRss(rssFeed) {
