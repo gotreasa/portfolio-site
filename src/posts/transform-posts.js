@@ -23,8 +23,8 @@ const postsSection = {
 };
 
 const baeldungPostFiles = [
-  'src/wp-posts/baeldung-posts.json',
-  'src/wp-posts/baeldung-cs-posts.json',
+  'src/posts/baeldung-posts.json',
+  'src/posts/baeldung-cs-posts.json',
 ];
 
 const rockItRssUrl = 'https://rockit.zone/index.xml';
