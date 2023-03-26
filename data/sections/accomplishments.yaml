@@ -1,0 +1,70 @@
+section:
+  name: Honors & awards
+  id: honors-awards
+  template: sections/accomplishments.html
+  enable: true
+  weight: 5
+  showOnNavbar: true
+
+accomplishments:
+  - name: Fivefold IBM CIO Hungary Champion
+    timeline: 2021-2022
+    organization:
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: This award represents the dedication and passion one has put into making CIO Hungary a better place.
+
+  - name: XP Farm Blue Belt
+    timeline: Apr 2022
+    organization:
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: This award demonstrates a commitment to software craftsmanship, continuous learning, teamwork, and the discipline to stick to daily practice.
+    certificateURL: https://www.credly.com/badges/8bdf3256-117c-4235-a6c7-f8860bf5e0cb
+
+  - name: OITM Competition 2018 - Java (Spring, Hibernate) Category 1st Prize
+    timeline: Dec 2018
+    organization:
+      name: Országos IT Megmérettetés
+      url: https://megmerettetes.hu/
+    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
+
+  - name: OITM Competition 2018 - Java EE Category 1st Prize
+    timeline: Dec 2018
+    organization:
+      name: Országos IT Megmérettetés
+      url: https://megmerettetes.hu/
+    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
+
+  - name: OITM Competition 2018 - Java Innovation Category 2nd Prize
+    timeline: Dec 2018
+    organization:
+      name: Országos IT Megmérettetés
+      url: https://megmerettetes.hu/
+    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
+
+  - name: OITM Competition 2018 - Overall 2nd Prize
+    timeline: Dec 2018
+    organization:
+      name: Országos IT Megmérettetés
+      url: https://megmerettetes.hu/
+    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
+
+  - name: Scientific Students' Associations (TDK) 2nd Prize
+    timeline: Jan 2013
+    organization:
+      name: Budapest University of Technology and Economics
+      url: https://bme.hu/
+    courseOverview: Integrated Development Environment for a Custom Soft-Core Processor
+    certificateURL: https://tdk.bme.hu/VIK/HWBeagy/Integralt-fejlesztoi-kornyezet-egyedi-soft
+
+  - name: Scientific Students' Associations (TDK) 2nd Prize
+    timeline: Jan 2013
+    organization:
+      name: Budapest University of Technology and Economics
+      url: https://bme.hu/
+    courseOverview: Push Notifications for Sensor Networks with Internet Connection
+    certificateURL: https://tdk.bme.hu/VIK/HWBeagy/Push-notification-internetre-kapcsolodo
+
+  - name: WTW (Win The Web) 24h Programming Competition 1st Place
+    timeline: Jan 2011
