@@ -1,0 +1,11 @@
+copyright: © 2023 Copyright.
+description: Portfolio of Attila Fejér.
+customMenus:
+
+# Specify OpenGraph Headers
+openGraph:
+  title: Attila's Portfolio
+  type: website
+  description: Portfolio of Attila Fejér.
+  image: images/author/john.png
+  url: https://attila.fejer.io

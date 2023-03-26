@@ -1,0 +1,95 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+designation: Technical Advancement Lead
+company:
+  name: IBM
+  url: https://www.ibm.com/us-en/
+
+# a summary about you
+summary: >-
+  I'm hard to fit in a single box since I consider myself many things.
+  Software engineer.
+  Tech trainer, mentor, coach, and author.
+  Dog and cat dad.
+  Amateur dog handler.
+  Guitar hobbyist.
+  Weekend hiker.
+  Easy rider.
+
+
+  And many more. Because life without passion and variety is wasted.
+
+socialLinks:
+  - name: Email
+    icon: fas fa-envelope
+    url: attila@fejer.io
+  - name: Blog
+    icon: fas fa-pen-nib
+    url: https://rockit.zone/
+  - name: GitHub
+    icon: fab fa-github
+    url: https://github.com/fanatixan
+  - name: GitLab
+    icon: fab fa-gitlab
+    url: https://gitlab.com/fanatixan
+  - name: LinkedIn
+    icon: fab fa-linkedin
+    url: https://linkedin.com/in/attila-fej%c3%a9r
+  - name: Twitter
+    icon: fab fa-twitter
+    url: https://twitter.com/FejerAttila
+  - name: Facebook
+    icon: fab fa-facebook
+    url: https://www.facebook.com/fanatixan
+
+resourceLinks:
+  - title: My Resume
+    url: /files/resume.pdf # https://www.overleaf.com/project/641f2c52a75b5b5e92aab8e2
+
+badges:
+  - type: certification
+    name: Oracle Certified Professional, Java SE 8 Programmer
+    url: https://www.credly.com/badges/c20362fa-380e-40e3-acc7-1d9ca9830d4c
+    badge: https://images.credly.com/size/680x680/images/3e1a7290-fade-4be4-9bcd-1a7743294a81/Oracle_Professional_Badge__1_.png
+
+  - type: certification
+    name: IBM Recognized Teacher/ Educator
+    url: https://www.credly.com/badges/ca9c981d-facf-4d6f-bd05-a0ce3e106636
+    badge: https://images.credly.com/size/680x680/images/12da05ff-0adb-4cf4-b1f2-3fcf15ef5188/Educator.png
+
+  - type: certification
+    name: IBM Recognized Speaker/ Presenter
+    url: https://www.credly.com/badges/291c86b4-35a7-4035-bb78-b50e750d7800
+    badge: https://images.credly.com/size/680x680/images/aad8d8bc-1cdf-4e79-b1e0-1595aeab251b/Speaker-presenter.png
+
+  - type: certification
+    name: XP Farm - Experienced XP Developer
+    url: https://www.credly.com/badges/8bdf3256-117c-4235-a6c7-f8860bf5e0cb
+    badge: https://images.credly.com/size/680x680/images/8fc4e903-8d44-45c8-b3af-a4be46cd3091/image.png
+
+  - type: certification
+    name: Developer Profession - Level 3 Expert
+    url: https://www.credly.com/badges/307f40e1-c0c9-4559-bc47-4cd5d520301e
+    badge: https://images.credly.com/size/680x680/images/7bf5867d-ea16-4d9f-9a6d-3d9011082c4a/Developer-Expert1.png
+
+  - type: certification
+    name: Blue Core Mentor
+    url: https://www.credly.com/badges/bd4e35b9-ff34-433d-89b9-e8366e5538ef
+    badge: https://images.credly.com/size/680x680/images/5fc0a9df-5ff7-4bcd-8eb8-5bf512eb3a0c/Blue-Core-Mentor.png
+
+  # - type: soft-skill-indicator
+  #   name: Leadership
+  #   percentage: 85
+  #   color: blue
+# you can also provide color code instead of the color name
+# - type: soft-skill-indicator
+#   name: Example 1
+#   percentage: 75
+#   color: "#00adb5"

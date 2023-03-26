@@ -1,3 +1,90 @@
 baseURL: https://attila.fejer.io/
 languageCode: en-us
-title: Attila Fejér Portfolio Site
+title: Attila Fejér Portfolio
+theme: toha
+
+enableEmoji: true
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+params:
+  background: /images/site/background.jpg
+
+  logo:
+    favicon: /images/author/attila.jpg
+  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+
+  topNavbar:
+    maxVisibleSections: 7
+
+  darkMode:
+    enable: false
+    services:
+      darkreader:
+        defaultColorScheme: system
+        fixes:
+          invert: ['img[src$=".svg"]']
+        theme:
+          brightness: 100
+          contrast: 100
+          sepia: 0
+
+  portfolio:
+    enable: false
+  blog:
+    enable: false
+  notes:
+    enable: false
+  comment:
+    enable: false
+  analytics:
+    enabled: false
+    services:
+      google:
+        id: G-H4LBG7NDFZ
+  support:
+    enable: false
+    services:
+      kofi:
+        user: hossainemruz
+        text: Tip Me
+        textColor: '#f9fafc'
+        backgroundColor: '#248aaa'
+      # buymeacoffee:
+      #   user: <your buymeacoffee.com user>
+      #   text: Support me on Buy me a coffee!
+      #   info: Buy me a coffee!
+      #   color: '#FFDD00'
+  toc:
+    enable: false
+  tags:
+    enable: false
+  flags:
+    enable: true
+  embedpdf:
+    enable: false
+  flowchart:
+    enable: false
+  math:
+    enable: false
+  syntaxHighlight:
+    enable: false
+  videoPlayer:
+    enable: false
+
+  footer:
+    enable: true
+    navigation:
+      enable: true
+      customMenus: true
+    contactMe:
+      enable: true
+    credentials:
+      enable: true
+    newsletter:
+      enable: false
+    disclaimer:
+      enable: false

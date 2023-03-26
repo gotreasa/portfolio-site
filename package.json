@@ -12,7 +12,8 @@
     "prepare": "husky install",
     "prettier:verify": "prettier --check \"*.{js,css,scss,md,html,yml,yaml,json}\"",
     "prettier:verifyfile": "prettier --check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-posts": "node src/posts/transform-posts.js"
   },
   "lint-staged": {
     "*.js": [
@@ -24,6 +25,11 @@
     "package.json": [
       "sort-package-json"
     ]
+  },
+  "dependencies": {
+    "@extractus/feed-extractor": "^6.2.1",
+    "moment": "^2.29.4",
+    "yaml": "^2.2.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.4.4",
