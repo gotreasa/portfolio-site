@@ -70,9 +70,9 @@ badges:
     badge: https://images.credly.com/size/680x680/images/aad8d8bc-1cdf-4e79-b1e0-1595aeab251b/Speaker-presenter.png
 
   - type: certification
-    name: XP Farm - Experienced XP Developer
-    url: https://www.credly.com/badges/8bdf3256-117c-4235-a6c7-f8860bf5e0cb
-    badge: https://images.credly.com/size/680x680/images/8fc4e903-8d44-45c8-b3af-a4be46cd3091/image.png
+    name: XP Farm - XP Coach
+    url: https://www.credly.com/badges/006ee89e-dbc8-4fd8-90ff-f5924d306556
+    badge: https://images.credly.com/size/680x680/images/41711b21-411c-41c5-9d41-f56a0fd1ec1b/image.png
 
   - type: certification
     name: Developer Profession - Level 3 Expert
@@ -85,9 +85,14 @@ badges:
     badge: https://images.credly.com/size/680x680/images/5fc0a9df-5ff7-4bcd-8eb8-5bf512eb3a0c/Blue-Core-Mentor.png
 
   # - type: soft-skill-indicator
-  #   name: Leadership
+  #   name: Technical Leadership
   #   percentage: 85
   #   color: blue
+
+  # - type: soft-skill-indicator
+  #   name: Tecnical Training
+  #   percentage: 90
+  #   color: green
 # you can also provide color code instead of the color name
 # - type: soft-skill-indicator
 #   name: Example 1
