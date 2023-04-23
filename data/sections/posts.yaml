@@ -13,6 +13,26 @@ buttons:
   - name: RockIT
     filter: rockit
 publications:
+  - title: Replacing Type Code With Class
+    publishedIn:
+      name: RockIT
+      date: 23 Apr 2023
+      url: https://rockit.zone/
+    paper:
+      summary: 'In the previous part, we had an overview of why switch-case could be hard to maintain. This part will focus on the simplest scenario: when type-code only affects data, not behavior. We&rsquo;ll do this by modeling a pizzeria.'
+      url: https://rockit.zone/post/switch-case/replacing-type-code-with-class/
+    categories:
+      - rockit
+  - title: The Dark Side of Switch-Case
+    publishedIn:
+      name: RockIT
+      date: 23 Apr 2023
+      url: https://rockit.zone/
+    paper:
+      summary: 'In a nutshell: switch-case makes code harder to maintain. We&rsquo;ll understand the reasons to eliminate it and see when its usage is justified.'
+      url: https://rockit.zone/post/switch-case/the-dark-side-of-switch-case/
+    categories:
+      - rockit
   - title: Tech Content Creators' Responsibilities
     publishedIn:
       name: RockIT
