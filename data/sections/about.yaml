@@ -7,7 +7,7 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
-designation: Technical Advancement Lead
+designation: Technical Coach
 company:
   name: IBM
   url: https://www.ibm.com/us-en/
@@ -29,7 +29,7 @@ summary: >-
 socialLinks:
   - name: Email
     icon: fas fa-envelope
-    url: attila@fejer.io
+    url: gearoid@otreasaigh.io
   - name: Blog
     icon: fas fa-pen-nib
     url: https://rockit.zone/
@@ -41,10 +41,10 @@ socialLinks:
     url: https://gitlab.com/fanatixan
   - name: LinkedIn
     icon: fab fa-linkedin
-    url: https://linkedin.com/in/attila-fej%c3%a9r
-  - name: Twitter
-    icon: fab fa-twitter
-    url: https://twitter.com/FejerAttila
+    url: https://linkedin.com/in/gearoidotreasaigh
+  # - name: Twitter
+  #   icon: fab fa-twitter
+  #   url: https://twitter.com/FejerGearóid
   - name: Facebook
     icon: fab fa-facebook
     url: https://www.facebook.com/fanatixan

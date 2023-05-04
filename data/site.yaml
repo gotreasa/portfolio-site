@@ -1,11 +1,11 @@
 copyright: © 2023 Copyright.
-description: Portfolio of Attila Fejér.
+description: Portfolio of Gearóid Ó Treasaigh.
 customMenus:
 
 # Specify OpenGraph Headers
 openGraph:
-  title: Attila's Portfolio
+  title: Gearóid's Portfolio
   type: website
-  description: Portfolio of Attila Fejér.
+  description: Portfolio of Gearóid Ó Treasaigh.
   image: images/author/john.png
-  url: https://attila.fejer.io
+  url: https://gearoid.otreasaigh.io
