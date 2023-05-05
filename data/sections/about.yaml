@@ -10,7 +10,7 @@ section:
 designation: Technical Coach
 company:
   name: IBM
-  url: https://www.ibm.com/us-en/
+  url: https://www.ibm.com/
 
 # a summary about you
 summary: >-
@@ -35,19 +35,19 @@ socialLinks:
     url: https://rockit.zone/
   - name: GitHub
     icon: fab fa-github
-    url: https://github.com/fanatixan
+    url: https://github.com/gotreasa
   - name: GitLab
     icon: fab fa-gitlab
-    url: https://gitlab.com/fanatixan
+    url: https://gitlab.com/gotreasa
   - name: LinkedIn
     icon: fab fa-linkedin
     url: https://linkedin.com/in/gearoidotreasaigh
   # - name: Twitter
   #   icon: fab fa-twitter
   #   url: https://twitter.com/FejerGearóid
-  - name: Facebook
-    icon: fab fa-facebook
-    url: https://www.facebook.com/fanatixan
+  # - name: Facebook
+  #   icon: fab fa-facebook
+  #   url: https://www.facebook.com/fanatixan
 
 resourceLinks:
   - title: My Resume
@@ -61,28 +61,28 @@ badges:
 
   - type: certification
     name: IBM Recognized Teacher/ Educator
-    url: https://www.credly.com/badges/ca9c981d-facf-4d6f-bd05-a0ce3e106636
-    badge: https://images.credly.com/size/680x680/images/12da05ff-0adb-4cf4-b1f2-3fcf15ef5188/Educator.png
+    url: https://www.credly.com/badges/db498da9-91e3-4bab-a31c-2fc7c22525a5
+    badge: https://images.credly.com/size/680x680/images/cb7d5b5f-47f5-438f-be3c-d2d3254af584/Recognized-Teacher-Educator.png
 
   - type: certification
-    name: IBM Recognized Speaker/ Presenter
-    url: https://www.credly.com/badges/291c86b4-35a7-4035-bb78-b50e750d7800
-    badge: https://images.credly.com/size/680x680/images/aad8d8bc-1cdf-4e79-b1e0-1595aeab251b/Speaker-presenter.png
+    name: Blue Core Coaching Supervisor
+    url: https://www.credly.com/badges/b4aad79f-733b-4d21-960c-939a699bdfca
+    badge: https://images.credly.com/size/680x680/images/610dff26-1807-42c4-a117-d5980940a5c1/Blue-Core-Coaching-Supervisor.png
 
   - type: certification
     name: XP Farm - XP Coach
-    url: https://www.credly.com/badges/006ee89e-dbc8-4fd8-90ff-f5924d306556
+    url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e
     badge: https://images.credly.com/size/680x680/images/41711b21-411c-41c5-9d41-f56a0fd1ec1b/image.png
 
   - type: certification
-    name: Developer Profession - Level 3 Expert
-    url: https://www.credly.com/badges/307f40e1-c0c9-4559-bc47-4cd5d520301e
-    badge: https://images.credly.com/size/680x680/images/7bf5867d-ea16-4d9f-9a6d-3d9011082c4a/Developer-Expert1.png
+    name: IBM Career Coach
+    url: https://www.credly.com/badges/b5ed2eb5-c69a-4ac5-8676-b4e4ef268f45
+    badge: https://images.credly.com/size/680x680/images/5629f00d-2209-4ee5-aee9-e7501ecc3db7/image.png
 
   - type: certification
-    name: Blue Core Mentor
-    url: https://www.credly.com/badges/bd4e35b9-ff34-433d-89b9-e8366e5538ef
-    badge: https://images.credly.com/size/680x680/images/5fc0a9df-5ff7-4bcd-8eb8-5bf512eb3a0c/Blue-Core-Mentor.png
+    name: Blue Core Coach
+    url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e
+    badge: https://images.credly.com/size/680x680/images/dbee997f-17d7-4788-8cdb-0732a8e9341d/Blue-Core-Coach.png
 
   # - type: soft-skill-indicator
   #   name: Technical Leadership
