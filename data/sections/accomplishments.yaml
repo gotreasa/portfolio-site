@@ -7,64 +7,31 @@ section:
   showOnNavbar: true
 
 accomplishments:
-  - name: Fivefold IBM CIO Hungary Champion
-    timeline: 2021-2022
-    organization:
-      name: IBM
-      url: https://ibm.com/
-    courseOverview: This award represents the dedication and passion one has put into making CIO Hungary a better place.
-
   - name: XP Farm Blue Belt
     timeline: Apr 2022
     organization:
       name: IBM
       url: https://ibm.com/
     courseOverview: This award demonstrates a commitment to software craftsmanship, continuous learning, teamwork, and the discipline to stick to daily practice.
-    certificateURL: https://www.credly.com/badges/8bdf3256-117c-4235-a6c7-f8860bf5e0cb
+    certificateURL: https://www.credly.com/badges/e1bdf131-557a-4f5c-a506-2702b5ab9738
 
-  - name: OITM Competition 2018 - Java (Spring, Hibernate) Category 1st Prize
-    timeline: Dec 2018
+  - name: Outstanding Technical Achievement Award
+    timeline: Aug 2017
     organization:
-      name: Országos IT Megmérettetés
-      url: https://megmerettetes.hu/
-    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: This is an award for development work on the application My Sales Activity which was used by partners to track their deals and apply for incentives
 
-  - name: OITM Competition 2018 - Java EE Category 1st Prize
-    timeline: Dec 2018
+  - name: Outstanding Technical Achievement
+    timeline: Nov 2014
     organization:
-      name: Országos IT Megmérettetés
-      url: https://megmerettetes.hu/
-    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: This award was for the development of the deployment architecture for SalesConnect which deployed an on premise version of SugarCRM.  The architecture involved building a command line tool for uDeploy called uCommand which facilitated easier deployments.
 
-  - name: OITM Competition 2018 - Java Innovation Category 2nd Prize
-    timeline: Dec 2018
+  - name: People's Innovation Choice
+    timeline: Oct 2014
     organization:
-      name: Országos IT Megmérettetés
-      url: https://megmerettetes.hu/
-    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
-
-  - name: OITM Competition 2018 - Overall 2nd Prize
-    timeline: Dec 2018
-    organization:
-      name: Országos IT Megmérettetés
-      url: https://megmerettetes.hu/
-    courseOverview: Hungarian National IT Challenge (Országos IT Megmérettetés)
-
-  - name: Scientific Students' Associations (TDK) 2nd Prize
-    timeline: Jan 2013
-    organization:
-      name: Budapest University of Technology and Economics
-      url: https://bme.hu/
-    courseOverview: Integrated Development Environment for a Custom Soft-Core Processor
-    certificateURL: https://tdk.bme.hu/VIK/HWBeagy/Integralt-fejlesztoi-kornyezet-egyedi-soft
-
-  - name: Scientific Students' Associations (TDK) 2nd Prize
-    timeline: Jan 2013
-    organization:
-      name: Budapest University of Technology and Economics
-      url: https://bme.hu/
-    courseOverview: Push Notifications for Sensor Networks with Internet Connection
-    certificateURL: https://tdk.bme.hu/VIK/HWBeagy/Push-notification-internetre-kapcsolodo
-
-  - name: WTW (Win The Web) 24h Programming Competition 1st Place
-    timeline: Jan 2011
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: Awarded the people's choice award for the Connections toolbar which was developed during my spare time, and voted on globally, by IBM employees.
