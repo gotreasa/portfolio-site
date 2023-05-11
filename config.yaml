@@ -1,6 +1,6 @@
 baseURL: https://gearoid.otreasaigh.io/
 languageCode: en-gb
-title: Gearóid Ó Treasaigh Portfolio
+title: Gearóid Ó Treasaigh
 theme: toha
 
 googleAnalytics: G-41SK9G84HV
@@ -16,23 +16,25 @@ params:
   background: /images/site/background.jpg
 
   logo:
-    favicon: /images/author/attila.jpg
+    favicon: /images/author/gearoid.png
   gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
 
   topNavbar:
     maxVisibleSections: 7
 
   darkMode:
-    enable: false
-    services:
-      darkreader:
-        defaultColorScheme: system
-        fixes:
-          invert: ['img[src$=".svg"]']
-        theme:
-          brightness: 100
-          contrast: 100
-          sepia: 0
+    enable: true
+    provider: darkreader
+    default: system
+    # services:
+    #   darkreader:
+    #     defaultColorScheme: system
+    #     fixes:
+    #       invert: ['img[src$=".svg"]']
+    #     theme:
+    #       brightness: 100
+    #       contrast: 100
+    #       sepia: 0
 
   features:
     portfolio:
