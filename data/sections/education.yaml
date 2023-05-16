@@ -13,10 +13,3 @@ degrees:
     institution:
       name: University of Galway
       url: https://www.universityofgalway.ie/
-
-  - name: Secondary School
-    icon: fa-school
-    # timeframe: 1999-2004
-    institution:
-      name: Presentation College Athenry
-      url: http://presathenry.ie/index.html/
