@@ -7,6 +7,13 @@ section:
   showOnNavbar: true
 
 accomplishments:
+  - name: Peer-to-Peer Recognition
+    timeline: May 2023
+    organization:
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: Awarded the Peer-to-Peer Recognition award for helping the organisation to grow in their technical skills.
+
   - name: XP Farm Blue Belt
     timeline: Apr 2022
     organization:
@@ -14,6 +21,14 @@ accomplishments:
       url: https://ibm.com/
     courseOverview: This award demonstrates a commitment to software craftsmanship, continuous learning, teamwork, and the discipline to stick to daily practice.
     certificateURL: https://www.credly.com/badges/e1bdf131-557a-4f5c-a506-2702b5ab9738
+
+  - name: IBM Corporate Service Corps
+    timeline: Aug 2018
+    organization:
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: This was a month long leadership development programme of volunteering in Cape Town, South Africa, working with a local non-profit orgainisation.
+    certificateURL: https://www.credly.com/earner/earned/badge/830d201c-1440-43e3-84d1-def4a9649e85
 
   - name: Outstanding Technical Achievement Award
     timeline: Aug 2017
