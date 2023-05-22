@@ -12,7 +12,24 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "html.format.templating": true
+        "html.format.templating": true,
+        // General settings
+        "files.eol": "\n",
+        // Latex settings
+        "latex-workshop.chktex.enabled": true,
+        "latex-workshop.latex.clean.subfolder.enabled": true,
+        "latex-workshop.latex.autoClean.run": "onBuilt",
+        "editor.formatOnSave": true,
+        "files.associations": {
+            "*.tex": "latex"
+        },
+        "latex-workshop.latexindent.args": [
+            "-c",
+            "%DIR%/",
+            "%TMPFILE%",
+            "-y=\"defaultIndent: '%INDENT%',onlyOneBackUp: 1\"",
+        ],
+        "latex-workshop.latex.recipe.default": "latexmk (xelatex)"
       },
       "extensions": [
         "bungcip.better-toml",
@@ -27,7 +44,11 @@
         "shuworks.vscode-table-formatter",
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "znck.grammarly"
+        "znck.grammarly",
+        "james-yu.latex-workshop",
+        "stkb.rewrap", // rewrap comments after n characters on one line
+        // Other
+        "vscode-icons-team.vscode-icons"
       ]
     }
   },
