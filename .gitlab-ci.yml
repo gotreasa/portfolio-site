@@ -19,6 +19,10 @@ install:
     paths:
       - node_modules/
 
+latex:
+  stage: prepare
+  script: ./scripts/generateLatex.sh
+
 eslint:
   stage: lint
   script: npm run lint:verify
