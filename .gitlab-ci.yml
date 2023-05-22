@@ -21,7 +21,7 @@ install:
 
 latex:
   stage: prepare
-  script: ./scripts/generateResume.sh
+  script: /workspace/site/scripts/generateResume.sh
 
 eslint:
   stage: lint
