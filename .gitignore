@@ -12,3 +12,6 @@ hugo_stats.json
 
 # Apple ignore files
 .DS_Store
+
+# Generated folder
+generated/

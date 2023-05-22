@@ -1,0 +1,268 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-emerald}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Gearóid Ó Treasaigh}
+\tagline{Technical coach with a background in leading software development teams and architecting applications. Working on large scale transformation through working with teams to improve the fundamentals to make lasting change to the culture of software development.}
+\photo[round]{../assets/images/author/gearoid.png}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email{gearoid.otreasaigh@ibm.com}
+    \phone{+44 78 2690 4551}
+    \location{London}
+    \vspace{0.5em}
+    % \homepage{nicokrieger.com}{https://www.nicokrieger.de}
+    \github{IBM repository}{https://github.ibm.com/gotreasa}
+    \github{External repository}{https://github.com/gotreasa}
+    \linkedin{Gearoid O'Treasaigh}{https://www.linkedin.com/in/gearoidotreasaigh/}
+    
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{JavaScript}{5}
+    \skill{Bash}{4}
+    \skill{Python}{3}
+    \skill{HTML/CSS}{3}
+    
+    \vspace{0.5em}
+    \skillsection{Software Engineering}
+    \skill{Agile}{4}
+    \skill{eXreme Programming}{4}
+    (Pair Programming, Test Driven Development, Behaviour Driven Development, DevOps, CI/CD)\\
+    \skill{Architecture}{3}
+    
+    \vspace{0.5em}
+    \skillsection{Operating Systems}
+    \skill{Linux}{4}
+    \skill{MacOS}{5}
+    \skill{Windows}{3}
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{Data handling/analysis}{2}
+    (e.g. numpy, pandas, Jupyter Notebooks, ...)\\
+    \skill{Docker}{3}
+    \skill{Git}{4}
+    
+    % \vspace{0.5em}
+    % \skillsection{Another skill subsection header}
+    % You can also put simply text here without the dots.
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{English}{5}
+    \skill{Spanish}{2}
+    \bigskip
+    
+    \section{Certificates}
+    \simpleskill{XP Farm - XP Coach}
+    \simpleskill{Blue Core Coach}
+    \simpleskill{Blue Core Coaching Supervisor}
+    \simpleskill{IBM Career Coach}
+    \simpleskill{Slack Certified Admin}
+    \simpleskill{IBM Recognized Teacher/Educator}
+    \simpleskill{IBM Service Corps Alum}
+
+}
+\mainbar{
+    % \section{About this template}
+    % Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
+    
+    \section[\faGears]{Work history}
+    \job{01/2022 - Present}
+        {IBM, London}
+        {Technical Coach}
+        {Train teams on XP Farm to transform their way of working.}
+    \job{10/2020 - 12/2021}
+        {IBM, London}
+        {Implementation Architect}
+        {Architected and led the development of the migration from custom NodeJS application to Salesforce}
+    \job{05/2019 - 10/2020}
+        {IBM, London}
+        {Senior JavaScript Full Stack \newline
+        Development Lead}
+        {Led the migration of My Sales Activity from Dublin to London}
+    \job{01/2017 - 05/2019}
+        {IBM, Dublin}
+        {JavaScript Full Stack Development \newline
+        Lead}
+        {Squad lead for the full stack development of the My Sales Activity application}
+    \job{03/2011 – 12/2016}
+        {IBM, Dublin}
+        {DevOps and Web Development \newline
+        Lead}
+        {Squad lead for the development of DevOps tooling and the web application of SalesConnect}
+    \job{11/2010 – 03/2011}
+        {IBM, Dublin}
+        {Software Engineer}
+        {}
+    \job{07/2009 – 11/2010}
+        {IBM, Dublin}
+        {Backend and Frontend Engineer}
+        {}
+    \job{05/2009 – 07/2009}
+        {IBM, Dublin}
+        {Software Engineer}
+        {}
+    \job{06/2008 – 05/2009}
+        {IBM, Dublin}
+        {Web Application Graduate \newline
+        Developer}
+        {}
+    
+    \section[\faMortarBoard]{Education}
+    \job {2004 - 2008}
+        {University of Galway, Ireland}
+        {Bachelor of Computing Studies}
+        {}
+
+    \section{Achievements, honours and awards}
+    \achievement{Peer-to-Peer Recognition 05/2023}
+    \achievement{XP Farm Red Belt 04/2023}
+    \achievement{Blue Core Coach 06/2019}
+    \achievement{IBM Corporate Service Corps 08/2018}
+    \achievement{Outstanding Technical Achievement 08/2017}
+    \achievement{Outstanding Technical Achievement 11/2014}
+    \achievement{People's Innovation Choice 10/2014}
+    \achievement{Leadership Excellence 11/2013}
+
+    % \section{General Skills}
+    % \smallskip % additional skip because tag outlines use up space
+    % \tag{Tag 1}
+    % \tag{Tag 2}
+    % \tag{and}
+    % \tag{another tag}
+    % \tag{some more tags}
+    % \tag{yet another one}
+    % \tag{tags flow over}
+    % \tag{to the next line}
+    % \tag{if necessary}
+    
+    % \medskip
+    % Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
+    
+    % \section{Wheel Chart}
+    % % This is taken from AltaCV
+    % % see https://github.com/liantze/AltaCV for details
+    % \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+    %     6/8em/accent!20/Sleep,          % comma-separated list of
+    %     8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
+    %     2/8em/accent!80/Training,          % here, the color is shades of the accent color
+    %     3/8em/accent!60/Recovering from fighting criminals,
+    %     5/8em/accent/Being Batman
+    % }
+}
+\makebody
+\clearpage
+
+
+% \pagestyle{highlightmain}
+% \highlightbar{}
+% \mainbar{
+
+%     \section{Another section}
+    
+%     This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
+%     The default page style is \texttt{headerhighlightmain} with all three elements.
+%     If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
+%     \medskip
+%     Neither main, nor highlight bar must be filled to make this template work.
+%     It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
+
+%     \vspace{0.5em}
+%     \subsection{Subsection 1}
+%     Demonstrate subsections.
+    
+%     \subsection{Subsection 2}
+%     Subsection are also bold face but a smaller font then section. They also omit the rule.
+    
+
+% }
+% \makebody
+
+
+% \clearpage
+% \pagestyle{empty}
+
+% \section{Publications}
+% \pubforcefullwidth
+
+% Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
+% Also show off the macros for publications that uses small icons for authors, date, journal and links.
+
+% Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
+% The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
+% \bigskip
+
+% \publication
+% 	{The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
+% 	{\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
+% 	{2020} % Year
+% 	{The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
+% 	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
+
+% \publication
+% 	{The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
+% 	{\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
+% 	{2020} % Year
+% 	{The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
+% 	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
+
+% \publication
+% 	{The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
+% 	{\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
+% 	{2019} % Year
+% 	{The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
+% 	{\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
+
+\end{document}
