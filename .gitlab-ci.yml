@@ -19,10 +19,6 @@ install:
     paths:
       - node_modules/
 
-latex:
-  stage: prepare
-  script: /workspaces/site/scripts/generateResume.sh
-
 eslint:
   stage: lint
   script: npm run lint:verify
