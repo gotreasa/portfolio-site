@@ -21,7 +21,7 @@ install:
 
 latex:
   stage: prepare
-  script: ./scripts/generateLatex.sh
+  script: ./scripts/generateResume.sh
 
 eslint:
   stage: lint
