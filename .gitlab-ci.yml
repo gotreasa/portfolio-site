@@ -8,9 +8,13 @@
 image: node:18-alpine
 
 stages:
+  - test
   - prepare
   - lint
   - security
+
+secret_detection:
+  stage: test
 
 install:
   stage: prepare
