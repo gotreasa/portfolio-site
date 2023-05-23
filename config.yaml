@@ -13,8 +13,7 @@ languages:
     weight: 1
 
 params:
-  background: /images/site/background.jpg
-
+  background: /images/site/background.png
   logo:
     favicon: /images/author/gearoid.png
   gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
