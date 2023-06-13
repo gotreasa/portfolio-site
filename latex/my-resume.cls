@@ -31,8 +31,8 @@
 \ProcessOptions*
 
 \ifthenelse{\boolean{@singleordouble}}
-    {\PassOptionsToClass{oneside}{scrartcl}}
-    {\PassOptionsToClass{twoside}{scrartcl}}
+{\PassOptionsToClass{oneside}{scrartcl}}
+{\PassOptionsToClass{twoside}{scrartcl}}
 
 \LoadClass{scrartcl}
 
@@ -134,77 +134,77 @@
 
 % declare new page style using layers
 \DeclareNewPageStyleByLayers{headerhighlightmain}{%
-  highlightbar.even,%
-  highlightbar.odd,%
-  header.bg
+	highlightbar.even,%
+	highlightbar.odd,%
+	header.bg
 }
 \DeclareNewPageStyleByLayers{highlightmain}{%
-  highlightbar.even,%
-  highlightbar.odd
+	highlightbar.even,%
+	highlightbar.odd
 }
 \DeclareNewPageStyleByLayers{headermain}{%
-  header.bg
+	header.bg
 }
 
 % define the layer for the highlight bar on odd pages
 \DeclareNewLayer[
-  background,
-  oddpage,
-  innermargin,
-  width=\highlightwidth,
-  contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
+	background,
+	oddpage,
+	innermargin,
+	width=\highlightwidth,
+	contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
 ]{highlightbar.odd}
 
 % clone highlight bar form odd pages to even pages
 % on same side for digital format
 \newcommand*\highlightbarsingle{%
-\DeclareNewLayer[
-  background,
-  evenpage,
-  outermargin,
-  width=\highlightwidth,
-  contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
-]{highlightbar.even}
+	\DeclareNewLayer[
+		background,
+		evenpage,
+		outermargin,
+		width=\highlightwidth,
+		contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
+	]{highlightbar.even}
 }
 
 % clone highlight bar from odd pages to even pages
 % on opposite sides for prints
 \newcommand*\highlightbardouble{%
-\DeclareNewLayer[
-    clone=highlightbar.odd,
-    evenpage,
-    align=r,
-    hoffset=\paperwidth
-  ]{highlightbar.even}
- }
+	\DeclareNewLayer[
+		clone=highlightbar.odd,
+		evenpage,
+		align=r,
+		hoffset=\paperwidth
+	]{highlightbar.even}
+}
 
 % use the correct version of the highlight bar on even pages
 % single for single, double for double
 \ifthenelse{
-    \boolean{@singleordouble}
+	\boolean{@singleordouble}
 }{%
-    \DeclareNewLayer[
-      background,
-      evenpage,
-      outermargin,
-      width=\highlightwidth,
-      contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
-    ]{highlightbar.even}
+	\DeclareNewLayer[
+		background,
+		evenpage,
+		outermargin,
+		width=\highlightwidth,
+		contents={\color{highlightbarcolor}\rule{\layerwidth}{\layerheight}}
+	]{highlightbar.even}
 }{%
-    \DeclareNewLayer[
-        clone=highlightbar.odd,
-        evenpage,
-        align=r,
-        hoffset=\paperwidth
-      ]{highlightbar.even}
+	\DeclareNewLayer[
+		clone=highlightbar.odd,
+		evenpage,
+		align=r,
+		hoffset=\paperwidth
+	]{highlightbar.even}
 }
 
 % define the layer for the header 
 \DeclareNewLayer[
-  background,
-  topmargin,
-  addheight=\headerheight,
-  contents={\color{headerbarcolor}\rule{\layerwidth}{\layerheight}}
+	background,
+	topmargin,
+	addheight=\headerheight,
+	contents={\color{headerbarcolor}\rule{\layerwidth}{\layerheight}}
 ]{header.bg}
 
 % % add the layers to page style plain
@@ -249,40 +249,40 @@
 
 % assemble the header
 \newcommand{\makeheader}{% header bar is a minipage
-    \begin{minipage}[t][\headerheight]{\textwidth}%
-        % \vspace{-1em}
-        \vspace{\dimexpr \@namefontheight-\@namelineheight}                     % align top of name and photo
-        % create two minipages for header text and photo if photo is given
-        \ifdef{\@photodiameter}{
-            \begin{minipage}[t]{\dimexpr \textwidth-\@photodiameter}        % to top align name and photo add [t] here
-                \vspace{0cm}%
-            }{}
-            % print the header text
-                \begin{minipage}[t][2em]{\linewidth}
-                    {\Huge\bfseries\color{headerfontcolor}\MakeUppercase{\@name}\par}
-                \end{minipage}%
-                \vfill%
-                \begin{minipage}[b][\dimexpr \headerheight-2em-\marginbottom]{\linewidth}%
-                    {\large\bfseries\color{headerfontcolor}\@tagline\par}
-                \end{minipage}%
-        % finish the minipages for text and photo if photo is given
-        \ifdef{\@photodiameter}{%
-            \end{minipage}\hfil%
-            \begin{minipage}[t]{\@photodiameter}                                % to top align name and photo add [t] here
-                \vspace{0cm}
-    			% format as square or round
-    			\ifthenelse{\equal{\@photoformat}{square}}{%
-    			    \includegraphics[width=\linewidth]{\@photo}%
-    			}{%
-    			    \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
-    			}
-    		\end{minipage}%
-            }{}
+	\begin{minipage}[t][\headerheight]{\textwidth}%
+		% \vspace{-1em}
+		\vspace{\dimexpr \@namefontheight-\@namelineheight}                     % align top of name and photo
+		% create two minipages for header text and photo if photo is given
+		\ifdef{\@photodiameter}{
+			\begin{minipage}[t]{\dimexpr \textwidth-\@photodiameter}        % to top align name and photo add [t] here
+				\vspace{0cm}%
+				}{}
+				% print the header text
+				\begin{minipage}[t][2em]{\linewidth}
+					{\Huge\bfseries\color{headerfontcolor}\MakeUppercase{\@name}\par}
+				\end{minipage}%
+				\vfill%
+				\begin{minipage}[b][\dimexpr \headerheight-2em-\marginbottom]{\linewidth}%
+					{\large\bfseries\color{headerfontcolor}\@tagline\par}
+				\end{minipage}%
+				% finish the minipages for text and photo if photo is given
+				\ifdef{\@photodiameter}{%
+			\end{minipage}\hfil%
+			\begin{minipage}[t]{\@photodiameter}                                % to top align name and photo add [t] here
+				\vspace{0cm}
+				% format as square or round
+				\ifthenelse{\equal{\@photoformat}{square}}{%
+				\includegraphics[width=\linewidth]{\@photo}%
+				}{%
+				\tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
+				}
+			\end{minipage}%
+		}{}
 	\end{minipage}%
 }
 
 \newcommand{\emptyheader}{%
-    \vspace*{\dimexpr \headerheight+0.5em}
+	\vspace*{\dimexpr \headerheight+0.5em}
 }
 
 
@@ -309,43 +309,43 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\highlightbar}[1]{%
-    \def\@highlightbar{%
-        \begin{minipage}[t]{\dimexpr \highlightwidth-\marginleft-\marginright}%
-            #1%
-        \end{minipage}%
-    }
+	\def\@highlightbar{%
+		\begin{minipage}[t]{\dimexpr \highlightwidth-\marginleft-\marginright}%
+			#1%
+		\end{minipage}%
+	}
 }
 
 % main bar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\mainbar}[1]{%
-    \def\@mainbar{%
-        \begin{minipage}[t]{\dimexpr \textwidth-\highlightwidth}%
-            #1%
-        \end{minipage}%
-    }
+	\def\@mainbar{%
+		\begin{minipage}[t]{\dimexpr \textwidth-\highlightwidth}%
+			#1%
+		\end{minipage}%
+	}
 }
 
 % make body with highlight bar and main bar
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\makebody}{%
-    \ifthenelse{\boolean{@singleordouble}}
-        {% if single layout, the highlight bar is always left
-            \@highlightbar
-            \hspace{\dimexpr \marginleft+\marginright}%
-            \@mainbar
-        }{% if double layout, the highlight bar alternates
-            \Ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
-                \@highlightbar
-                \hspace{\dimexpr \marginleft+\marginright}%
-                \@mainbar
-            }{%  if the page is even, the highlight bar is on the right
-                \@mainbar
-                \hspace{\dimexpr \marginleft+\marginright}%
-                \@highlightbar
-            }   
-        }
+	\ifthenelse{\boolean{@singleordouble}}
+	{% if single layout, the highlight bar is always left
+		\@highlightbar
+		\hspace{\dimexpr \marginleft+\marginright}%
+		\@mainbar
+	}{% if double layout, the highlight bar alternates
+		\Ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
+			\@highlightbar
+			\hspace{\dimexpr \marginleft+\marginright}%
+			\@mainbar
+		}{%  if the page is even, the highlight bar is on the right
+			\@mainbar
+			\hspace{\dimexpr \marginleft+\marginright}%
+			\@highlightbar
+		}
+	}
 }
 
 
@@ -355,17 +355,17 @@
 
 % redefine section in caps, bold and with rule below
 \renewcommand{\section}[2][]{%
-    \bigskip%
-    % \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr 1pt-\baselineskip}\raggedright\input{#1}}}%
-    \ifstrequal{#1}{}{}{\large \makebox[5mm][c]{#1}\hspace{0.5em}}
-    {\color{heading}\Large\bfseries\MakeUppercase{#2}}\\[-1ex]%
-    {\color{heading}\rule{\linewidth}{1.0pt}\par}\smallskip
+\bigskip%
+% \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr 1pt-\baselineskip}\raggedright\input{#1}}}%
+\ifstrequal{#1}{}{}{\large \makebox[5mm][c]{#1}\hspace{0.5em}}
+{\color{heading}\Large\bfseries\MakeUppercase{#2}}\\[-1ex]%
+{\color{heading}\rule{\linewidth}{1.0pt}\par}\smallskip
 }
 
 % redefine subsection as bold
 \renewcommand{\subsection}[1]{%
-  \smallskip%
-  {\color{emphasis}\large\bfseries{#1}\par}\medskip
+	\smallskip%
+	{\color{emphasis}\large\bfseries{#1}\par}\medskip
 }
 
 % format job/school list
@@ -377,31 +377,31 @@
 \setlength{\jobdateplacelength}{0.4\linewidth}
 \setlength{\jobpositionlength}{0.6\linewidth}
 \newcommand{\job}[4]{%
-    \begin{minipage}[t]{\jobdateplacelength}% minipage for left column with date/place
-        \footnotesize
-        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
-            \makebox[3mm][c]{\faCalendar}
-        \end{minipage}%
-        \hspace{0.5em}%
-        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
-            #1
-        \end{minipage}%
-        \par
-        \vspace{0.1em}
-        \begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line places
-            \makebox[3mm][c]{\faMapMarker}
-        \end{minipage}%
-        \hspace{0.5em}%
-        \begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap place in minipage to allow multi-line places
-            #2
-        \end{minipage}%
-    \end{minipage}%
-    \begin{minipage}[t]{\jobpositionlength}% minipage for position
-        {\large \color{emphasis} #3}
-    \end{minipage}%
-    \ifstrequal{#4}{}{}{\par \vspace{0.1em} \footnotesize #4}
-    \par\normalsize
-    \vspace{0.5em}
+	\begin{minipage}[t]{\jobdateplacelength}% minipage for left column with date/place
+		\footnotesize
+		\begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line dates
+			\makebox[3mm][c]{\faCalendar}
+		\end{minipage}%
+		\hspace{0.5em}%
+		\begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap date in minipage to allow multi-line dates
+			#1
+		\end{minipage}%
+		\par
+		\vspace{0.1em}
+		\begin{minipage}[t]{3mm}% wrap marker in minipage to allow multi-line places
+			\makebox[3mm][c]{\faMapMarker}
+		\end{minipage}%
+		\hspace{0.5em}%
+		\begin{minipage}[t]{\dimexpr \jobdateplacelength-3mm-0.5em}% wrap place in minipage to allow multi-line places
+			#2
+		\end{minipage}%
+	\end{minipage}%
+	\begin{minipage}[t]{\jobpositionlength}% minipage for position
+		{\large \color{emphasis} #3}
+	\end{minipage}%
+	\ifstrequal{#4}{}{}{\par \vspace{0.1em} \footnotesize #4}
+	\par\normalsize
+	\vspace{0.5em}
 }
 
 
@@ -409,23 +409,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\skill}[2]{%
-    \textcolor{emphasis}{\textbf{#1}}\hfill
-    \foreach \x in {1,...,5}{%
-      \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}\par%
+	\textcolor{emphasis}{\textbf{#1}}\hfill
+	\foreach \x in {1,...,5}{%
+			\space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}\par%
 }
 
 % skill without any charts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\simpleskill}[1]{%
-    \textcolor{emphasis}{\textbf{#1}}\par%
+	\textcolor{emphasis}{\textbf{#1}}\par%
 }
 
 % sectioning of skills
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\skillsection}[1]{%
-    \textit{\color{accent}#1}\par
+	\textit{\color{accent}#1}\par
 }
 
 % tag (framed word or phrase)
@@ -433,7 +433,7 @@
 
 % adapted from AltaCV: https://github.com/liantze/AltaCV
 \newcommand{\tag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+	\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
 }
 
 % wheel chart
@@ -441,57 +441,57 @@
 
 % adapted from AltaCV: https://github.com/liantze/AltaCV
 \newcommand{\wheelchart}[4][0]{%
-    \begingroup\centering
-    \def\innerradius{#3}%
-    \def\outerradius{#2}%
-    % Calculate total
-    \pgfmathsetmacro{\totalnum}{0}%
-    \foreach \value/\colour/\name in {#4} {%
-        \pgfmathparse{\value+\totalnum}%
-        \global\let\totalnum=\pgfmathresult%
-    }%
-    \begin{tikzpicture}
+	\begingroup\centering
+	\def\innerradius{#3}%
+	\def\outerradius{#2}%
+	% Calculate total
+	\pgfmathsetmacro{\totalnum}{0}%
+	\foreach \value/\colour/\name in {#4} {%
+			\pgfmathparse{\value+\totalnum}%
+			\global\let\totalnum=\pgfmathresult%
+		}%
+	\begin{tikzpicture}
 
-      % Calculate the thickness and the middle line of the wheel
-      \pgfmathsetmacro{\wheelwidth}{\outerradius-\innerradius}
-      \pgfmathsetmacro{\midradius}{(\outerradius+\innerradius)/2}
-      \pgfmathsetmacro{\totalrot}{-90 + #1}
+		% Calculate the thickness and the middle line of the wheel
+		\pgfmathsetmacro{\wheelwidth}{\outerradius-\innerradius}
+		\pgfmathsetmacro{\midradius}{(\outerradius+\innerradius)/2}
+		\pgfmathsetmacro{\totalrot}{-90 + #1}
 
-      % Rotate so we start from the top
-      \begin{scope}[rotate=\totalrot]
+		% Rotate so we start from the top
+		\begin{scope}[rotate=\totalrot]
 
-      % Loop through each value set. \cumnum keeps track of where we are in the wheel
-      \pgfmathsetmacro{\cumnum}{0}
-      \foreach \value/\width/\colour/\name in {#4} {
-            \pgfmathsetmacro{\newcumnum}{\cumnum + \value/\totalnum*360}
+			% Loop through each value set. \cumnum keeps track of where we are in the wheel
+			\pgfmathsetmacro{\cumnum}{0}
+			\foreach \value/\width/\colour/\name in {#4} {
+					\pgfmathsetmacro{\newcumnum}{\cumnum + \value/\totalnum*360}
 
-            % Calculate the percent value
-            \pgfmathsetmacro{\percentage}{\value/\totalnum*100}
-            % Calculate the mid angle of the colour segments to place the labels
-            \pgfmathsetmacro{\midangle}{-(\cumnum+\newcumnum)/2}
+					% Calculate the percent value
+					\pgfmathsetmacro{\percentage}{\value/\totalnum*100}
+					% Calculate the mid angle of the colour segments to place the labels
+					\pgfmathsetmacro{\midangle}{-(\cumnum+\newcumnum)/2}
 
-            % This is necessary for the labels to align nicely
-            \pgfmathparse{
-               (-\midangle>180?"west":"east")
-            } \edef\textanchor{\pgfmathresult}
-            \pgfmathparse{
-               (-\midangle>180?"flush left":"flush right")
-            } \edef\textalign{\pgfmathresult}
-            \pgfmathsetmacro\labelshiftdir{1-2*(-\midangle<180)}
+					% This is necessary for the labels to align nicely
+					\pgfmathparse{
+						(-\midangle>180?"west":"east")
+					} \edef\textanchor{\pgfmathresult}
+					\pgfmathparse{
+						(-\midangle>180?"flush left":"flush right")
+					} \edef\textalign{\pgfmathresult}
+					\pgfmathsetmacro\labelshiftdir{1-2*(-\midangle<180)}
 
-            % Draw the color segments. Somehow, the \midrow units got lost, so we add 'pt' at the end. Not nice...
-            \filldraw[draw=white,fill=\colour] (-\cumnum:\outerradius) arc (-\cumnum:-(\newcumnum):\outerradius) --
-            (-\newcumnum:\innerradius) arc (-\newcumnum:-(\cumnum):\innerradius) -- cycle;
+					% Draw the color segments. Somehow, the \midrow units got lost, so we add 'pt' at the end. Not nice...
+					\filldraw[draw=white,fill=\colour] (-\cumnum:\outerradius) arc (-\cumnum:-(\newcumnum):\outerradius) --
+					(-\newcumnum:\innerradius) arc (-\newcumnum:-(\cumnum):\innerradius) -- cycle;
 
-            % Draw the data labels
-            \draw  [*-,thin,emphasis] node [append after command={(\midangle:\midradius pt) -- (\midangle:\outerradius + 1ex) -- (\tikzlastnode)}] at (\midangle:\outerradius + 1ex) [xshift=\labelshiftdir*0.5cm,inner sep=1ex, outer sep=0pt, text width=\width,anchor=\textanchor,align=\textalign,font=\small,text=body]{\name};
-            % Set the old cumulated angle to the new value
-            \global\let\cumnum=\newcumnum
-        }
-      \end{scope}
-%      \draw[gray] (0,0) circle (\outerradius) circle (\innerradius);
-    \end{tikzpicture}\par
-    \endgroup
+					% Draw the data labels
+					\draw  [*-,thin,emphasis] node [append after command={(\midangle:\midradius pt) -- (\midangle:\outerradius + 1ex) -- (\tikzlastnode)}] at (\midangle:\outerradius + 1ex) [xshift=\labelshiftdir*0.5cm,inner sep=1ex, outer sep=0pt, text width=\width,anchor=\textanchor,align=\textalign,font=\small,text=body]{\name};
+					% Set the old cumulated angle to the new value
+					\global\let\cumnum=\newcumnum
+				}
+		\end{scope}
+		%      \draw[gray] (0,0) circle (\outerradius) circle (\innerradius);
+	\end{tikzpicture}\par
+	\endgroup
 }
 
 % publication
@@ -508,77 +508,77 @@
 
 % helper function to set spacings that work empirically
 \newcommand{\pubdefaultspacing}{%
-    \setlength{\pubdatelength}{0.15\linewidth}
-    \setlength{\pubjournallength}{0.65\linewidth}
-    \setlength{\publinklength}{0.20\linewidth}
+	\setlength{\pubdatelength}{0.15\linewidth}
+	\setlength{\pubjournallength}{0.65\linewidth}
+	\setlength{\publinklength}{0.20\linewidth}
 }
 
 % helper function to force the publication to use the full width in normal page styles without highlight bar or header
 \newcommand{\pubforcefullwidth}{%
-    \setlength{\pubdatelength}{0.1\textwidth}
-    \setlength{\pubjournallength}{0.8\textwidth}
-    \setlength{\publinklength}{0.1\textwidth}
+	\setlength{\pubdatelength}{0.1\textwidth}
+	\setlength{\pubjournallength}{0.8\textwidth}
+	\setlength{\publinklength}{0.1\textwidth}
 }
 
 % \pubforcefullwidth
 \pubdefaultspacing
 
 \newcommand{\publication}[5]{%
-    {\normalsize \color{emphasis}#1\par}
-    \vspace{0.1em}%
-    \begin{minipage}[t]{3mm}%
-        \makebox[3mm][c]{\footnotesize \faGroup}
-    \end{minipage}%
-    \hspace{0.5em}%
-    \begin{minipage}[t]{\dimexpr \linewidth-3mm-0.5em}%
-        {\footnotesize #2\par}
-    \end{minipage}%
-    \par%
-    \vspace{0.25em}%
-    \ifstrequal{#4}{}{%
-        \begin{minipage}[t]{\dimexpr \pubdatelength+\pubjournallength-1.0em}%
-            \footnotesize \makebox[3mm][c]{\faCalendar} \hspace{0.25em} #3
-        \end{minipage}%
-    }{%
-        \begin{minipage}[t]{\dimexpr \pubdatelength-1.0em}%
-            \footnotesize \makebox[3mm][c]{\faCalendar} \hspace{0.25em} #3
-        \end{minipage}%
-    }%
-    \hspace{1.0em}
-    \begin{minipage}[t]{\dimexpr \pubjournallength-1.0em}%
-        \ifstrequal{#4}{}{}{%
-            \begin{minipage}[t]{3mm}%
-                \makebox[3mm][c]{\footnotesize \faBook}
-            \end{minipage}%
-            \hspace{0.5em}%
-            \begin{minipage}[t]{\dimexpr \linewidth-3mm-0.25em}%
-                {\footnotesize #4\par}
-            \end{minipage}%
-        }%
-    \end{minipage}%
-    \hspace{1.0em}
-    \begin{minipage}[t]{\publinklength}%
-        \ifstrequal{#5}{}{}{%
-            \footnotesize \makebox[3mm][c]{\faChain} \hspace{0.25em} #5\par
-        }%
-    \end{minipage}%
-    \par\normalsize
-    \vspace{1.0em}
+	{\normalsize \color{emphasis}#1\par}
+	\vspace{0.1em}%
+	\begin{minipage}[t]{3mm}%
+		\makebox[3mm][c]{\footnotesize \faGroup}
+	\end{minipage}%
+	\hspace{0.5em}%
+	\begin{minipage}[t]{\dimexpr \linewidth-3mm-0.5em}%
+		{\footnotesize #2\par}
+	\end{minipage}%
+	\par%
+	\vspace{0.25em}%
+	\ifstrequal{#4}{}{%
+		\begin{minipage}[t]{\dimexpr \pubdatelength+\pubjournallength-1.0em}%
+			\footnotesize \makebox[3mm][c]{\faCalendar} \hspace{0.25em} #3
+		\end{minipage}%
+	}{%
+		\begin{minipage}[t]{\dimexpr \pubdatelength-1.0em}%
+			\footnotesize \makebox[3mm][c]{\faCalendar} \hspace{0.25em} #3
+		\end{minipage}%
+	}%
+	\hspace{1.0em}
+	\begin{minipage}[t]{\dimexpr \pubjournallength-1.0em}%
+		\ifstrequal{#4}{}{}{%
+			\begin{minipage}[t]{3mm}%
+				\makebox[3mm][c]{\footnotesize \faBook}
+			\end{minipage}%
+			\hspace{0.5em}%
+			\begin{minipage}[t]{\dimexpr \linewidth-3mm-0.25em}%
+				{\footnotesize #4\par}
+			\end{minipage}%
+		}%
+	\end{minipage}%
+	\hspace{1.0em}
+	\begin{minipage}[t]{\publinklength}%
+		\ifstrequal{#5}{}{}{%
+			\footnotesize \makebox[3mm][c]{\faChain} \hspace{0.25em} #5\par
+		}%
+	\end{minipage}%
+	\par\normalsize
+	\vspace{1.0em}
 }
 
 % achievement
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\achievement}[1]{%
-    \begin{minipage}[t]{3mm}%
-        \makebox[3mm][c]{\footnotesize \faTrophy}
-    \end{minipage}%
-    \hspace{0.5em}%
-    \begin{minipage}[t]{\dimexpr \textwidth-0.5em-3mm}%
-        {\normalsize #1\par}
-    \end{minipage}%
-    \par
-    \vspace{0.5em}
+	\begin{minipage}[t]{3mm}%
+		\makebox[3mm][c]{\footnotesize \faTrophy}
+	\end{minipage}%
+	\hspace{0.5em}%
+	\begin{minipage}[t]{\dimexpr \textwidth-0.5em-3mm}%
+		{\normalsize #1\par}
+	\end{minipage}%
+	\par
+	\vspace{0.5em}
 }
 
 % lists
