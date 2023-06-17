@@ -254,7 +254,7 @@
 		\vspace{\dimexpr \@namefontheight-\@namelineheight}                     % align top of name and photo
 		% create two minipages for header text and photo if photo is given
 		\ifdef{\@photodiameter}{
-			\begin{minipage}[t]{\dimexpr \textwidth-\@photodiameter}        % to top align name and photo add [t] here
+			\begin{minipage}[t]{\dimexpr \textwidth}        % to top align name and photo add [t] here
 				\vspace{0cm}%
 				}{}
 				% print the header text
@@ -265,18 +265,19 @@
 				\begin{minipage}[b][\dimexpr \headerheight-2em-\marginbottom]{\linewidth}%
 					{\large\bfseries\color{headerfontcolor}\@tagline\par}
 				\end{minipage}%
+				\hfill%
 				% finish the minipages for text and photo if photo is given
 				\ifdef{\@photodiameter}{%
 			\end{minipage}\hfil%
-			\begin{minipage}[t]{\@photodiameter}                                % to top align name and photo add [t] here
-				\vspace{0cm}
-				% format as square or round
-				\ifthenelse{\equal{\@photoformat}{square}}{%
-				\includegraphics[width=\linewidth]{\@photo}%
-				}{%
-				\tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
-				}
-			\end{minipage}%
+			% \begin{minipage}[t]{\@photodiameter}                                % to top align name and photo add [t] here
+			% 	\vspace{0cm}
+			% 	% format as square or round
+			% 	\ifthenelse{\equal{\@photoformat}{square}}{%
+			% 	\includegraphics[width=\linewidth]{\@photo}%
+			% 	}{%
+			% 	\tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
+			% 	}
+			% \end{minipage}%
 		}{}
 	\end{minipage}%
 }
@@ -297,7 +298,7 @@
 \newcommand{\email}[1]{\infofield{\faEnvelope}{\href{mailto:#1}{#1}}}
 \newcommand{\address}[1]{\infofield{\faAt}{#1}}
 \newcommand{\location}[1]{\infofield{\faMapMarker}{#1}}
-\newcommand{\phone}[1]{\infofield{\faPhone}{#1}}
+\newcommand{\phone}[1]{\infofield{\faPhone}{\href{tel:#1}{#1}}}
 \newcommand{\homepage}[2]{\infofield{\faHome}{\href{#2}{#1}}}
 \newcommand{\linkedin}[2]{\infofield{\faLinkedin}{\href{#2}{#1}}}
 \newcommand{\github}[2]{\infofield{\faGithub}{\href{#2}{#1}}}

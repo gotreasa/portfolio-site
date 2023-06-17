@@ -47,161 +47,57 @@
 \begin{document}
 
 \name{Gearóid Ó Treasaigh}
-\tagline{Technical coach with 10+ years of experience leading software development teams and architecting applications. 
-Proven track record of driving large-scale transformation by working with teams to improve fundamentals and create lasting change to the culture of software development.}
+\tagline{Technical coach with 10+ years of experience leading software development teams and architecting applications.
+	Proven track record of driving large-scale transformation by working with teams to improve fundamentals and create lasting change to the culture of software development.}
 \photo[round]{../assets/images/author/gearoid.png}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
 
 \makeheader
 
 \highlightbar{
 
-    \section{Contact}
-    
-    \email{gearoid.otreasaigh@ibm.com}
-    \phone{+44 78 2690 4551}
-    \location{London}
-    \vspace{0.5em}
-    % \homepage{nicokrieger.com}{https://www.nicokrieger.de}
-    \github{IBM repository}{https://github.ibm.com/gotreasa}
-    \github{External repository}{https://github.com/gotreasa}
-    \linkedin{Gearoid O'Treasaigh}{https://www.linkedin.com/in/gearoidotreasaigh/}
-    
-    
-    \section{Skills}
-    
-    \skillsection{Programming}
-    \skill{JavaScript}{5}
-    \skill{Bash}{4}
-    \skill{Python}{3}
-    \skill{HTML/CSS}{3}
-    
-    \vspace{0.5em}
-    \skillsection{Software Engineering}
-    \skill{Agile}{4}
-    \skill{eXreme Programming}{4}
-    (Pair Programming, Test Driven Development, Behaviour Driven Development, DevOps, CI/CD)\\
-    \skill{Architecture}{3}
-    
-    \vspace{0.5em}
-    \skillsection{Operating Systems}
-    \skill{Linux}{4}
-    \skill{MacOS}{5}
-    \skill{Windows}{3}
-    
-    \vspace{0.5em}
-    \skillsection{Software \& Tools}
-    \skill{Git}{4}
-    \skill{Docker}{3}
-    \skill{Data handling/analysis}{2}
-    (e.g. numpy, pandas, Jupyter Notebooks, ...)\\
-    
-    % \vspace{0.5em}
-    % \skillsection{Another skill subsection header}
-    % You can also put simply text here without the dots.
-    
-    \vspace{0.5em}
-    \skillsection{Languages}
-    \skill{English}{5}
-    \skill{Spanish}{2}
-    \bigskip
-    
-    \section{Certificates}
-    \simpleskill{XP Farm - XP Coach}
-    \simpleskill{Blue Core Coach}
-    \simpleskill{Blue Core Coaching Supervisor}
-    \simpleskill{IBM Career Coach}
-    \simpleskill{Slack Certified Admin}
-    \simpleskill{IBM Recognized Teacher/Educator}
-    \simpleskill{IBM Service Corps Alum}
+	\input{section_contact}
+
+
+	\input{section_skills}
+
+
+
+	\bigskip
+
+	\input{section_certifications}
 
 }
 \mainbar{
-    % \section{About this template}
-    % Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
-    
-    \section[\faGears]{Work history}
-    \job{01/2022 - Present}
-        {IBM, London}
-        {Technical Coach}
-        {Train teams on XP Farm to transform their way of working.}
-    \job{10/2020 - 12/2021}
-        {IBM, London}
-        {Implementation Architect}
-        {Architected and led the development of the migration from custom NodeJS application to Salesforce}
-    \job{05/2019 - 10/2020}
-        {IBM, London}
-        {Senior JavaScript Full Stack \newline
-        Development Lead}
-        {Led the migration of My Sales Activity from Dublin to London}
-    \job{01/2017 - 05/2019}
-        {IBM, Dublin}
-        {JavaScript Full Stack Development \newline
-        Lead}
-        {Squad lead for the full stack development of the My Sales Activity application}
-    \job{03/2011 – 12/2016}
-        {IBM, Dublin}
-        {DevOps and Web Development \newline
-        Lead}
-        {Squad lead for the development of DevOps tooling and the web application of SalesConnect}
-    \job{11/2010 – 03/2011}
-        {IBM, Dublin}
-        {Software Engineer}
-        {}
-    \job{07/2009 – 11/2010}
-        {IBM, Dublin}
-        {Backend and Frontend Engineer}
-        {}
-    \job{05/2009 – 07/2009}
-        {IBM, Dublin}
-        {Software Engineer}
-        {}
-    \job{06/2008 – 05/2009}
-        {IBM, Dublin}
-        {Web Application Graduate \newline
-        Developer}
-        {}
-    
-    \section[\faMortarBoard]{Education}
-    \job {2004 - 2008}
-        {University of Galway, Ireland}
-        {Bachelor of Computing Studies}
-        {}
+	% \section{About this template}
+	% Section are set in bold face. An optional parameter of \texttt{\textbackslash section} takes a symbol to add in front of the text. This option is used in the jobs and education sections below.
 
-    \section{Achievements, honours and awards}
-    \achievement{Peer-to-Peer Recognition 05/2023}
-    \achievement{XP Farm Red Belt 04/2023}
-    \achievement{Blue Core Coach 06/2019}
-    \achievement{IBM Corporate Service Corps 08/2018}
-    \achievement{Outstanding Technical Achievement 08/2017}
-    \achievement{Outstanding Technical Achievement 11/2014}
-    \achievement{People's Innovation Choice 10/2014}
-    \achievement{Leadership Excellence 11/2013}
+	\input{section_work_history}
 
-    % \section{General Skills}
-    % \smallskip % additional skip because tag outlines use up space
-    % \tag{Tag 1}
-    % \tag{Tag 2}
-    % \tag{and}
-    % \tag{another tag}
-    % \tag{some more tags}
-    % \tag{yet another one}
-    % \tag{tags flow over}
-    % \tag{to the next line}
-    % \tag{if necessary}
-    
-    % \medskip
-    % Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
-    
-    % \section{Wheel Chart}
-    % % This is taken from AltaCV
-    % % see https://github.com/liantze/AltaCV for details
-    % \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
-    %     6/8em/accent!20/Sleep,          % comma-separated list of
-    %     8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
-    %     2/8em/accent!80/Training,          % here, the color is shades of the accent color
-    %     3/8em/accent!60/Recovering from fighting criminals,
-    %     5/8em/accent/Being Batman
-    % }
+	% \section{General Skills}
+	% \smallskip % additional skip because tag outlines use up space
+	% \tag{Tag 1}
+	% \tag{Tag 2}
+	% \tag{and}
+	% \tag{another tag}
+	% \tag{some more tags}
+	% \tag{yet another one}
+	% \tag{tags flow over}
+	% \tag{to the next line}
+	% \tag{if necessary}
+
+	% \medskip
+	% Tags must be ordered by hand with newlines to get a nice layout, especially for long tags.
+
+	% \section{Wheel Chart}
+	% % This is taken from AltaCV
+	% % see https://github.com/liantze/AltaCV for details
+	% \wheelchart{1.5cm}{0.5cm}{% outer and inner diameter
+	%     6/8em/accent!20/Sleep,          % comma-separated list of
+	%     8/8em/accent!40/Daytime job,    % fraction of 24 / line length / color / label
+	%     2/8em/accent!80/Training,          % here, the color is shades of the accent color
+	%     3/8em/accent!60/Recovering from fighting criminals,
+	%     5/8em/accent/Being Batman
+	% }
 }
 \makebody
 \clearpage
@@ -212,7 +108,7 @@ Proven track record of driving large-scale transformation by working with teams 
 % \mainbar{
 
 %     \section{Another section}
-    
+
 %     This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
 %     The default page style is \texttt{headerhighlightmain} with all three elements.
 %     If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
@@ -223,17 +119,21 @@ Proven track record of driving large-scale transformation by working with teams 
 %     \vspace{0.5em}
 %     \subsection{Subsection 1}
 %     Demonstrate subsections.
-    
+
 %     \subsection{Subsection 2}
 %     Subsection are also bold face but a smaller font then section. They also omit the rule.
-    
+
 
 % }
 % \makebody
 
 
-% \clearpage
-% \pagestyle{empty}
+\clearpage
+\pagestyle{empty}
+
+\input{section_education}
+
+\input{section_achievements}
 
 % \section{Publications}
 % \pubforcefullwidth
