@@ -41,7 +41,7 @@ socialLinks:
     url: https://gitlab.com/gotreasa
   - name: LinkedIn
     icon: fab fa-linkedin
-    url: https://linkedin.com/in/gearoidotreasaigh
+    url: https://linkedin.com/in/gearoid-o-treasaigh
   # - name: Twitter
   #   icon: fab fa-twitter
   #   url: https://twitter.com/FejerGearóid
@@ -55,9 +55,9 @@ resourceLinks:
 
 badges:
   - type: certification
-    name: Oracle Certified Professional, Java SE 8 Programmer
-    url: https://www.credly.com/badges/c20362fa-380e-40e3-acc7-1d9ca9830d4c
-    badge: https://images.credly.com/size/680x680/images/3e1a7290-fade-4be4-9bcd-1a7743294a81/Oracle_Professional_Badge__1_.png
+    name: Agile Team Facilitation
+    url: https://www.icagile.com/credentials/581ac05b-0338-432f-8119-d7014066e783
+    badge: https://images.credly.com/size/680x680/images/a0094e49-3070-4c3b-b538-452320be93c1/image.png
 
   - type: certification
     name: IBM Recognized Teacher/ Educator
