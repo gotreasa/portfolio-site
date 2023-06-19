@@ -9,7 +9,7 @@ ARG VERSION=latest
 
 # Download Hugo
 RUN apt-get update && \
-    apt-get install -y ca-certificates openssl git curl latexmk texlive-xetex texlive-fonts-extra && \
+    apt-get install -y ca-certificates openssl git curl latexmk texlive-xetex texlive-fonts-extra texlive-extra-utils && \
     rm -rf /var/lib/apt/lists/* && \
     case ${VERSION} in \
     latest) \
