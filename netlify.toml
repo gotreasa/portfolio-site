@@ -6,7 +6,7 @@
   HUGO_VERSION = "0.110.0"
 
 [context.production]
-  command = "hugo -b https://gearoid.otreasaigh.io"
+  command = "hugo -b https://gearoid.otreasaigh.com"
 
 [context.deploy-preview]
   command = "hugo -b $DEPLOY_PRIME_URL"

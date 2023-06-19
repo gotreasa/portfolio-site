@@ -1,5 +1,5 @@
 section:
-  name: Experiences
+  name: Experience
   id: experiences
   enable: true
   weight: 3
@@ -7,111 +7,101 @@ section:
 
 experiences:
   - company:
-      name: IBM ISSC Hungary Kft.
+      name: IBM United Kingdom
       url: https://ibm.com
-      location: Budapest, Hungary
+      location: London, United Kingdom
     positions:
-      - designation: Technical Coach
-        start: May 2022
+      - designation: Technical Agile Coach
+        start: January 2022
         responsibilities:
           - Created and organized technical knowledge sharing programs
           - Helped existing programs grow locally and globally
           - Mentored developers in-person and remotely
 
-      - designation: Software Architect
-        start: Jul 2021
-        end: Apr 2022
+      - designation: Implementation Architect & Technical Lead
+        start: October 2020
+        end: December 2021
         responsibilities:
-          - Designed complex application architectures both on high- and low levels
+          - Designed complex application architectures both on high and low levels
           - Hosted multiple trainings on company level
           - Contributed in reaching quarterly goals of the company
           - Nominated as a leadership talent
 
-      - designation: Lead Software Developer
-        start: Feb 2020
-        end: Jun 2021
+      - designation: Senior JavaScript Full Stack Development Lead
+        start: May 2019
+        end: October 2020
         responsibilities:
-          - Led Java-based project teams
-          - Designed and implemented DevOps pipelines
-          - Improved the use of Agile methodologies
-          - Redesigned a complex in-production system architecture to improve scalability and maintainability
-          - Implemented reusable system components
-          - Helped new team members to integrate to the team both personally and professionally
-          - Initiated training programs and mentoring sessions on department level
+          - Designed complex application architectures both on high and low levels
+          - Hosted multiple trainings on company level
+          - Contributed in reaching quarterly goals of the company
+          - Nominated as a leadership talent
 
   - company:
-      name: Baeldung
-      url: https://baeldung.com
-      location: Remote
+      name: IBM Ireland
+      url: https://ibm.com
+      location: Dublin, Ireland
     positions:
-      - designation: Author
-        start: Apr 2018
-        end: Aug 2021
+      - designation: JavaScript Full Stack Development Lead
+        start: January 2017
+        end: April 2019
+        responsibilities:
+          - Researched and wrote technical articles for online publications
+
+      - designation: DevOps and Web Development Lead
+        start: March 2011
+        end: December 2016
+        responsibilities:
+          - Researched and wrote technical articles for online publications
+          
+      - designation: Web Developer
+        start: May 2009
+        end: March 2011
+        responsibilities:
+          - Researched and wrote technical articles for online publications
+          
+      - designation: Web Application Graduate
+        start: June 2008
+        end: May 2009
         responsibilities:
           - Researched and wrote technical articles for online publications
 
   - company:
-      name: Self-employed
-      location: Budapest, Hungary
+      name: Galway City Council
+      url: https://www.galwaycity.ie/
+      location: Galway, Ireland
+
     positions:
-      - designation: Freelance Software Engineer
-        start: Apr 2014
-        end: Feb 2020
-        responsibilities:
-          - Built, tested and deployed scalable, highly available and modular software products
-          - Gathered and defined customer requirements to develop clear specifications for creating well-organized project plans
-          - Maintained existing applications
-          - Designed and delivered new applications
-          - Advised on design, planning and implementation of software projects
+      - designation: Community Forum Webmaster
+        start: April 2007
+        end: December 2010
 
   - company:
-      name: Apertus Nonprofit Kft.
-      location: Budapest, Hungary
+      name: Western Theological Institute
+      url: https://www.theologywest.ie/
+      location: Galway, Ireland
+
     positions:
-      - designation: Lead Software Developer
-        start: Jul 2017
-        end: Jul 2019
-        responsibilities:
-          - Wrote Spring Boot code using IntelliJ IDEA
-          - Wrote Angular code using Visual Studio Code
-          - Unified Jenkins build and deploy pipelines
-          - Strengthened development methodologies by introducing unit testing and TDD
-          - Assessed under-performing software and identified ways that it could be improved
-          - Collaborated on all stages of systems development lifecycle, from requirements gathering to production releases
-          - Designed system architecture and integration points between loosely coupled backend applications
+      - designation: Webmaster & IT consultant
+        start: December 2004
+        end: June 2008
 
   - company:
-      name: Budapest University of Technology and Economics
-      url: https://bme.hu
-      location: Budapest, Hungary
+      name: University of Galway
+      url: https://www.universityofgalway.ie/
+      location: Galway, Ireland
+
     positions:
-      - designation: Demonstrator
-        start: Sep 2010
-        end: Jan 2018
-        responsibilities:
-          - Delivered presentations in computer science, information theory and digital design
-          - Led digital design laboratory courses
+      - designation: Lab Demonstrator
+        start: September 2007
+        end: April 2008
 
   - company:
-      name: EPAM Academy, Pentaschool, Ruander, Masterfields, Számalk
-      location: Budapest, Hungary
-    positions:
-      - designation: Software Development Trainer
-        start: Jun 2013
-        end: May 2017
-        responsibilities:
-          - Developed software developer course plans
-          - Taught software development technologies in class courses
+      name: Dublin City University
+      url: https://www.dcu.ie/
+      location: Dublin, Ireland
 
-  - company:
-      name: Just Another Company Kft.
-      location: Budapest, Hungary
     positions:
-      - designation: Co-Founder, CEO, Software Engineer
-        start: Apr 2012
-        end: Jun 2015
-        responsibilities:
-          - Delivered projects to pre-determined budget, maintaining time parameters and quality standards
-          - Applied strong leadership talents and problem-solving skills to maintain team efficiency and organize workflows to meet any daily demand
-          - Worked closely with clients to establish problem specifications and system designs
-          - Evaluated project requirements and specifications and developed software applications that surpassed client expectations
+      - designation: ODCSSS Student Researcher
+        start: June 2007
+        end: August 2007
+  

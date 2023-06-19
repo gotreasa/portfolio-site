@@ -3,14 +3,10 @@ nickname: Gearóid
 greeting: Hi, I am
 image: images/author/gearoid.png
 contactInfo:
-  email: gearoid@otreasaigh.io
+  email: gearoid@otreasaigh.com
   linkedin: gearoid-o-treasaigh
 
 summary:
   - I am a software engineer
-  - I am a tech trainer, mentor, coach, and author
-  - I have dogs and cats
-  - I am hiking and herding sheep with my border collie
-  - I play on the guitar
-  - I am an easy rider
-  - I love DIY
+  - I am a tech trainer, mentor, and coach
+  - I am a hiker

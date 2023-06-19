@@ -1,4 +1,4 @@
-# otreasaigh.io
+# otreasaigh.com
 
 ## Resources
 

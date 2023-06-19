@@ -3,7 +3,7 @@ section:
   id: honors-awards
   template: sections/accomplishments.html
   enable: true
-  weight: 5
+  weight: 4
   showOnNavbar: true
 
 accomplishments:

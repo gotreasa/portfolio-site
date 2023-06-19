@@ -1,4 +1,4 @@
-baseURL: https://gearoid.otreasaigh.io/
+baseURL: https://gearoid.otreasaigh.com/
 languageCode: en-gb
 title: Gearóid Ó Treasaigh
 theme: toha
@@ -25,19 +25,10 @@ params:
     enable: true
     provider: darkreader
     default: system
-    # services:
-    #   darkreader:
-    #     defaultColorScheme: system
-    #     fixes:
-    #       invert: ['img[src$=".svg"]']
-    #     theme:
-    #       brightness: 100
-    #       contrast: 100
-    #       sepia: 0
 
   features:
     portfolio:
-      enable: false
+      enable: true
     blog:
       enable: false
     notes:
@@ -89,6 +80,6 @@ params:
     credentials:
       enable: true
     newsletter:
-      enable: false
+      enable: true
     disclaimer:
       enable: false

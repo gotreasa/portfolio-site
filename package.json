@@ -1,5 +1,5 @@
 {
-  "name": "otreasaigh.io",
+  "name": "otreasaigh.com",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -10,16 +10,16 @@
     "lint:verifyfile": "eslint",
     "precommit": "lint-staged --relative --verbose",
     "prepare": "husky install",
+    "prettier:fix": "prettier --fix",
     "prettier:verify": "prettier --check \"*.{js,css,scss,md,html,yml,yaml,json}\"",
-    "prettier:verifyfile": "prettier --check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint:verifyfile"
+      "npm run lint:fix"
     ],
     "*.{js,css,scss,md,html,yml,yaml,json}": [
-      "npm run prettier:verifyfile"
+      "npm run prettier:fix"
     ],
     "package.json": [
       "sort-package-json"
