@@ -51,13 +51,13 @@ socialLinks:
 
 resourceLinks:
   - title: My Resume
-    url: /files/resume.pdf # https://www.overleaf.com/project/641f2c52a75b5b5e92aab8e2
+    url: /files/resume.pdf
 
 badges:
   - type: certification
-    name: Agile Team Facilitation
-    url: https://www.icagile.com/credentials/581ac05b-0338-432f-8119-d7014066e783
-    badge: https://images.credly.com/size/680x680/images/a0094e49-3070-4c3b-b538-452320be93c1/image.png
+    name: XP Farm - XP Coach
+    url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e
+    badge: https://images.credly.com/size/680x680/images/41711b21-411c-41c5-9d41-f56a0fd1ec1b/image.png
 
   - type: certification
     name: IBM Recognized Teacher/ Educator
@@ -70,14 +70,14 @@ badges:
     badge: https://images.credly.com/size/680x680/images/610dff26-1807-42c4-a117-d5980940a5c1/Blue-Core-Coaching-Supervisor.png
 
   - type: certification
-    name: XP Farm - XP Coach
-    url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e
-    badge: https://images.credly.com/size/680x680/images/41711b21-411c-41c5-9d41-f56a0fd1ec1b/image.png
-
-  - type: certification
     name: IBM Career Coach
     url: https://www.credly.com/badges/b5ed2eb5-c69a-4ac5-8676-b4e4ef268f45
     badge: https://images.credly.com/size/680x680/images/5629f00d-2209-4ee5-aee9-e7501ecc3db7/image.png
+
+  - type: certification
+    name: Agile Coaching
+    url: https://www.icagile.com/credentials/581ac05b-0338-432f-8119-d7014066e783
+    badge: https://images.credly.com/size/680x680/images/5c50a643-ef0f-4bea-9c90-6fe2e785a1c8/image.png
 
   - type: certification
     name: Blue Core Coach
