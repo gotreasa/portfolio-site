@@ -7,12 +7,12 @@ section:
   showOnNavbar: true
 
 accomplishments:
-  - name: Peer-to-Peer Recognition
+  - name: Peer-to-Peer Recognition - Growth Minded
     timeline: May 2023
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: Awarded the Peer-to-Peer Recognition award for helping the organisation to grow in their technical skills.
+    courseOverview: Gearoid is Growth Minded because he is always willing to learn and grow, and he is committed to helping others do the same. He has demonstrated this by sharing his experience and software craftsmanship expertise with others, encouraging teams to adopt an outward mindset culture, and educating individuals in using data analysis to improve software delivery outcomes.
 
   - name: XP Farm Blue Belt
     timeline: Apr 2022
@@ -27,7 +27,7 @@ accomplishments:
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: This was a month long leadership development programme of volunteering in Cape Town, South Africa, working with a local non-profit orgainisation.
+    courseOverview: IBM Service Corps is a global volunteer program that sends IBMers to work on projects with non-profit organizations and social enterprises in developing countries. The program is designed to use IBM's skills and expertise to help solve some of the world's most pressing social challenges. Service Corps projects have covered a wide range of areas, including education, healthcare, economic development, and environmental sustainability. Gearoid spent a month volunteering in Cape Town, South Africa, working with a local non-profit orgainisation.
     certificateURL: https://www.credly.com/earner/earned/badge/830d201c-1440-43e3-84d1-def4a9649e85
 
   - name: Outstanding Technical Achievement Award
@@ -35,18 +35,25 @@ accomplishments:
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: This is an award for development work on the application My Sales Activity which was used by partners to track their deals and apply for incentives
+    courseOverview: This is an award for tranforming the Partner Relationship Managment from being a clunky process spread across a number of tools to being a single application - My Sales Activity - that can complete a deal registration in 5 minutes instead of taking a number of hours.  This was built as an AngularJS application that cut the development costs by 1.5 milliion a year.
 
   - name: Outstanding Technical Achievement
     timeline: Nov 2014
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: This award was for the development of the deployment architecture for SalesConnect which deployed an on premise version of SugarCRM.  The architecture involved building a command line tool for uDeploy called uCommand which facilitated easier deployments.
+    courseOverview: Received for being the first application to use uDeploy in a production application, deploying SugarCRM and other microservices as part of a Customer Relationship Management application. Along with developing a custom command line tool - uCommand to enable easier deployments using uDeploy.
 
   - name: People's Innovation Choice
     timeline: Oct 2014
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: Awarded the people's choice award for the Connections toolbar which was developed during my spare time, and voted on globally, by IBM employees.
+    courseOverview: Awarded the people's choice award for the Connections toolbar for Firefox which was developed during my spare time, and voted on globally, by IBM employees. The project was open source and available on https://github.com/OpenNTF/ConnectionsToolbarForFirefox/.
+
+  - name: Leadership Excellence
+    timeline: November 2013
+    organization:
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: Lead and developed the people on the SalesConnect team in Dublin to deliver a rich collaboration experience within the application.
