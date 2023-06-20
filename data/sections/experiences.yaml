@@ -12,15 +12,15 @@ experiences:
       location: London, United Kingdom
     positions:
       - designation: Technical Agile Coach
-        start: January 2022
+        start: Jan 2022
         responsibilities:
           - Created and organized technical knowledge sharing programs
           - Helped existing programs grow locally and globally
           - Mentored developers in-person and remotely
 
       - designation: Implementation Architect & Technical Lead
-        start: October 2020
-        end: December 2021
+        start: Oct 2020
+        end: Dec 2021
         responsibilities:
           - Designed complex application architectures both on high and low levels
           - Hosted multiple trainings on company level
@@ -29,7 +29,7 @@ experiences:
 
       - designation: Senior JavaScript Full Stack Development Lead
         start: May 2019
-        end: October 2020
+        end: Oct 2020
         responsibilities:
           - Designed complex application architectures both on high and low levels
           - Hosted multiple trainings on company level
@@ -42,25 +42,25 @@ experiences:
       location: Dublin, Ireland
     positions:
       - designation: JavaScript Full Stack Development Lead
-        start: January 2017
-        end: April 2019
+        start: Jan 2017
+        end: Apr 2019
         responsibilities:
           - Researched and wrote technical articles for online publications
 
       - designation: DevOps and Web Development Lead
-        start: March 2011
-        end: December 2016
+        start: Mar 2011
+        end: Dec 2016
         responsibilities:
           - Researched and wrote technical articles for online publications
-          
+
       - designation: Web Developer
         start: May 2009
-        end: March 2011
+        end: Mar 2011
         responsibilities:
           - Researched and wrote technical articles for online publications
-          
+
       - designation: Web Application Graduate
-        start: June 2008
+        start: Jun 2008
         end: May 2009
         responsibilities:
           - Researched and wrote technical articles for online publications
@@ -72,8 +72,8 @@ experiences:
 
     positions:
       - designation: Community Forum Webmaster
-        start: April 2007
-        end: December 2010
+        start: Apr 2007
+        end: Dec 2010
 
   - company:
       name: Western Theological Institute
@@ -82,8 +82,8 @@ experiences:
 
     positions:
       - designation: Webmaster & IT consultant
-        start: December 2004
-        end: June 2008
+        start: Dec 2004
+        end: Jun 2008
 
   - company:
       name: University of Galway
@@ -92,8 +92,8 @@ experiences:
 
     positions:
       - designation: Lab Demonstrator
-        start: September 2007
-        end: April 2008
+        start: Sep 2007
+        end: Apr 2008
 
   - company:
       name: Dublin City University
@@ -102,6 +102,5 @@ experiences:
 
     positions:
       - designation: ODCSSS Student Researcher
-        start: June 2007
-        end: August 2007
-  
+        start: Jun 2007
+        end: Aug 2007
