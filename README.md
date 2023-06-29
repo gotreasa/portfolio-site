@@ -2,9 +2,9 @@
 
 ## Resources
 
-### Retrieving Wordpress posts
+### Retrieving WordPress posts
 
-1. Open author's WP page where their posts are listed
+1. Open the author's WP page where their posts are listed
 2. Open a terminal
 3. Run the following command to get the post ids:
    `Array.from(document.querySelectorAll('article')).map(a => a.getAttribute('id')).map(id => id.replace('post-', '')).join(',')`
