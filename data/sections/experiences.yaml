@@ -14,27 +14,25 @@ experiences:
       - designation: Technical Agile Coach
         start: Jan 2022
         responsibilities:
-          - Created and organized technical knowledge sharing programs
-          - Helped existing programs grow locally and globally
-          - Mentored developers in-person and remotely
+          - Trained and mentored 4 developer dojos on eXtreme Programming to become software craftspeople. Improved participants' TDD, planning, and DevOps skills which improved their DORA scores on their teams.
+          - Created a course on basic data analysis using Jupyter Notebooks which enabled both technical and non-technical participants to make more informed decsions building their applications. This improved their ability to build the right features for users.
+          - Organised outward mindset classes and a guild for an oganisation of over 260 people which had an impact on teams ability to focus on outcome and achieve their OKRs.
+          - Received the Peer-to-Peer - Growth Minded award for transforming the organisation.
 
       - designation: Implementation Architect & Technical Lead
         start: Oct 2020
         end: Dec 2021
         responsibilities:
-          - Designed complex application architectures both on high and low levels
-          - Hosted multiple trainings on company level
-          - Contributed in reaching quarterly goals of the company
-          - Nominated as a leadership talent
+          - Migrated the deal registration process used by business partners from a NodeJS application to Salesforce.  The business partner community consists of 200k users and 10k partners and generates 11 billion USD$ annually.
+          - Simplified the deal registration to one simple process instead of a multi step process they previously experienced.
 
       - designation: Senior JavaScript Full Stack Development Lead
         start: May 2019
         end: Oct 2020
         responsibilities:
-          - Designed complex application architectures both on high and low levels
-          - Hosted multiple trainings on company level
-          - Contributed in reaching quarterly goals of the company
-          - Nominated as a leadership talent
+          - Transformed the software deal registration process which lead to an increase in the NPS score and ensured the entire process was automated within the NodeJS application.
+          - Mentored a group of 3 development leads in squad leadership and agile refinement.
+          - Led and mentored a tribe of 18 developers.
 
   - company:
       name: IBM Ireland
@@ -45,25 +43,30 @@ experiences:
         start: Jan 2017
         end: Apr 2019
         responsibilities:
-          - Researched and wrote technical articles for online publications
+          - Created an AngularJS application with a NodeJS backend that automated opportunity and incentive creation for 10k business partners and their 200k users.
+          - The transformation lead to users instantly recording the opportunities and products that they were selling from an old process that could take them days as they waited for each step to complete.
+          - Led a team of 6 people as part of the agile tribe.
+          - Earned an Outstanding Technical Achievement award for transforming and simplifying the partners registering their deals.
 
       - designation: DevOps and Web Development Lead
         start: Mar 2011
         end: Dec 2016
         responsibilities:
-          - Researched and wrote technical articles for online publications
+          - Transformed the deployment process for an on-premise instance which previously took 72 hours to be able to run, to within 2 hours, saving a maximum of 2000 hours over the course of the year for the business.
+          - Continuously sought areas that were not automated and led the team to be able to transform and automate the deployments.
+          - Earned an Outstanding Technical Achievement Award for being the first team to introduce Urban Code Deployment and use it to deploy to production.
 
       - designation: Web Developer
         start: May 2009
         end: Mar 2011
         responsibilities:
-          - Researched and wrote technical articles for online publications
+          - Web developer on a number of enterprise collaboration applications using Java and C for the backend with HTML, Dojo, JavaScript and CSS for the frontend.
 
       - designation: Web Application Graduate
         start: Jun 2008
         end: May 2009
         responsibilities:
-          - Researched and wrote technical articles for online publications
+          - Java developer on the XPages application which provided users the ability to create Domino applications in a fraction of the time using a drag and drop interface.
 
   - company:
       name: Galway City Council
