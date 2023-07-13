@@ -12,6 +12,14 @@ languages:
     languageName: English
     weight: 1
 
+# At least HTML and JSON are required for the main HTML content and
+# client-side JavaScript search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   background: /images/site/background.png
   logo:
@@ -80,6 +88,6 @@ params:
     credentials:
       enable: true
     newsletter:
-      enable: true
+      enable: false
     disclaimer:
       enable: false
