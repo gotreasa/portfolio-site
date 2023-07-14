@@ -2,6 +2,7 @@ baseURL: https://gearoid.otreasaigh.com/
 languageCode: en-gb
 title: Gearóid Ó Treasaigh
 theme: toha
+Description: blah
 
 googleAnalytics: G-41SK9G84HV
 
@@ -22,6 +23,7 @@ outputs:
 
 params:
   background: /images/site/background.png
+  description: Portfolio for Gearóid Ó Treasaigh (Gearoid O'Treasaigh). Software Craftsmanship Coach, Extreme Programming Coach, Technical Agile Coach.
   logo:
     favicon: /images/author/gearoid.png
   gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
