@@ -6,7 +6,7 @@
   HUGO_VERSION = "0.110.0"
 
 [context.production]
-  command = "hugo -b https://gearoid.otreasaigh.com"
+  command = "hugo -b https://gearoid.otreasaigh.com --minify"
 
 [context.deploy-preview]
-  command = "hugo -b $DEPLOY_PRIME_URL"
+  command = "hugo -b $gp_PRIME_URL --minify"

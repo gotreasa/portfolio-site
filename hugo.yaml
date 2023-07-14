@@ -91,3 +91,6 @@ params:
       enable: false
     disclaimer:
       enable: false
+
+  minify:
+    minifyOutput: true
