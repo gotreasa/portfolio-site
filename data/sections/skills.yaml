@@ -21,22 +21,22 @@ skills:
   - name: Cloud
     logo: /images/sections/skills/cloud.png
     summary: >-
-      Fond of distributed architectural patterns and technologies. Worked with GCP, AWS, and IBM Cloud.
+      Fond of distributed architectural patterns and technologies. Worked with AWS, and IBM Cloud.
 
-  - name: Java
-    logo: /images/sections/skills/java.svg
-    summary: >-
-      Has 10+ years of experience using the Java ecosystem on client and server side. A seasoned trainer.
-      Prefers Gradle, but used Maven for years, too.
-    url: https://www.java.com/
+  # - name: Java
+  #   logo: /images/sections/skills/java.svg
+  #   summary: >-
+  #     Has 10+ years of experience using the Java ecosystem on client and server side. A seasoned trainer.
+  #     Prefers Gradle, but used Maven for years, too.
+  #   url: https://www.java.com/
 
-  - name: Spring
-    logo: /images/sections/skills/spring.png
-    summary: >-
-      His go-to framework in the Java world. Familiar with XML, annotation-based, and code-based configuration.
-      Has experience with Spring Boot and Spring Cloud. For years, he refused to switch from Java EE to Spring.
-      It's one of his biggest regrets.
-    url: https://spring.io/
+  # - name: Spring
+  #   logo: /images/sections/skills/spring.png
+  #   summary: >-
+  #     His go-to framework in the Java world. Familiar with XML, annotation-based, and code-based configuration.
+  #     Has experience with Spring Boot and Spring Cloud. For years, he refused to switch from Java EE to Spring.
+  #     It's one of his biggest regrets.
+  #   url: https://spring.io/
 
   - name: Docker
     logo: /images/sections/skills/docker.svg
@@ -45,11 +45,11 @@ skills:
       Experienced with multi-stage, multi-arch build process.
     url: 'https://www.docker.com/'
 
-  - name: Linux
-    logo: /images/sections/skills/linux.png
-    summary: >-
-      Uses as main operating system for development (directly installed or WSL2).
-      Capable of writing bash/shell scripts. Has a command line sickness. It's terminal.
+  # - name: Linux
+  #   logo: /images/sections/skills/linux.png
+  #   summary: >-
+  #     Uses as main operating system for development (directly installed or WSL2).
+  #     Capable of writing bash/shell scripts. Has a command line sickness. It's terminal.
 
   - name: Git
     logo: /images/sections/skills/git.png
@@ -60,5 +60,5 @@ skills:
   - name: Other technologies
     logo: /images/sections/skills/technology.svg
     summary: >-
-      Varying experience in HTML, CSS, JavaScript, TypeScript, Angular, Kotlin,
-      Python, C, C++, C#, and SQL.
+      Varying experience in HTML, CSS, JavaScript, TypeScript, Angular,
+      Python, C, C++, and SQL.
