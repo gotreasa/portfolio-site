@@ -28,20 +28,20 @@
     "*.{tex,cls}": "/workspaces/portfolio-site/scripts/generateResume.sh"
   },
   "dependencies": {
-    "@extractus/feed-extractor": "^6.2.3",
+    "@extractus/feed-extractor": "^7.0.0",
     "moment": "^2.29.4",
     "yaml": "^2.3.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
-    "eslint": "^8.43.0",
+    "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "jshint": "^2.13.6",
-    "lint-staged": "^13.2.2",
-    "prettier": "^2.8.8",
-    "sort-package-json": "^2.4.1"
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0",
+    "sort-package-json": "^2.5.1"
   }
 }
