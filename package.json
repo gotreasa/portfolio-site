@@ -6,6 +6,7 @@
   "author": "",
   "main": "index.js",
   "scripts": {
+    "lint:fix": "eslint --fix",
     "lint:verify": "eslint .",
     "lint:verifyfile": "eslint",
     "precommit": "lint-staged --relative --verbose",

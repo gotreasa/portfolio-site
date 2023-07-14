@@ -42,7 +42,7 @@ function baeldungPosts() {
 
 function loadAllBaeldungPosts() {
   return Promise.all(baeldungPostFiles.map(loadBaeldungPosts)).then((posts) =>
-    posts.flat()
+    posts.flat(),
   );
 }
 
