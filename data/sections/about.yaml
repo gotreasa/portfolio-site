@@ -72,7 +72,7 @@ badges:
   - type: certification
     name: IBM Career Coach
     url: https://www.credly.com/badges/b5ed2eb5-c69a-4ac5-8676-b4e4ef268f45
-    badge: https://images.credly.com/size/680x680/images/64e14ec8-707e-4400-a027-e18001128d84/Blue-Core-Coach.png
+    badge: https://images.credly.com/size/680x680/images/5629f00d-2209-4ee5-aee9-e7501ecc3db7/image.png
 
   - type: certification
     name: Agile Coaching
@@ -82,7 +82,7 @@ badges:
   - type: certification
     name: Blue Core Coach
     url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e
-    badge: https://images.credly.com/size/680x680/images/dbee997f-17d7-4788-8cdb-0732a8e9341d/Blue-Core-Coach.png
+    badge: https://images.credly.com/size/680x680/images/64e14ec8-707e-4400-a027-e18001128d84/Blue-Core-Coach.png
 
   # - type: soft-skill-indicator
   #   name: Technical Leadership
