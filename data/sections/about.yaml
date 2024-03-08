@@ -7,10 +7,10 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
-designation: Technical Coach
+designation: Software Craftsmanship Coach
 company:
-  name: IBM
-  url: https://www.ibm.com/
+  name: NS
+  url: https://www.ns.nl/
 
 # a summary about you
 summary: >-
