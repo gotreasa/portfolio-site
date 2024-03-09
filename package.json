@@ -25,8 +25,7 @@
     ],
     "package.json": [
       "sort-package-json"
-    ],
-    "*.{tex,cls}": "/workspaces/portfolio-site/scripts/generateResume.sh"
+    ]
   },
   "dependencies": {
     "@extractus/feed-extractor": "^7.0.0",

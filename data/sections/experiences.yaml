@@ -7,12 +7,25 @@ section:
 
 experiences:
   - company:
+      name: Freelance
+      start: Dec 2023
+      location: London, United Kingdom
+    positions:
+      - designation: Software Craftsmanship Coach @ Netherlands Railway
+        start: Jan 2024
+        responsibilities:
+          - Iteratively develop and improve the curriculum based on experimentation
+          - Coach teams on how to apply Extreme Programming
+          - Train teams in the skills of Extreme Programming
+
+  - company:
       name: IBM United Kingdom
       url: https://ibm.com
       location: London, United Kingdom
     positions:
       - designation: Technical Agile Coach
         start: Jan 2022
+        end: Jun 2023
         responsibilities:
           - Trained and mentored 4 developer dojos on eXtreme Programming to become software craftspeople. Improved participants' TDD, planning, and DevOps skills which improved their DORA scores on their teams.
           - Created a course on basic data analysis using Jupyter Notebooks which enabled both technical and non-technical participants to make more informed decsions building their applications. This improved their ability to build the right features for users.
