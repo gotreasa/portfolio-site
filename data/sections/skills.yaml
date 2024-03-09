@@ -10,7 +10,7 @@ skills:
     logo: /images/sections/skills/tools.svg
     summary: >-
       Has a deep understanding of software engineering principles and best practices including agile,
-      SOLID, design patterns, hexagonal architecture, clean code, refactoring, and domain-driven design.
+      design patterns, hexagonal architecture, clean code, refactoring, and domain-driven design.
 
   - name: Extreme Programming
     logo: /images/sections/skills/xp.svg
@@ -21,7 +21,7 @@ skills:
   - name: Cloud
     logo: /images/sections/skills/cloud.png
     summary: >-
-      Fond of distributed architectural patterns and technologies. Worked with GCP, AWS, and IBM Cloud.
+      Fond of distributed architectural patterns and technologies. Worked with AWS, and IBM Cloud.
 
   # - name: Java
   #   logo: /images/sections/skills/java.svg
@@ -54,11 +54,11 @@ skills:
   - name: Git
     logo: /images/sections/skills/git.png
     summary: >-
-      Experienced with git-based development (using the CLI). Mostly uses GitLab and GitHub.
+      Experienced with git-based development (using the CLI). Mostly uses GitHub.
     url: 'https://git-scm.com/'
 
   - name: Other technologies
     logo: /images/sections/skills/technology.svg
     summary: >-
-      Varying experience in HTML, CSS, JavaScript, TypeScript, Angular, Kotlin,
+      Varying experience in HTML, CSS, JavaScript, TypeScript, Java
       Python, C, C++, and SQL.
