@@ -35,10 +35,10 @@ outputs:
     - JSON
 
 params:
-  background: /images/site/background.png
+  background: /images/site/background.webp
   description: Portfolio for Gearóid Ó Treasaigh (Gearoid O'Treasaigh). Software Craftsmanship Coach, Extreme Programming Coach, Technical Agile Coach.
   logo:
-    favicon: /images/author/gearoid.png
+    favicon: /images/author/gearoid.webp
   gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
 
   topNavbar:
