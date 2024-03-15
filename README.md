@@ -1,4 +1,4 @@
-# otreasaigh.com
+# gearoid.eu
 
 ## Resources
 
