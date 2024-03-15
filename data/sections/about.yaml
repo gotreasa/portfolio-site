@@ -56,33 +56,33 @@ resourceLinks:
 badges:
   - type: certification
     name: XP Farm - XP Coach
-    url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e
-    badge: https://images.credly.com/size/680x680/images/41711b21-411c-41c5-9d41-f56a0fd1ec1b/image.png
-
-  - type: certification
-    name: IBM Recognized Teacher/ Educator
-    url: https://www.credly.com/badges/db498da9-91e3-4bab-a31c-2fc7c22525a5
-    badge: https://images.credly.com/size/680x680/images/cb7d5b5f-47f5-438f-be3c-d2d3254af584/Recognized-Teacher-Educator.png
+    url: https://www.credly.com/badges/0087c7bd-d19d-4864-b7cf-dd553a53cd21/public_url
+    badge: /images/badges/xp-coach.png
 
   - type: certification
     name: Blue Core Coaching Supervisor
-    url: https://www.credly.com/badges/b4aad79f-733b-4d21-960c-939a699bdfca
-    badge: https://images.credly.com/size/680x680/images/5e7c1fee-48fd-4b1c-bbf0-319db982d661/Blue-Core-Coaching-Supervisor.png
+    url: https://www.credly.com/badges/b4aad79f-733b-4d21-960c-939a699bdfca/public_url
+    badge: /images/badges/blue-core-coaching-supervisor.png
 
   - type: certification
     name: IBM Career Coach
-    url: https://www.credly.com/badges/b5ed2eb5-c69a-4ac5-8676-b4e4ef268f45
-    badge: https://images.credly.com/size/680x680/images/5629f00d-2209-4ee5-aee9-e7501ecc3db7/image.png
+    url: https://www.credly.com/badges/b5ed2eb5-c69a-4ac5-8676-b4e4ef268f45/public_url
+    badge: /images/badges/ibm-career-coach.png
 
   - type: certification
     name: Agile Coaching
     url: https://www.icagile.com/credentials/581ac05b-0338-432f-8119-d7014066e783
-    badge: https://images.credly.com/size/680x680/images/5c50a643-ef0f-4bea-9c90-6fe2e785a1c8/image.png
+    badge: /images/badges/agile-coaching.png
 
   - type: certification
     name: Blue Core Coach
-    url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e
-    badge: https://images.credly.com/size/680x680/images/64e14ec8-707e-4400-a027-e18001128d84/Blue-Core-Coach.png
+    url: https://www.credly.com/badges/1491a972-1d96-4837-832a-9759e91ccc5e/public_url
+    badge: /images/badges/blue-core-coach.png
+
+  - type: certification
+    name: Agile Team Facilitation
+    url: https://www.credly.com/badges/91e74391-f214-4793-9feb-547f9d7256d3/public_url
+    badge: /images/badges/agile-team-facilitation.png
 
   # - type: soft-skill-indicator
   #   name: Technical Leadership
