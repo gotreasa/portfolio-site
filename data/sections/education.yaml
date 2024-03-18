@@ -3,8 +3,8 @@ section:
   id: education
   template: sections/education.html
   enable: true
-  weight: 7
-  showOnNavbar: true
+  weight: 6
+  showOnNavbar: false
 
 degrees:
   - name: B.Sc. in Computing Studies

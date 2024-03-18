@@ -1,0 +1,32 @@
+section:
+  name: Services
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+
+skills:
+  - name: Software Craftsmanship Coach
+    # summary: >-
+    #   Has a deep understanding of software engineering principles and best practices including agile,
+    #   design patterns, hexagonal architecture, clean code, refactoring, and domain-driven design.
+
+  - name: Samman Coaching
+    # summary: >-
+    #   Applies and trains XP techniques, such as direct client communication, pair programming, TDD,
+    #   BDD, CI/CD, team code ownership, and coding standards.
+
+  - name: DevOps Coach
+    # summary: >-
+    #   Fond of distributed architectural patterns and technologies. Worked with AWS, and IBM Cloud.
+
+  - name: Software Developer
+    # summary: >-
+    #   Builds most applications to run in containers. Prefers containerized development.
+    #   Experienced with multi-stage, multi-arch build process.
+    # url: 'https://www.docker.com/'
+
+  - name: DevOps Engineer
+    # summary: >-
+    #   Experienced with git-based development (using the CLI). Mostly uses GitHub.
+    # url: 'https://git-scm.com/'

@@ -42,7 +42,7 @@ params:
   gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
 
   topNavbar:
-    maxVisibleSections: 7
+    maxVisibleSections: 6
 
   features:
     portfolio:

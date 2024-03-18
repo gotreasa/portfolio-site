@@ -14,17 +14,7 @@ company:
 
 # a summary about you
 summary: >-
-  I'm hard to fit in a single box since I consider myself many things.
-  Software engineer.
-  Tech trainer, mentor, coach, and author.
-  Dog and cat dad.
-  Amateur dog handler.
-  Guitar hobbyist.
-  Weekend hiker.
-  Easy rider.
-
-
-  And many more. Because life without passion and variety is wasted.
+  Looking a digital transfromation?  Below you can see the services that I offer
 
 socialLinks:
   - name: Email
@@ -52,6 +42,8 @@ socialLinks:
 resourceLinks:
   - title: My Resume
     url: /files/resume.pdf
+  - title: Contact Me
+    url: mailto:gearoid@gearoid.eu
 
 badges:
   - type: certification
