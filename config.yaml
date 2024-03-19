@@ -35,7 +35,7 @@ outputs:
     - JSON
 
 params:
-  background: /images/site/background.webp
+  background: /images/site/gradient_background.webp
   description: Portfolio for Gearóid Ó Treasaigh (Gearoid O'Treasaigh). Software Craftsmanship Coach, Extreme Programming Coach, Technical Agile Coach.
   logo:
     favicon: /images/author/gearoid.webp
