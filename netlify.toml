@@ -41,3 +41,9 @@
     conservativeCollapse = true
     minifyCSS = true
     minifyJS = true
+
+[[redirects]]
+  from = "/blog"
+  to = "https://gearoideu.wordpress.com/"
+  status = 302
+  force = true
