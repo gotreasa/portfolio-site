@@ -12,9 +12,10 @@ company:
   name: NS
   url: https://www.ns.nl/en
 
-# a summary about you
+# A summary about you
 summary: >-
-  Looking a digital transfromation?  Below you can see the services that I offer
+  Looking for a digital transformation?  Struggling with rapidly delivering new features for your product that truly delight users?
+  Below you can see the services that I offer to address these problems.
 
 socialLinks:
   - name: Email
@@ -42,8 +43,8 @@ socialLinks:
 resourceLinks:
   - title: My Resume
     url: /files/resume.pdf
-  - title: Contact Me
-    url: mailto:gearoid@gearoid.eu
+  - title: Book an Appointment
+    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
 
 badges:
   - type: certification
