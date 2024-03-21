@@ -44,6 +44,6 @@
 
 [[redirects]]
   from = "/blog/*"
-  to = "https://gearoideu.wordpress.com/:splat"
+  to = "https://glimpsingza.wordpress.com/:splat"
   status = 302
   force = true
