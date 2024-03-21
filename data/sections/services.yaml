@@ -1,32 +1,41 @@
 section:
   name: Services
-  id: skills
+  id: services
   enable: true
   weight: 2
   showOnNavbar: true
 
-skills:
+services:
   - name: Software Craftsmanship Coach
-    # summary: >-
-    #   Has a deep understanding of software engineering principles and best practices including agile,
-    #   design patterns, hexagonal architecture, clean code, refactoring, and domain-driven design.
+    summary: >-
+      []()Creating great products can be a tough challenge, we see that 77% of employees are disengaged, so most teams are working at a mediocre level.
+      Looking at the DORA outcomes we can see that teams can improve by 2000X better.
+    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
 
   - name: Samman Coaching
-    # summary: >-
-    #   Applies and trains XP techniques, such as direct client communication, pair programming, TDD,
-    #   BDD, CI/CD, team code ownership, and coding standards.
+    summary: >-
+      Samman Coaching provides a mix of learning hours along with ensemble programming sessions where I can work with teams to improve their ways of working
+      while also getting a chance to put those new ways of working into practice.  Out of this developers learn the skills in hands-on learning sessions and 
+      the ensemble sessions allow it to be practiced on the real code while also sharing knowledge of the codebase.
+    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
 
   - name: DevOps Coach
-    # summary: >-
-    #   Fond of distributed architectural patterns and technologies. Worked with AWS, and IBM Cloud.
+    summary: >-
+      With a consistently changing landscape of tooling, teams need to get the opportunity
+      to try out new tools and improve the way that they can work in a psychologically safe environment.
+      I work with teams to understand their challenges and incrementally improve their
+    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
 
-  - name: Software Developer
-    # summary: >-
-    #   Builds most applications to run in containers. Prefers containerized development.
-    #   Experienced with multi-stage, multi-arch build process.
-    # url: 'https://www.docker.com/'
+  - name: Software Development Consultant
+    summary: >-
+      Experienced software developer having worked on several enterprise collaboration, customer and partner
+      relationship applications. Looking for opportunities with Python, JavaScript and TypeScript development
+      - both frontend and backend.
+    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
 
-  - name: DevOps Engineer
-    # summary: >-
-    #   Experienced with git-based development (using the CLI). Mostly uses GitHub.
-    # url: 'https://git-scm.com/'
+  - name: DevOps Consultant
+    summary: >-
+      Looking to automate your delivery pipeline and improve the ability of your teams to deliver their software?
+      I enjoy working with the developers that make use of the automation tooling and pipelines to understand 
+      their needs and simplify their development process through to deployment to production.
+    url: https://calendar.app.google/rGPGM8oHRArkWEzi9

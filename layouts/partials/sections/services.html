@@ -12,8 +12,8 @@
   </h1>
   {{ end }}
   <div class="container d-flex-block">
-    <div class="row" id="primary-skills">
-      blah {{ range .skills }} {{ partial "cards/skills.html" . }} {{ end }}
+    <div class="row" id="primary-skills" style="text-align: center">
+      {{ range .services }} {{ partial "cards/services.html" . }} {{ end }}
     </div>
   </div>
 </div>
