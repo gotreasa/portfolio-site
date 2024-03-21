@@ -23,21 +23,6 @@ skills:
     summary: >-
       Fond of distributed architectural patterns and technologies. Worked with AWS, and IBM Cloud.
 
-  # - name: Java
-  #   logo: /images/sections/skills/java.svg
-  #   summary: >-
-  #     Has 10+ years of experience using the Java ecosystem on client and server side. A seasoned trainer.
-  #     Prefers Gradle, but used Maven for years, too.
-  #   url: https://www.java.com/
-
-  # - name: Spring
-  #   logo: /images/sections/skills/spring.png
-  #   summary: >-
-  #     His go-to framework in the Java world. Familiar with XML, annotation-based, and code-based configuration.
-  #     Has experience with Spring Boot and Spring Cloud. For years, he refused to switch from Java EE to Spring.
-  #     It's one of his biggest regrets.
-  #   url: https://spring.io/
-
   - name: Docker
     logo: /images/sections/skills/docker.svg
     summary: >-
