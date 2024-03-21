@@ -43,7 +43,7 @@
     minifyJS = true
 
 [[redirects]]
-  from = "/blog"
-  to = "https://gearoideu.wordpress.com/"
+  from = "/blog/*"
+  to = "https://gearoideu.wordpress.com/:splat"
   status = 302
   force = true
