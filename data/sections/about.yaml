@@ -9,8 +9,8 @@ section:
 
 designation: Software Craftsmanship Coach
 company:
-  name: NS
-  url: https://www.ns.nl/en
+  name: Freelance
+  # url: https://www.ns.nl/en
 
 # A summary about you
 summary: >-
@@ -44,7 +44,7 @@ resourceLinks:
   - title: My Resume
     url: /files/resume.pdf
   - title: Book an Appointment
-    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
+    url: https://calendar.app.google/2zpCAdCQW61V1ZQh8
 
 badges:
   - type: certification
