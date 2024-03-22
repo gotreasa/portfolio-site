@@ -10,32 +10,32 @@ services:
     summary: >-
       []()Creating great products can be a tough challenge, we see that 77% of employees are disengaged, so most teams are working at a mediocre level.
       Looking at the DORA outcomes we can see that teams can improve by 2000X better.
-    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
+    url: /posts/software-craftsmanship-coach
 
   - name: Samman Coaching
     summary: >-
       Samman Coaching provides a mix of learning hours along with ensemble programming sessions where I can work with teams to improve their ways of working
       while also getting a chance to put those new ways of working into practice.  Out of this developers learn the skills in hands-on learning sessions and 
       the ensemble sessions allow it to be practiced on the real code while also sharing knowledge of the codebase.
-    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
+    url: /posts/samman-coaching
 
   - name: DevOps Coach
     summary: >-
       With a consistently changing landscape of tooling, teams need to get the opportunity
       to try out new tools and improve the way that they can work in a psychologically safe environment.
       I work with teams to understand their challenges and incrementally improve their
-    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
+    url: /posts/devops-coach
 
   - name: Software Development Consultant
     summary: >-
       Experienced software developer having worked on several enterprise collaboration, customer and partner
       relationship applications. Looking for opportunities with Python, JavaScript and TypeScript development
       - both frontend and backend.
-    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
+    url: /posts/software-development-consultant
 
   - name: DevOps Consultant
     summary: >-
       Looking to automate your delivery pipeline and improve the ability of your teams to deliver their software?
       I enjoy working with the developers that make use of the automation tooling and pipelines to understand 
       their needs and simplify their development process through to deployment to production.
-    url: https://calendar.app.google/rGPGM8oHRArkWEzi9
+    url: /posts/devops-consultant
