@@ -26,6 +26,11 @@ languages:
     languageName: English
     weight: 1
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 # At least HTML and JSON are required for the main HTML content and
 # client-side JavaScript search
 outputs:
@@ -39,7 +44,7 @@ params:
   description: Portfolio for Gearóid Ó Treasaigh (Gearoid O'Treasaigh). Software Craftsmanship Coach, Extreme Programming Coach, Technical Agile Coach.
   logo:
     favicon: /images/author/gearoid.webp
-  gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
+  # gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
 
   topNavbar:
     maxVisibleSections: 6
@@ -76,7 +81,7 @@ params:
     tags:
       enable: false
     flags:
-      enable: true
+      enable: false
     # # If you want to use different country flag for a language, specify them here.
     # flagOverwrites:
     #   - languageCode: en
