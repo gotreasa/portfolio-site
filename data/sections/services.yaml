@@ -8,34 +8,25 @@ section:
 services:
   - name: Software Craftsmanship Coach
     summary: >-
-      []()Creating great products can be a tough challenge, we see that 77% of employees are disengaged, so most teams are working at a mediocre level.
-      Looking at the DORA outcomes we can see that teams can improve by 2000X better.
+      Elevate your software development team to elite to rapidly deliver products that delight the users.
     url: /posts/software-craftsmanship-coach
 
   - name: Samman Coaching
     summary: >-
-      Samman Coaching provides a mix of learning hours along with ensemble programming sessions where I can work with teams to improve their ways of working
-      while also getting a chance to put those new ways of working into practice.  Out of this developers learn the skills in hands-on learning sessions and 
-      the ensemble sessions allow it to be practiced on the real code while also sharing knowledge of the codebase.
+      Transform how the team works within their own codebase while learning new skills.
     url: /posts/samman-coaching
 
   - name: DevOps Coach
     summary: >-
-      With a consistently changing landscape of tooling, teams need to get the opportunity
-      to try out new tools and improve the way that they can work in a psychologically safe environment.
-      I work with teams to understand their challenges and incrementally improve their
+      Coach your DevOps team to incrementally improve your pipeline to elite.
     url: /posts/devops-coach
 
   - name: Software Development Consultant
     summary: >-
-      Experienced software developer having worked on several enterprise collaboration, customer and partner
-      relationship applications. Looking for opportunities with Python, JavaScript and TypeScript development
-      - both frontend and backend.
+      Deliver applications in JavaScript, TypeScript, or Python through to production.
     url: /posts/software-development-consultant
 
   - name: DevOps Consultant
     summary: >-
-      Looking to automate your delivery pipeline and improve the ability of your teams to deliver their software?
-      I enjoy working with the developers that make use of the automation tooling and pipelines to understand 
-      their needs and simplify their development process through to deployment to production.
+      Work with your team on improving the pipeline and building out the functionality needed.
     url: /posts/devops-consultant
