@@ -12,7 +12,7 @@ categories: ['Services']
 hero: software-craftsmanship-coach.webp
 ---
 
-Experienced software developer having worked on several enterprise collaboration, customer and partner relationship applications. Looking for opportunities with Python, JavaScript and TypeScript development - both frontend and backend.
+Want your team to code like superheroes? I'm a coach who teaches cool tricks and teamwork skills to turn them into super-programmers! This means they can build things faster with fewer bugs, so they have more time for the fun parts of coding!
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 

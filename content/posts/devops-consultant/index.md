@@ -10,7 +10,7 @@ menu:
 hero: devops-consultant.webp
 ---
 
-Looking to automate your delivery pipeline and improve the ability of your teams to deliver their software? I enjoy working with the developers that make use of the automation tooling and pipelines to understand their needs and simplify their development process through to deployment to production.
+Is putting your software online like a giant, messy puzzle? I can help! I untangle the mess and make it smooth sailing, so new features get to users quickly. Think of it like building a super-fast slide for your awesome software!
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 

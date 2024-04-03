@@ -10,9 +10,7 @@ menu:
 hero: devops-coach.webp
 ---
 
-With a consistently changing landscape of tooling, teams need to get the opportunity
-to try out new tools and improve the way that they can work in a psychologically safe environment.
-I work with teams to understand their challenges and incrementally improve their
+Building software is like a team sport! As a DevOps coach, I help your team work together seamlessly to build and launch software. We'll learn cool tricks to automate things and make the process smoother, so everyone can focus on creating amazing things!
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 
