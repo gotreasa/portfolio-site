@@ -1,0 +1,25 @@
+weight;word;color;url
+7;JavaScript;; 
+6;TypeScript;;
+5;Python;; 
+4;Bash;;
+2;Requirements;;
+1;Product Development;;
+3;Production;;
+3;Development;; 
+2;Staging;; 
+4;Test Driven Development;; 
+5;Domain Driven Design;;
+3;Hexagonal Architecture;;
+2;Lean UX;;
+2;Event Storming;;
+3;API;; 
+3;Cloud;;
+4;Jest;;
+4;PyTest;;
+2;GitHub;;
+2;Github Actions;;
+2;Travis CI;;
+2;Jenkins;;
+1;Agile;;
+1;Scrum;;

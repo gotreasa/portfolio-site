@@ -7,6 +7,7 @@ menu:
     name: DevOps Consultant
     identifier: devops-consultant
     weight: 40
+hero: devops-consultant.webp
 ---
 
 Looking to automate your delivery pipeline and improve the ability of your teams to deliver their software? I enjoy working with the developers that make use of the automation tooling and pipelines to understand their needs and simplify their development process through to deployment to production.

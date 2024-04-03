@@ -7,6 +7,7 @@ menu:
     name: Samman Coaching
     identifier: samman-coaching
     weight: 20
+hero: samman-coaching.webp
 ---
 
 Samman Coaching provides a mix of learning hours along with ensemble programming sessions where I can work with teams to improve their ways of working while also getting a chance to put those new ways of working into practice. Out of this developers learn the skills in hands-on learning sessions and the ensemble sessions allow it to be practiced on the real code while also sharing knowledge of the codebase.

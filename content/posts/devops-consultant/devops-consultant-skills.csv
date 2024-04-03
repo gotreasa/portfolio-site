@@ -1,0 +1,25 @@
+weight;word;color;url
+12;Site Reliability Engineering;;
+8;Chaos Engineering;;
+15;DevOps;;
+7;JavaScript;; 
+6;TypeScript;;
+5;Python;; 
+4;Bash;;
+2;Requirements;;
+10;Test Driven Development;; 
+10;Acceptance Test Driven Development;; 
+10;Behaviour Driven Development;; 
+8;Domain Driven Design;;
+8;Hexagonal Architecture;;
+10;Lean UX;;
+7;Event Storming;;
+3;API;; 
+3;Cloud;;
+4;Jest;;
+4;PyTest;;
+2;GitHub;;
+15;Github Actions;;
+15;Travis CI;;
+15;Jenkins;;
+10;Agile;;

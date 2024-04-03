@@ -7,6 +7,7 @@ menu:
     name: Software Development Consultant
     identifier: software-development-consultant
     weight: 50
+hero: software-development-consultant.webp
 ---
 
 Creating great products can be a tough challenge, we see that 77% of employees are disengaged, so most teams are working at a mediocre level.

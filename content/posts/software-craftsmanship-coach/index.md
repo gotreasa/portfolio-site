@@ -9,6 +9,7 @@ menu:
     weight: 10
 tags: ['Basic', 'Multi-lingual']
 categories: ['Services']
+hero: software-craftsmanship-coach.webp
 ---
 
 Experienced software developer having worked on several enterprise collaboration, customer and partner relationship applications. Looking for opportunities with Python, JavaScript and TypeScript development - both frontend and backend.

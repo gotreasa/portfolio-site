@@ -7,6 +7,7 @@ menu:
     name: DevOps Coach
     identifier: devops-coach
     weight: 30
+hero: devops-coach.webp
 ---
 
 With a consistently changing landscape of tooling, teams need to get the opportunity
