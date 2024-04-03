@@ -11,11 +11,6 @@ services:
       Elevate your software development team to elite to rapidly deliver products that delight the users.
     url: /posts/software-craftsmanship-coach
 
-  - name: Samman Coaching
-    summary: >-
-      Transform how the team works within their own codebase while learning new skills.
-    url: /posts/samman-coaching
-
   - name: DevOps Coach
     summary: >-
       Coach your DevOps team to incrementally improve your pipeline to elite.
