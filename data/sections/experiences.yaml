@@ -7,16 +7,29 @@ section:
 
 experiences:
   - company:
-      name: Freelance
-      start: Dec 2023
+      name: BriX Consulting
+      url: https://brix.consulting
+      start: Jan 2024
       location: London, United Kingdom
     positions:
-      - designation: Software Craftsmanship Coach with <a href="https://www.ns.nl/en">NS</a>
+      - designation: Software Craftsmanship Coach with <a href="https://www.ns.nl/en" target="_blank">NS</a>
         start: Jan 2024
         responsibilities:
           - Iteratively develop and improve the curriculum based on experimentation.
           - Coach teams on how to apply Extreme Programming.
           - Train teams in the skills of Extreme Programming.
+
+  - company:
+      name: Freelance
+      start: Dec 2023
+      location: London, United Kingdom
+    positions:
+      - designation: Software Consultant & Software Craftsmanship Coach
+        start: Dec 2023
+        responsibilities:
+          - Transform teams from mediocre development practices to elite software craftsmanship.
+          - Coach teams on how to improve culture and ways of working.
+          - Develop custom solutions for clients.
 
   - company:
       name: IBM United Kingdom
