@@ -10,7 +10,7 @@ menu:
 hero: software-development-consultant.webp
 ---
 
-Imagine building a giant Lego castle, but you're not sure which pieces to use. That's where I come in! I help pick the right tools and plan things out, so your software is strong and works perfectly – just like an awesome Lego creation! I enjoy getting my hands dirty and build the castle with your team.
+Imagine building a giant Lego castle, but you're not sure which pieces to use. That's where I come in! I help pick the right tools and plan things out, so your software is strong and works perfectly – just like an awesome Lego creation! I enjoy getting my hands dirty and building the castle with your team.
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 
