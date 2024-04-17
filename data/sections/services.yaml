@@ -9,19 +9,19 @@ services:
   - name: Software Craftsmanship Coach
     summary: >-
       Elevate your software development team to elite to rapidly deliver products that delight the users.
-    url: /posts/software-craftsmanship-coach
+    url: /services/software-craftsmanship-coach
 
   - name: DevOps Coach
     summary: >-
       Coach your DevOps team to incrementally improve your pipeline to elite.
-    url: /posts/devops-coach
+    url: /services/devops-coach
 
   - name: Software Development Consultant
     summary: >-
       Deliver applications in JavaScript, TypeScript, or Python through to production.
-    url: /posts/software-development-consultant
+    url: /services/software-development-consultant
 
   - name: DevOps Consultant
     summary: >-
       Work with your team on improving the pipeline and building out the functionality needed.
-    url: /posts/devops-consultant
+    url: /services/devops-consultant
