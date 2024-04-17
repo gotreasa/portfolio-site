@@ -1,0 +1,43 @@
+name: Update Blog Posts
+
+env:
+  NODE_VERSION: 18.18
+  HUGO_VERSION: 0.124.1
+
+permissions:
+  checks: write
+  contents: read
+  pull-requests: read
+
+on:
+  schedule:
+    - cron: '15 10 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+    update_blog_posts:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the code
+              uses: actions/checkout@main
+              with: 
+                persist-credentials: false 
+                fetch-depth: 0
+                ref: main
+            - uses: actions/setup-node@main
+              with:
+                node-version: '${{ env.NODE_VERSION }}'
+            - run: npm install
+            - name: Update the blog posts
+              run: npm run update-posts
+            - name: Commit changes for the blog posts
+              run: git commit -a -m 'chore: update the blog posts'
+            - name: Push changes
+              uses: ad-m/github-push-action@master
+              with:
+                github_token: ${{ secrets.DEPENDABOT }}
+                branch: main
+
+
+
+
