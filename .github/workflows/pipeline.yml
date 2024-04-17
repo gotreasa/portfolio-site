@@ -59,7 +59,9 @@ jobs:
           hugo-version: '${{ env.HUGO_VERSION }}'
           extended: true
       - name: Build
-        run: npm run build
+        run: |
+          npm install 
+          npm run build
 
   # Check for any broken links
   markdown-link-check:
