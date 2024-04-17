@@ -15,7 +15,8 @@
     "prettier:fix": "prettier --write",
     "prettier:verify": "prettier --check \"*.{js,css,scss,md,html,yml,yaml,json}\"",
     "prettier:verifyfile": "prettier --check",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-posts": "node src/posts/transform-posts.js"
   },
   "lint-staged": {
     "*.js": [

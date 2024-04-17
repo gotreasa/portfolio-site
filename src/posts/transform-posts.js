@@ -1,10 +1,9 @@
-const {
-  promises: { readFile, writeFile },
-} = require('fs');
+import { promises } from 'fs';
+import { extract } from '@extractus/feed-extractor';
+import moment from 'moment';
+import YAML from 'yaml';
 
-const { extract } = require('@extractus/feed-extractor');
-const moment = require('moment');
-const YAML = require('yaml');
+const { writeFile } = promises;
 
 const postsSection = {
   section: {
@@ -12,77 +11,15 @@ const postsSection = {
     id: 'posts',
     template: 'sections/publications.html',
     enable: true,
-    weight: 6,
+    weight: 4,
     showOnNavbar: true,
   },
-  buttons: [
-    { name: 'All', filter: 'all' },
-    { name: 'Baeldung', filter: 'baeldung' },
-    { name: 'RockIT', filter: 'rockit' },
-  ],
 };
 
-const baeldungPostFiles = [
-  'src/posts/baeldung-posts.json',
-  'src/posts/baeldung-cs-posts.json',
-];
-
-const rockItRssUrl = 'https://rockit.zone/index.xml';
+const blogRssUrl = 'https://blog.gearoid.eu/feed';
 
 function posts() {
-  return Promise.all([baeldungPosts(), rockItPosts()]).then(([bp, rp]) => [
-    ...bp,
-    ...rp,
-  ]);
-}
-
-function baeldungPosts() {
-  return loadAllBaeldungPosts().then(extractRelevantDataFromWp);
-}
-
-function loadAllBaeldungPosts() {
-  return Promise.all(baeldungPostFiles.map(loadBaeldungPosts)).then((posts) =>
-    posts.flat(),
-  );
-}
-
-function loadBaeldungPosts(file) {
-  return readFile(file).then(JSON.parse);
-}
-
-function extractRelevantDataFromWp(posts) {
-  return posts.map(extractRelevantDataFromWpPost);
-}
-
-function extractRelevantDataFromWpPost(post) {
-  return {
-    title: toPlainString(post.title.rendered),
-    publishedIn: {
-      name: extractSiteName(post),
-      date: moment(post.date),
-      url: extractSiteBaseUrl(post),
-    },
-    paper: {
-      summary: toPlainString(post.excerpt.rendered),
-      url: post.link,
-    },
-    categories: ['baeldung'],
-  };
-}
-
-function extractSiteName(post) {
-  const url = extractSiteBaseUrl(post);
-  if (url.endsWith('/cs/')) {
-    return 'Baeldung CS';
-  }
-
-  return 'Baeldung';
-}
-
-function extractSiteBaseUrl(post) {
-  const link = post.link;
-  const lastSlash = link.lastIndexOf('/');
-  return link.substring(0, lastSlash + 1);
+  return Promise.all([blogPosts()]).then(([bp]) => [...bp]);
 }
 
 function toPlainString(s) {
@@ -93,12 +30,12 @@ function toPlainString(s) {
     .trim();
 }
 
-function rockItPosts() {
-  return loadRockItPosts().then(extractRelevantDataFromRss);
+function blogPosts() {
+  return loadBlogPosts().then(extractRelevantDataFromRss);
 }
 
-function loadRockItPosts() {
-  return extract(rockItRssUrl, { descriptionMaxLen: 500 });
+function loadBlogPosts() {
+  return extract(blogRssUrl, { descriptionMaxLen: 500 });
 }
 
 function extractRelevantDataFromRss(rssFeed) {
@@ -106,7 +43,7 @@ function extractRelevantDataFromRss(rssFeed) {
     return {
       title: toPlainString(e.title),
       publishedIn: {
-        name: 'RockIT',
+        name: 'Medium',
         date: moment(e.published),
         url: rssFeed.link,
       },
@@ -114,7 +51,6 @@ function extractRelevantDataFromRss(rssFeed) {
         summary: toPlainString(e.description),
         url: e.link,
       },
-      categories: ['rockit'],
     };
   });
 }
