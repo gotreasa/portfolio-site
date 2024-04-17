@@ -1,0 +1,39 @@
+# You can override the included template(s) by including variable overrides
+# SAST customization: REDACTED_security/sast/#customizing-the-sast-settings
+# Secret Detection customization: REDACTED_security/secret_detection/#customizing-settings
+# Dependency Scanning customization: REDACTED_security/dependency_scanning/#customizing-the-dependency-scanning-settings
+# Container Scanning customization: REDACTED_security/container_scanning/#customizing-the-container-scanning-settings
+# Note that environment variables can be set in several places
+# See REDACTED#cicd-variable-precedence
+image: node:18-alpine
+
+stages:
+  - test
+  - prepare
+  - lint
+  - security
+
+secret_detection:
+  stage: test
+
+install:
+  stage: prepare
+  script: npm install
+  artifacts:
+    paths:
+      - node_modules/
+
+eslint:
+  stage: lint
+  script: npm run lint:verify
+
+prettier:
+  stage: lint
+  script: npm run prettier:verify
+
+sast:
+  stage: security
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+  - template: Secret-Detection.gitlab-ci.yml

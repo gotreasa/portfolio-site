@@ -8,6 +8,8 @@ concurrency:
 jobs:
   secret_detection:
     runs-on: ubuntu-latest
+    container:
+      image: node:18-alpine
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4.1.0
@@ -17,6 +19,8 @@ jobs:
   install:
     needs: secret_detection
     runs-on: ubuntu-latest
+    container:
+      image: node:18-alpine
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4.1.0
@@ -32,6 +36,8 @@ jobs:
   eslint:
     needs: install
     runs-on: ubuntu-latest
+    container:
+      image: node:18-alpine
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4.1.0
@@ -43,6 +49,8 @@ jobs:
   prettier:
     needs: install
     runs-on: ubuntu-latest
+    container:
+      image: node:18-alpine
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4.1.0
@@ -56,6 +64,8 @@ jobs:
       - eslint
       - prettier
     runs-on: ubuntu-latest
+    container:
+      image: node:18-alpine
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4.1.0

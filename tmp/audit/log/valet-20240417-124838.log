@@ -1,0 +1,37 @@
+# Logfile created on 2024-04-17 12:48:38 +0000 by logger.rb/v1.5.3
+I, [2024-04-17T12:48:38.172831 #1]  INFO -- : Using GitHub Features: Defaults
+I, [2024-04-17T12:48:38.172972 #1]  INFO -- : Auditing 'REDACTED'
+I, [2024-04-17T12:48:38.188222 #1]  INFO -- request: GET REDACTED4/groups/gotreasa/projects
+I, [2024-04-17T12:48:38.488609 #1]  INFO -- response: Status 404
+I, [2024-04-17T12:48:38.503813 #1]  INFO -- request: GET REDACTED
+I, [2024-04-17T12:48:38.848815 #1]  INFO -- response: Status 200
+I, [2024-04-17T12:48:38.850532 #1]  INFO -- : Sending telemetry with transaction id '73d2293c-ef4d-40c1-9a23-4d086027ef2e'
+E, [2024-04-17T12:48:39.219918 #1] ERROR -- : There was an error extracting pipelines from GitLab
+Message: Resource not found
+(GET 404) Not Found: REDACTED4/groups/gotreasa/projects
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/services/gitlab_ci/parse_response.rb:14:in `parse!'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/adapters/gitlab_ci/client.rb:140:in `block in paginate'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/adapters/gitlab_ci/client.rb:133:in `loop'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/adapters/gitlab_ci/client.rb:133:in `paginate'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/adapters/gitlab_ci/client.rb:84:in `fetch_projects'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/services/gitlab_ci/REDACTED.rb:40:in `block in pipelines_from_client'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/services/gitlab_ci/REDACTED.rb:39:in `each'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/services/gitlab_ci/REDACTED.rb:39:in `pipelines_from_client'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/services/gitlab_ci/REDACTED.rb:16:in `call'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/adapters/provider_resolver.rb:66:in `call'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/commands/audit.rb:16:in `block in call'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/logger.rb:96:in `with_progress_bar'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/commands/audit.rb:15:in `call'
+/usr/local/bundle/gems/actions_importer-1.3.22008/lib/valet/subcommands/audit.rb:129:in `gitlab'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor/command.rb:27:in `run'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor/invocation.rb:127:in `invoke_command'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor.rb:392:in `dispatch'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor/invocation.rb:116:in `invoke'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor.rb:243:in `block in subcommand'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor/command.rb:27:in `run'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor/invocation.rb:127:in `invoke_command'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor.rb:392:in `dispatch'
+/usr/local/bundle/gems/thor-1.2.2/lib/thor/base.rb:485:in `start'
+/usr/local/bundle/gems/actions_importer-1.3.22008/exe/actions-importer:19:in `<top (required)>'
+/usr/local/bundle/bin/actions-importer:25:in `load'
+/usr/local/bundle/bin/actions-importer:25:in `<main>'
