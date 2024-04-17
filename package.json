@@ -7,6 +7,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
     "lint:fix": "eslint --fix",
     "lint:verify": "eslint .",
     "lint:verifyfile": "eslint",
