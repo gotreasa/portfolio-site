@@ -47,8 +47,17 @@ jobs:
       - name: Prettify the code
         run: npm run lint:verify
 
+  # Check for any broken links
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+      # checkout to latest commit
+      - uses: actions/checkout@master
+      # run markdown linter
+      - uses: gaurav-nelson/github-action-markdown-link-check@1.0.15
+
   hugo-build:
-    needs: [commitlint, prettier-verify, eslint-verify]
+    needs: [commitlint, prettier-verify, eslint-verify, markdown-link-check]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
@@ -62,12 +71,3 @@ jobs:
         run: |
           npm install 
           npm run build
-
-  # Check for any broken links
-  markdown-link-check:
-    runs-on: ubuntu-latest
-    steps:
-      # checkout to latest commit
-      - uses: actions/checkout@master
-      # run markdown linter
-      - uses: gaurav-nelson/github-action-markdown-link-check@1.0.15
