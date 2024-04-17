@@ -21,9 +21,9 @@ socialLinks:
   - name: Email
     icon: fas fa-envelope
     url: gearoid@gearoid.eu
-  # - name: Blog
-  #   icon: fas fa-pen-nib
-  #   url: https://rockit.zone/
+  - name: Blog
+    icon: fas fa-pen-nib
+    url: https://blog.gearoid.eu/
   - name: GitHub
     icon: fab fa-github
     url: https://github.com/gotreasa
