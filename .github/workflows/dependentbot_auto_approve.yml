@@ -5,20 +5,14 @@ on:
 
 jobs:
   auto-merge:
+    if: github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-      - name: 🪪 Check if it's Dependabot's PR
-        run: |
-          if [[ "${{ github.actor }}" != "dependabot[bot]" ]]; then
-            echo "Not a Dependabot PR, skipping auto-merge..."
-            exit 0
-          fi
-
       - name: 🛒 Check out to get the configuration file .github/auto-merge.yml
         uses: actions/checkout@v4
 
-      - name: 🤖 DependentBot AutoMerge
+      - name: 🤖 DependaBot AutoMerge
         uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          github-token: ${{ secrets.DEPENDENTBOT }}
+          github-token: ${{ secrets.DEPENDABOT }}
           command: merge
