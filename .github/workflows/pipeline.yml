@@ -67,6 +67,10 @@ jobs:
         with:
           hugo-version: '${{ env.HUGO_VERSION }}'
           extended: true
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+          cache: false
       - name: Build
         run: |
           npm install 
