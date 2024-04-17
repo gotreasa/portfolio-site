@@ -14,3 +14,11 @@ publications:
     paper:
       summary: "Going from a mediocre team to an elite team can seem daunting, especially when we need to figure out where to start. The DevOps Research and Assessment (DORA) can be our north star, helping us build the habits and practices we need to be elite. We'll look at DORA, the challenges of building habits, and how to form habits that stick.What Is DORA?The DevOps Research and Assessment (DORA) report focuses on four key areas to measure elite teams:Lead time: How long does it take from code committed..."
       url: https://medium.com/@gearoid.otreasaigh/building-elite-teams-starts-with-habits-948cd5aa1e75?source=rss-268c77893847------2
+  - title: Introduction to Pull Request Stacking
+    publishedIn:
+      name: Medium
+      date: 10 Apr 2024
+      url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
+    paper:
+      summary: Pull Request (PR) stacking is another name for stacked diffs, a concept that has existed for several years. We'll go through what it is, the tools we can use and where PR stacking may be of benefit.What Is PR Stacking?In traditional Pull Requests (PRs), the developer makes all of the changes in one or more commits and then opens the PR to merge the change back into the main branch. The approach in PR stacking instead is to separate the functionality to be delivered into pieces. Let's say we're...
+      url: https://medium.com/@gearoid.otreasaigh/pull-request-stacking-11c59203e517?source=rss-268c77893847------2
