@@ -1,4 +1,9 @@
 name: gearoid.eu/portfolio-site
+
+env:
+  NODE_VERSION: 18.18
+  HUGO_VERSION: 0.114.0
+
 on:
   push:
   workflow_dispatch:
@@ -23,6 +28,9 @@ jobs:
         with:
           fetch-depth: 20
           lfs: true
+      - uses: actions/setup-node@main
+        with:
+          node-version: '${{ env.NODE_VERSION }}'
       - run: npm install
       - uses: actions/upload-artifact@v4.1.0
         if: success()
@@ -38,8 +46,12 @@ jobs:
         with:
           fetch-depth: 20
           lfs: true
-      - uses: actions/download-artifact@v4.1.0
-      - run: npm run lint:verify
+      - uses: actions/setup-node@main
+        with:
+          node-version: '${{ env.NODE_VERSION }}'
+      - run: |
+          npm install
+          npm run lint:verify
   prettier:
     needs: install
     runs-on: ubuntu-latest
@@ -49,8 +61,12 @@ jobs:
         with:
           fetch-depth: 20
           lfs: true
-      - uses: actions/download-artifact@v4.1.0
-      - run: npm run prettier:verify
+      - uses: actions/setup-node@main
+        with:
+          node-version: '${{ env.NODE_VERSION }}'
+      - run: |
+          npm install
+          npm run prettier:verify
   sast:
     needs:
       - eslint
