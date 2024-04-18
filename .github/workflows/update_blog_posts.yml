@@ -2,7 +2,6 @@ name: Update Blog Posts
 
 env:
   NODE_VERSION: 18.18
-  HUGO_VERSION: 0.124.1
 
 permissions:
   checks: write
