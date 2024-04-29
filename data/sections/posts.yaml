@@ -6,6 +6,14 @@ section:
   weight: 4
   showOnNavbar: true
 publications:
+  - title: A Change in Identity — From Developer to Craftsperson
+    publishedIn:
+      name: Medium
+      date: 26 Apr 2024
+      url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
+    paper:
+      summary: A Change in Identity — From Developer to CraftspersonIn this blog article, we'll explore the principles of software craftsmanship, the benefits of becoming a software craftsperson, and how we can improve our skills. We'll look at a growth mindset and some resources to help us on our journey. Let's dive in!Witnessing CraftsmanshipLet's say we enter a home and face this beautifully crafted staircase. Why do we even think this is beautiful? What comes to mind is the skill and work that has gone...
+      url: https://the-iterative-edge.gearoid.eu/a-change-in-identity-from-developer-to-craftsperson-066d529e15d3?source=rss-268c77893847------2
   - title: Building Elite Teams Starts With Habits
     publishedIn:
       name: Medium
