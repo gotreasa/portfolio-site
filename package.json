@@ -31,7 +31,7 @@
     ]
   },
   "dependencies": {
-    "@extractus/feed-extractor": "^7.1.0",
+    "@extractus/feed-extractor": "^7.1.2",
     "moment": "^2.30.1",
     "yaml": "^2.4.1"
   },
