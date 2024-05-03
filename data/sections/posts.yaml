@@ -6,6 +6,14 @@ section:
   weight: 4
   showOnNavbar: true
 publications:
+  - title: 'Password Management (Part 1): The Basics'
+    publishedIn:
+      name: Medium
+      date: 2 May 2024
+      url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
+    paper:
+      summary: Happy World Password Day! (In 2024, it's being celebrated on May 2nd). Remembering loads of passwords is an absolute pain. As we work in corporate jobs, we find that the number of personal and professional passwords we have continues to grow, along with having to log into systems numerous times a day. In general, employees manage 191 logins and log in 154 times a month, with each login taking, on average, 14 seconds, causing us to spend at least 36 minutes entering passwords per month. Let's...
+      url: https://the-iterative-edge.gearoid.eu/password-management-part-1-the-basics-64e1066cde91?source=rss-268c77893847------2
   - title: A Change in Identity — From Developer to Craftsperson
     publishedIn:
       name: Medium
@@ -28,5 +36,5 @@ publications:
       date: 10 Apr 2024
       url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
     paper:
-      summary: Pull Request (PR) stacking is another name for stacked diffs, a concept that has existed for several years. We'll go through what it is, the tools we can use and where PR stacking may be of benefit.What Is PR Stacking?In traditional Pull Requests (PRs), the developer makes all of the changes in one or more commits and then opens the PR to merge the change back into the main branch. The approach in PR stacking instead is to separate the functionality to be delivered into pieces. Let's say we're...
+      summary: Pull Request (PR) stacking is another name for stacked diffs, a concept that has existed for several years. We'll discuss what it is, the tools we can use, and where PR stacking may benefit us.What Is PR Stacking?In traditional Pull Requests (PRs), the developer makes all the changes in one or more commits and then opens the PR to merge the change into the main branch. The approach in PR stacking instead is to separate the functionality to be delivered into pieces. Let's say we're working on a...
       url: https://the-iterative-edge.gearoid.eu/pull-request-stacking-11c59203e517?source=rss-268c77893847------2
