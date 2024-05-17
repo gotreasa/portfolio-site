@@ -6,6 +6,14 @@ section:
   weight: 4
   showOnNavbar: true
 publications:
+  - title: 'Password Management (Part 2): Passwordless Login'
+    publishedIn:
+      name: Medium
+      date: 16 May 2024
+      url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
+    paper:
+      summary: We keep hearing about the move to passwordless logins. What does all this mean? Does it mean that we're not going to have any way of checking who we are or that we're moving to the advanced technology where we have retina scanning? Let's delve into it in this blog post.What Is Authentication?Let's start with authentication. Auth0 defines authentication as the process of proving some fact or document is genuine. A user proves their identity by providing their credentials. A user can use...
+      url: https://the-iterative-edge.gearoid.eu/password-management-part-2-passwordless-login-3cdfbd925833?source=rss-268c77893847------2
   - title: 'Password Management (Part 1): The Basics'
     publishedIn:
       name: Medium
