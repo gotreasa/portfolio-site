@@ -70,7 +70,7 @@
     "ityped": "^1.0.3",
     "jshint": "^2.13.6",
     "katex": "^0.16.10",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^15.2.4",
     "mark.js": "^8.11.1",
     "mermaid": "^10.9.1",
     "netlify-plugin-minify-html": "^0.3.1",
