@@ -3,7 +3,7 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.123.8"
+  HUGO_VERSION = "0.125.3"
 
 [context.production]
   command = "hugo -b https://gearoid.eu --minify"
