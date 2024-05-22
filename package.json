@@ -1,21 +1,12 @@
 {
   "name": "gearoid.eu",
   "version": "1.0.0",
-  "description": "A portfolio site for Gearoid O'Treasaigh",
-  "homepage": "https://gearoid.eu",
-  "bugs": {
-    "url": "https://github.com/gotreasa/portfolio/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gotreasa/portfolio-site.git"
-  },
+  "description": "",
   "license": "ISC",
-  "author": "Gearoid O'Treasaigh",
+  "author": "",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "autoprefixer": "postcss static/css/*/*.css --use autoprefixer -r --no-map",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
     "lint:fix": "eslint --fix",
     "lint:verify": "eslint .",
@@ -49,14 +40,10 @@
     "@fontsource/mulish": "5.0.18",
     "@fortawesome/fontawesome-free": "^6.5.2",
     "autoprefixer": "^10.4.19",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^4.6.2",
     "commitlint": "^19.3.0",
     "eslint": "^9.3.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.6.0",
-    "eslint-plugin-no-jquery": "^2.7.0",
     "eslint-plugin-prettier": "^5.1.3",
     "feather-icons": "^4.29.2",
     "filterizr": "^2.2.4",
