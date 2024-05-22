@@ -2,6 +2,9 @@
 ARG NODE_VERSION=18
 FROM mcr.microsoft.com/devcontainers/javascript-node:${NODE_VERSION}
 
+LABEL org.opencontainers.image.source="https://github.com/devcontainers/images/tree/main/src/javascript-node"
+LABEL org.opencontainers.image.description="The overall image which containes javascript-node"
+
 # VARIANT can be either 'hugo' for the standard version or 'hugo_extended' for the extended version.
 ARG VARIANT=hugo
 # VERSION can be either 'latest' or a specific version number
