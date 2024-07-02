@@ -56,7 +56,7 @@
     "include-media": "^1.4.10",
     "ityped": "^1.0.3",
     "jshint": "^2.13.6",
-    "katex": "^0.16.10",
+    "katex": "^0.16.11",
     "lint-staged": "^15.2.7",
     "mark.js": "^8.11.1",
     "mermaid": "^10.9.1",
