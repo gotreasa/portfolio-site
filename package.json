@@ -36,7 +36,7 @@
     "yaml": "^2.5.1"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^19.4.1",
+    "@commitlint/config-conventional": "^19.5.0",
     "@fontsource/mulish": "5.0.20",
     "@fortawesome/fontawesome-free": "^6.6.0",
     "autoprefixer": "^10.4.20",
