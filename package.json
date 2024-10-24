@@ -17,6 +17,7 @@
     "prettier:verify": "prettier --check \"*.{js,css,scss,md,html,yml,yaml,json}\"",
     "prettier:verifyfile": "prettier --check",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "update-modules": "node ./scripts/clearModules.js && hugo mod clean --all && hugo mod get -u ./... && hugo mod tidy && npm i",
     "update-posts": "node src/posts/transform-posts.js"
   },
   "lint-staged": {

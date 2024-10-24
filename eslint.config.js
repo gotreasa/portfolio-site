@@ -13,6 +13,7 @@ export default [
       'themes/',
       'public/',
       'resources/',
+      'scripts',
     ],
   },
   {
