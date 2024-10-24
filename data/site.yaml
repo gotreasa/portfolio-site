@@ -1,4 +1,4 @@
-copyright: © 2023 Copyright.
+copyright: © {{ .Now.Year }} Copyright.
 description: Portfolio of Gearóid Ó Treasaigh.
 customMenus:
 
