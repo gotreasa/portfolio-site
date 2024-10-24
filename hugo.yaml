@@ -1,7 +1,7 @@
 baseURL: https://gearoid.eu/
 languageCode: en-gb
 title: Gearóid Ó Treasaigh
-Description: blah
+Description: Professional portfolio for Gearóid Ó Treasaigh
 
 # Use Hugo modules to add theme
 module:
