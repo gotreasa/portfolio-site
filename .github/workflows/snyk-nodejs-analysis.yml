@@ -16,6 +16,9 @@ on:
   schedule:
     - cron: '20 21 * * 6'
 
+permissions:
+  actions: read
+
 jobs:
   snyk:
     if: github.actor != 'dependabot[bot]'
