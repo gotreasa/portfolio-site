@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@main
       - uses: actions/setup-node@main
         with:
-          node-version: 20.11
+          node-version: '${{ env.NODE_VERSION }}'
           cache: 'npm'
       - name: 🗂️ Get npm cache directory
         id: npm-cache-dir
