@@ -2,6 +2,7 @@ import { promises } from 'fs';
 import { extract } from '@extractus/feed-extractor';
 import moment from 'moment';
 import YAML from 'yaml';
+import { stripHtml } from 'string-strip-html';
 
 const { writeFile } = promises;
 
@@ -23,9 +24,8 @@ function posts() {
 }
 
 function toPlainString(s) {
-  return s
-    .replace(/[\s+]/g, ' ')
-    .replace(/<\/?[a-zA-Z-]+>/g, '')
+  return stripHtml(s)
+    .result.replace(/[\s+]/g, ' ')
     .replace(/(’|&#8217;)/g, "'")
     .trim();
 }
@@ -39,6 +39,7 @@ function loadBlogPosts() {
 }
 
 function extractRelevantDataFromRss(rssFeed) {
+  console.log(rssFeed);
   return rssFeed.entries.map((e) => {
     return {
       title: toPlainString(e.title),
