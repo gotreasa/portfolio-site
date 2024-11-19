@@ -9,7 +9,7 @@
   command = "hugo -b https://gearoid.eu --minify"
 
 [context.deploy-preview]
-  command = "hugo -b $gp_PRIME_URL --minify"
+  command = "hugo -b $DEPLOY_PRIME_URL --minify"
 
 [build.processing]
   skip_processing = false

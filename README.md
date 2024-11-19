@@ -1,3 +1,8 @@
+[![Update Blog Posts](https://github.com/gotreasa/portfolio-site/actions/workflows/update_blog_posts.yml/badge.svg)](https://github.com/gotreasa/portfolio-site/actions/workflows/update_blog_posts.yml)
+[![CodeQL](https://github.com/gotreasa/portfolio-site/actions/workflows/codeql.yml/badge.svg)](https://github.com/gotreasa/portfolio-site/actions/workflows/codeql.yml)
+[![Build](https://github.com/gotreasa/portfolio-site/actions/workflows/pipeline.yml/badge.svg)](https://github.com/gotreasa/portfolio-site/actions/workflows/pipeline.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/39b97913-22d0-4592-9ec1-0e8001ab7fbd/deploy-status)](https://app.netlify.com/sites/gearoid-o-treasaigh/deploys)
+
 # gearoid.eu
 
 ## Resources
