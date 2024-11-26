@@ -52,7 +52,7 @@
     "eslint-plugin-n": "^17.14.0",
     "eslint-plugin-no-jquery": "^3.0.2",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-promise": "^7.2.0",
     "feather-icons": "^4.29.2",
     "filterizr": "^2.2.4",
     "flag-icons": "^7.2.3",
