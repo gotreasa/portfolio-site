@@ -26,13 +26,13 @@ socialLinks:
     url: https://blog.gearoid.eu/
   - name: GitHub
     icon: fab fa-github
-    url: https://github.com/gotreasa
+    url: https://l.gearoid.eu/github
   - name: GitLab
     icon: fab fa-gitlab
-    url: https://gitlab.com/gotreasa
+    url: https://l.gearoid.eu/gitlab
   - name: LinkedIn
     icon: fab fa-linkedin
-    url: https://linkedin.com/in/gearoid-o-treasaigh
+    url: https://l.gearoid.eu/linkedin
   # - name: Twitter
   #   icon: fab fa-twitter
   #   url: https://twitter.com/FejerGearóid
@@ -42,9 +42,9 @@ socialLinks:
 
 resourceLinks:
   - title: My Resume
-    url: /files/resume.pdf
+    url: https://l.gearoid.eu/cv
   - title: Book an Appointment
-    url: https://calendar.app.google/2zpCAdCQW61V1ZQh8
+    url: https://l.gearoid.eu/appointment
 
 badges:
   - type: certification
