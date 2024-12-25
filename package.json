@@ -58,7 +58,7 @@
     "flag-icons": "^7.2.3",
     "fuse.js": "^7.0.0",
     "globals": "^15.14.0",
-    "highlight.js": "^11.11.0",
+    "highlight.js": "^11.11.1",
     "husky": "^9.1.7",
     "imagesloaded": "^5.0.0",
     "include-media": "^1.4.10",
