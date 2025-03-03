@@ -73,7 +73,7 @@
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.0",
     "prettier": "^3.5.2",
-    "sort-package-json": "^2.15.0",
+    "sort-package-json": "^2.15.1",
     "string-strip-html": "^13.4.12"
   },
   "comments": {
