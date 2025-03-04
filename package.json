@@ -72,7 +72,7 @@
     "popper.js": "^1.16.1",
     "postcss": "^8.5.3",
     "postcss-cli": "^11.0.0",
-    "prettier": "^3.5.2",
+    "prettier": "^3.5.3",
     "sort-package-json": "^2.15.1",
     "string-strip-html": "^13.4.12"
   },
