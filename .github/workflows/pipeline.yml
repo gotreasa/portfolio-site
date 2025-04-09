@@ -2,7 +2,7 @@ name: Pipeline
 
 env:
   NODE_VERSION: 22.11
-  HUGO_VERSION: 0.136.4
+  HUGO_VERSION: 0.145.0
 
 permissions:
   checks: write
