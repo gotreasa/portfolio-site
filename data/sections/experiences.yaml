@@ -7,25 +7,40 @@ section:
 
 experiences:
   - company:
+      name: Untangled Code Ltd.
+      url: https://untangledcode.com
+      start: Nov 2024
+      location: London, United Kingdom
+    positions:
+      - designation: Software Craftsmanship Coach | CEO
+        start: Nov 2024
+        responsibilities:
+          - Transform teams from mediocre development practices to elite software craftsmanship.
+          - Coach teams on how to improve culture and ways of working.
+          - Develop custom solutions for clients.
+
+  - company:
       name: BriX Consulting
       url: https://brix.consulting
       start: Jan 2024
       location: London, United Kingdom
     positions:
-      - designation: Software Craftsmanship Coach with <a href="https://www.ns.nl/en" target="_blank">NS</a>
+      - designation: Software Craftsmanship Coach | Partner
         start: Jan 2024
         responsibilities:
           - Iteratively develop and improve the curriculum based on experimentation.
-          - Coach teams on how to apply Extreme Programming.
-          - Train teams in the skills of Extreme Programming.
+          - Train and coach teams on how to apply Extreme Programming.
+          - Helping organisations to improve their software craftsmanship skills by 2,000% with XP practices.
 
   - company:
       name: Freelance
       start: Dec 2023
+      end: Nov 2024
       location: London, United Kingdom
     positions:
       - designation: Software Consultant & Software Craftsmanship Coach
         start: Dec 2023
+        end: Nov 2024
         responsibilities:
           - Transform teams from mediocre development practices to elite software craftsmanship.
           - Coach teams on how to improve culture and ways of working.
