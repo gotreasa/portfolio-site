@@ -14,6 +14,4 @@ Imagine building a giant Lego castle, but you're not sure which pieces to use. T
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 
-<!-- Google Calendar Appointment Scheduling begin -->
-<iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1SH9ZSsMTLkGJxS_lD1aKG6oQt1tuDUIhMHI9ZeE9TtJWBR86_WLGhPY9Hobc_dJ1n_5le_RRy?gv=true" style="border: 0; background-color: white" width="100%" height="600" frameborder="0"></iframe>
-<!-- end Google Calendar Appointment Scheduling -->
+<div><script src="https://meet.reclaimai.com/scripts/embed-scheduling-link.0.x.x.js" data-id="0577af84-b7c1-4360-b8e4-02c1fe93082a" data-redirect="NONE"></script></div>
