@@ -61,7 +61,7 @@
     "highlight.js": "^11.11.1",
     "husky": "^9.1.7",
     "imagesloaded": "^5.0.0",
-    "include-media": "^1.4.10",
+    "include-media": "^2.0.0",
     "ityped": "^1.0.3",
     "katex": "^0.16.22",
     "lint-staged": "^16.1.5",
