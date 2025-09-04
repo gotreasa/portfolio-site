@@ -92,7 +92,7 @@ jobs:
         with:
           hugo-version: '${{ env.HUGO_VERSION }}'
           extended: true
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v6
         with:
           go-version: '1.24'
           cache: false
