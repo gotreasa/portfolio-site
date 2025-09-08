@@ -1,7 +1,7 @@
 name: Pipeline
 
 env:
-  NODE_VERSION: 22.11
+  NODE_VERSION: 24.7
   HUGO_VERSION: 0.145.0
 
 permissions:
