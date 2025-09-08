@@ -32,7 +32,7 @@
     ]
   },
   "dependencies": {
-    "@extractus/feed-extractor": "^7.1.6",
+    "@extractus/feed-extractor": "^7.1.7",
     "moment": "^2.30.1",
     "node-html-parser": "^7.0.1",
     "yaml": "^2.8.1"
@@ -40,12 +40,12 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^19.8.1",
     "@fontsource/mulish": "5.2.6",
-    "@fortawesome/fontawesome-free": "^7.0.0",
+    "@fortawesome/fontawesome-free": "^7.0.1",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "autoprefixer": "^10.4.21",
     "bootstrap": "^5.3.8",
     "commitlint": "^19.8.1",
-    "eslint": "^9.34.0",
+    "eslint": "^9.35.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^17.21.3",
@@ -63,9 +63,9 @@
     "include-media": "^1.4.10",
     "ityped": "^1.0.3",
     "katex": "^0.16.22",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "mark.js": "^8.11.1",
-    "mermaid": "^11.10.1",
+    "mermaid": "^11.11.0",
     "netlify-plugin-minify-html": "^0.3.1",
     "plyr": "^3.8.3",
     "popper.js": "^1.16.1",
