@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.8.1",
-    "@fontsource/mulish": "5.2.6",
+    "@fontsource/mulish": "5.2.7",
     "@fortawesome/fontawesome-free": "^7.0.1",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "autoprefixer": "^10.4.21",
