@@ -13,6 +13,7 @@ on:
   - push
   - pull_request
   - workflow_dispatch
+  - merge_group
 
 jobs:
   commitlint:
