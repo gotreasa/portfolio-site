@@ -62,7 +62,7 @@
     "imagesloaded": "^5.0.0",
     "include-media": "^1.4.10",
     "ityped": "^1.0.3",
-    "katex": "^0.16.25",
+    "katex": "^0.16.27",
     "lint-staged": "^16.2.7",
     "mark.js": "^8.11.1",
     "mermaid": "^11.12.2",
