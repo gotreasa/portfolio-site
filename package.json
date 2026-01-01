@@ -44,7 +44,7 @@
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
     "autoprefixer": "^10.4.23",
     "bootstrap": "^5.3.8",
-    "commitlint": "^20.2.0",
+    "commitlint": "^20.3.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
