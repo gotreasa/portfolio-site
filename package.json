@@ -38,7 +38,7 @@
     "yaml": "^2.8.2"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^20.2.0",
+    "@commitlint/config-conventional": "^20.3.0",
     "@fontsource/mulish": "5.2.8",
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@microsoft/eslint-formatter-sarif": "^3.1.0",
