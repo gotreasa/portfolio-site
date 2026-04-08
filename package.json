@@ -70,7 +70,7 @@
     "netlify-plugin-minify-html": "^0.3.1",
     "plyr": "^3.8.4",
     "popper.js": "^1.16.1",
-    "postcss": "^8.5.8",
+    "postcss": "^8.5.9",
     "postcss-cli": "^11.0.1",
     "prettier": "^3.8.1",
     "sort-package-json": "^3.6.1",
