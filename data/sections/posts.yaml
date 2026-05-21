@@ -12,7 +12,7 @@ publications:
       date: 16 May 2024
       url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
     paper:
-      summary: We keep hearing about the move to passwordless logins. What does all this mean? Does it mean that we're not going to have any way of checking who we are or that we're moving to the advanced technology where we have retina scanning? Let's delve into it in this blog post.What Is Authentication?Let's start with authentication. Auth0 defines authentication as the process of proving some fact or document is genuine. A user proves their identity by providing their credentials. A user can use...
+      summary: We keep hearing about the move to passwordless logins. What does all this mean? Does it mean that we're not going to have any way of checking who we are or that we're moving to the advanced technology where we have retina scanning? Let's delve into it in this blog post.What Is Authentication?Let's start with authentication. Auth0 defines authentication as the process of proving some fact or document is genuine. A user proves their identity by providing their credentials. A user can use different...
       url: https://the-iterative-edge.gearoid.eu/password-management-part-2-passwordless-login-3cdfbd925833?source=rss-268c77893847------2
   - title: 'Password Management (Part 1): The Basics'
     publishedIn:
@@ -20,7 +20,7 @@ publications:
       date: 2 May 2024
       url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
     paper:
-      summary: Happy World Password Day! (In 2024, it's being celebrated on May 2nd). Remembering loads of passwords is an absolute pain. As we work in corporate jobs, we find that the number of personal and professional passwords we have continues to grow, along with having to log into systems numerous times a day. In general, employees manage 191 logins and log in 154 times a month, with each login taking, on average, 14 seconds, causing us to spend at least 36 minutes entering passwords per month. Let's...
+      summary: Happy World Password Day! (In 2024, it's being celebrated on May 2nd). Remembering loads of passwords is an absolute pain. As we work in corporate jobs, we find that the number of personal and professional passwords we have continues to grow, along with having to log into systems numerous times a day. In general, employees manage 191 logins and log in 154 times a month, with each login taking, on average, 14 seconds, causing us to spend at least 36 minutes entering passwords per month. Let's loo...
       url: https://the-iterative-edge.gearoid.eu/password-management-part-1-the-basics-64e1066cde91?source=rss-268c77893847------2
   - title: A Change in Identity — From Developer to Craftsperson
     publishedIn:
@@ -28,7 +28,7 @@ publications:
       date: 26 Apr 2024
       url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
     paper:
-      summary: A Change in Identity — From Developer to CraftspersonIn this blog article, we'll explore the principles of software craftsmanship, the benefits of becoming a software craftsperson, and how we can improve our skills. We'll look at a growth mindset and some resources to help us on our journey. Let's dive in!Witnessing CraftsmanshipLet's say we enter a home and face this beautifully crafted staircase. Why do we even think this is beautiful? What comes to mind is the skill and work that has gone...
+      summary: A Change in Identity — From Developer to CraftspersonIn this blog article, we'll explore the principles of software craftsmanship, the benefits of becoming a software craftsperson, and how we can improve our skills. We'll look at a growth mindset and some resources to help us on our journey. Let's dive in!Witnessing CraftsmanshipLet's say we enter a home and face this beautifully crafted staircase. Why do we even think this is beautiful? What comes to mind is the skill and work that has gone int...
       url: https://the-iterative-edge.gearoid.eu/a-change-in-identity-from-developer-to-craftsperson-066d529e15d3?source=rss-268c77893847------2
   - title: Building Elite Teams Starts With Habits
     publishedIn:
@@ -36,7 +36,7 @@ publications:
       date: 17 Apr 2024
       url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
     paper:
-      summary: "Going from a mediocre team to an elite team can seem daunting, especially when we need to figure out where to start. The DevOps Research and Assessment (DORA) can be our north star, helping us build the habits and practices we need to be elite. We'll look at DORA, the challenges of building habits, and how to form habits that stick.What Is DORA?The DevOps Research and Assessment (DORA) report focuses on four key areas to measure elite teams:Lead time: How long does it take from code committed..."
+      summary: "Going from a mediocre team to an elite team can seem daunting, especially when we need to figure out where to start. The DevOps Research and Assessment (DORA) can be our north star, helping us build the habits and practices we need to be elite. We'll look at DORA, the challenges of building habits, and how to form habits that stick.What Is DORA?The DevOps Research and Assessment (DORA) report focuses on four key areas to measure elite teams:Lead time: How long does it take from code committed to..."
       url: https://the-iterative-edge.gearoid.eu/building-elite-teams-starts-with-habits-948cd5aa1e75?source=rss-268c77893847------2
   - title: Introduction to Pull Request Stacking
     publishedIn:
@@ -44,5 +44,5 @@ publications:
       date: 10 Apr 2024
       url: https://medium.com/@gearoid.otreasaigh?source=rss-268c77893847------2
     paper:
-      summary: Pull Request (PR) stacking is another name for stacked diffs, a concept that has existed for several years. We'll discuss what it is, the tools we can use, and where PR stacking may benefit us.What Is PR Stacking?In traditional Pull Requests (PRs), the developer makes all the changes in one or more commits and then opens the PR to merge the change into the main branch. The approach in PR stacking instead is to separate the functionality to be delivered into pieces. Let's say we're working on a...
+      summary: Pull Request (PR) stacking is another name for stacked diffs, a concept that has existed for several years. We'll discuss what it is, the tools we can use, and where PR stacking may benefit us.What Is PR Stacking?In traditional Pull Requests (PRs), the developer makes all the changes in one or more commits and then opens the PR to merge the change into the main branch. The approach in PR stacking instead is to separate the functionality to be delivered into pieces. Let's say we're working on a n...
       url: https://the-iterative-edge.gearoid.eu/pull-request-stacking-11c59203e517?source=rss-268c77893847------2
