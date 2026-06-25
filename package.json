@@ -66,7 +66,7 @@
     "katex": "^0.17.0",
     "lint-staged": "^17.0.8",
     "mark.js": "^8.11.1",
-    "mermaid": "^11.15.0",
+    "mermaid": "^11.16.0",
     "netlify-plugin-minify-html": "^0.3.1",
     "plyr": "^3.8.4",
     "popper.js": "^1.16.1",
