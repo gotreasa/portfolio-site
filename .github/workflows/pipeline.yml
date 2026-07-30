@@ -77,7 +77,7 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@main
       - name: Check for broken links
-        uses: umbrelladocs/action-linkspector@v1
+        uses: umbrelladocs/action-linkspector@v1.5.4
         with:
           fail_level: error
           filter_mode: nofilter
