@@ -9,42 +9,28 @@ experiences:
   - company:
       name: Untangled Code Ltd.
       url: https://untangledcode.com
-      start: Nov 2024
+      start: Dec 2023
       location: London, United Kingdom
     positions:
-      - designation: Software Consultant | Software Craftsmanship Coach | CEO
-        start: Nov 2024
+      - designation: Founder | Technical Coach
+        start: Dec 2023
         responsibilities:
-          - Transform teams from mediocre development practices to elite software craftsmanship.
-          - Coach teams on how to improve culture and ways of working.
-          - Develop custom solutions for clients.
+          - Founded and run the practice through which all coaching and consulting engagements are delivered, sub-contracting to BriX Consulting.
+          - Coach teams from mediocre development practices to elite software craftsmanship, and on culture and ways of working.
+          - Contribute to nWave, an AI-agent delivery framework, on packaging correctness, CI, hooks and test infrastructure.
 
   - company:
       name: BriX Consulting
       url: https://brix.consulting
-      start: Jan 2024
+      start: Dec 2023
       location: London, United Kingdom
     positions:
-      - designation: Software Craftsmanship Coach | Partner
-        start: Jan 2024
+      - designation: Technical Agile Coach | Partner
+        start: Dec 2023
         responsibilities:
           - Iteratively develop and improve the curriculum based on experimentation.
           - Train and coach teams on how to apply Extreme Programming.
-          - Helping organisations to improve their software craftsmanship skills by 2,000% with XP practices.
-
-  - company:
-      name: Freelance
-      start: Dec 2023
-      end: Nov 2024
-      location: London, United Kingdom
-    positions:
-      - designation: Software Consultant | Software Craftsmanship Coach
-        start: Dec 2023
-        end: Nov 2024
-        responsibilities:
-          - Transform teams from mediocre development practices to elite software craftsmanship.
-          - Coach teams on how to improve culture and ways of working.
-          - Develop custom solutions for clients.
+          - Instructor and embedded coach on a two-year Extreme Programming transformation for a Fortune 100 insurer, a programme that trained over 3,000 engineers and product managers across three continents.
 
   - company:
       name: IBM United Kingdom
@@ -82,7 +68,7 @@ experiences:
     positions:
       - designation: JavaScript Full Stack Development Lead
         start: Jan 2017
-        end: Apr 2019
+        end: May 2019
         responsibilities:
           - Created an AngularJS application with a NodeJS backend that automated opportunity and incentive creation for 10k business partners and their 200k users.
           - The transformation lead to users instantly recording the opportunities and products that they were selling from an old process that could take them days as they waited for each step to complete.
@@ -110,7 +96,7 @@ experiences:
           - Java developer on the XPages application which provided users the ability to create Domino applications in a fraction of the time using a drag and drop interface.
 
   - company:
-      name: Galway City Council
+      name: Galway City Community Forum
       url: https://www.galwaycity.ie/
       location: Galway, Ireland
 

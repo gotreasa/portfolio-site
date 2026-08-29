@@ -7,10 +7,10 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
-designation: Software Craftsmanship Coach
+designation: Founder & Technical Coach
 company:
-  name: Freelance
-  # url: https://www.ns.nl/en
+  name: Untangled Code Ltd.
+  url: https://untangledcode.com
 
 # A summary about you
 summary: >-
@@ -23,7 +23,7 @@ socialLinks:
     url: gearoid@gearoid.eu
   - name: Blog
     icon: fas fa-pen-nib
-    url: https://blog.gearoid.eu/
+    url: https://the-iterative-edge.gearoid.eu/
   - name: GitHub
     icon: fab fa-github
     url: https://l.gearoid.eu/github
@@ -33,12 +33,6 @@ socialLinks:
   - name: LinkedIn
     icon: fab fa-linkedin
     url: https://l.gearoid.eu/linkedin
-  # - name: Twitter
-  #   icon: fab fa-twitter
-  #   url: https://twitter.com/FejerGearóid
-  # - name: Facebook
-  #   icon: fab fa-facebook
-  #   url: https://www.facebook.com/fanatixan
 
 resourceLinks:
   - title: My Resume
