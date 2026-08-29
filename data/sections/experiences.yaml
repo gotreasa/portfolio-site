@@ -31,6 +31,9 @@ experiences:
           - Iteratively develop and improve the curriculum based on experimentation.
           - Train and coach teams on how to apply Extreme Programming.
           - Instructor and embedded coach on a two-year Extreme Programming transformation for a Fortune 100 insurer, a programme that trained over 3,000 engineers and product managers across three continents.
+          - The client's published outcomes for that programme cover three of the four DORA measures. They went from monthly deployments to daily releases, cut production timelines from weeks to under 48 hours, and increased change success rates above 90 percent. Those are the client's results, achieved by the teams I was coaching.
+          - Delivered the Software Craftsmanship Dojo to one team of 15 at Nederlandse Spoorwegen over three months, taking 13 of the 15 to Yellow Belt against a graduation bar assessed on delivered work rather than self-report. It was one of two teams in a pilot that went on to a multi-year contract, which other instructors delivered.
+          - Took a train driver through that same programme alongside the developers, from not believing he could write code to doing it beside them while the whole team learned software craftsmanship.
 
   - company:
       name: IBM United Kingdom

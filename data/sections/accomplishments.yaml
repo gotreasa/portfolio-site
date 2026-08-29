@@ -14,6 +14,13 @@ accomplishments:
       url: https://ibm.com/
     courseOverview: Gearoid is Growth Minded because he is always willing to learn and grow, and he is committed to helping others do the same. He has demonstrated this by sharing his experience and software craftsmanship expertise with others, encouraging teams to adopt an outward mindset culture, and educating individuals in using data analysis to improve software delivery outcomes.
 
+  - name: Manager's Choice Award
+    timeline: 2017
+    organization:
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: Awarded for sharing Test-Driven Development, Pair Programming and Clean Code expertise through delivering code retreats, run for groups of up to 20 developers alongside a full-stack delivery lead role.
+
   - name: XP Farm Blue Belt
     timeline: Apr 2022
     organization:
