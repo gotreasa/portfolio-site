@@ -19,7 +19,7 @@ accomplishments:
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: The top coaching grade in the belt system, awarded for coaching teams to a graduation standard assessed on delivered work rather than self-report. Graduation requires a solo timeboxed delivery under strict red-green-refactor at full coverage, written during the graduation.
+    courseOverview: The top coaching grade in the belt system, awarded for coaching teams to a graduation standard assessed on delivered work rather than self-report. Graduation requires a solo delivery under a strict double-loop BDD, ATDD and TDD workflow at 100% coverage, written during the graduation with a backlog of user stories and a record of technical debt.
     certificateURL: https://www.credly.com/badges/0087c7bd-d19d-4864-b7cf-dd553a53cd21
 
   - name: IBM Corporate Service Corps
