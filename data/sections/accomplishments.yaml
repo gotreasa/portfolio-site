@@ -35,7 +35,7 @@ accomplishments:
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: This is an award for tranforming the Partner Relationship Managment from being a clunky process spread across a number of tools to being a single application - My Sales Activity - that can complete a deal registration in 5 minutes instead of taking a number of hours.  This was built as an AngularJS application that cut the development costs by 1.5 milliion a year.
+    courseOverview: This is an award for tranforming the Partner Relationship Managment from being a clunky process spread across a number of tools to being a single application - My Sales Activity - that can complete a deal registration in 5 minutes instead of taking a number of hours.  This was built as an AngularJS application that cut development cost by almost 90%.
 
   - name: Outstanding Technical Achievement
     timeline: Nov 2014
