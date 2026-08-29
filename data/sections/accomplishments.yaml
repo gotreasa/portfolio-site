@@ -14,20 +14,13 @@ accomplishments:
       url: https://ibm.com/
     courseOverview: Gearoid is Growth Minded because he is always willing to learn and grow, and he is committed to helping others do the same. He has demonstrated this by sharing his experience and software craftsmanship expertise with others, encouraging teams to adopt an outward mindset culture, and educating individuals in using data analysis to improve software delivery outcomes.
 
-  - name: Manager's Choice Award
-    timeline: 2017
+  - name: XP Farm Coach Red Belt
+    timeline: Mar 2023
     organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: Awarded for sharing Test-Driven Development, Pair Programming and Clean Code expertise through delivering code retreats, run for groups of up to 20 developers alongside a full-stack delivery lead role.
-
-  - name: XP Farm Blue Belt
-    timeline: Apr 2022
-    organization:
-      name: IBM
-      url: https://ibm.com/
-    courseOverview: This award demonstrates a commitment to software craftsmanship, continuous learning, teamwork, and the discipline to stick to daily practice.
-    certificateURL: https://www.credly.com/badges/e1bdf131-557a-4f5c-a506-2702b5ab9738/public_url
+    courseOverview: The top coaching grade in the belt system, awarded for coaching teams to a graduation standard assessed on delivered work rather than self-report. Graduation requires a solo timeboxed delivery under strict red-green-refactor at full coverage, written during the graduation.
+    certificateURL: https://www.credly.com/badges/0087c7bd-d19d-4864-b7cf-dd553a53cd21
 
   - name: IBM Corporate Service Corps
     timeline: Aug 2018
@@ -36,6 +29,13 @@ accomplishments:
       url: https://ibm.com/
     courseOverview: IBM Service Corps is a global volunteer program that sends IBMers to work on projects with non-profit organizations and social enterprises in developing countries. The program is designed to use IBM's skills and expertise to help solve some of the world's most pressing social challenges. Service Corps projects have covered a wide range of areas, including education, healthcare, economic development, and environmental sustainability. Gearoid spent a month volunteering in Cape Town, South Africa, working with a local non-profit orgainisation.
     certificateURL: https://www.credly.com/badges/830d201c-1440-43e3-84d1-def4a9649e85/public_url
+
+  - name: Manager's Choice Award
+    timeline: 2017
+    organization:
+      name: IBM
+      url: https://ibm.com/
+    courseOverview: Awarded for sharing Test-Driven Development, Pair Programming and Clean Code expertise through delivering code retreats, run for groups of up to 20 developers alongside a full-stack delivery lead role.
 
   - name: Outstanding Technical Achievement Award
     timeline: Aug 2017
