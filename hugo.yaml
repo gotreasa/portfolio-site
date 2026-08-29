@@ -1,5 +1,5 @@
 baseURL: https://gearoid.eu/
-languageCode: en-gb
+locale: en-gb
 title: Gearóid Ó Treasaigh
 Description: Professional portfolio for Gearóid Ó Treasaigh
 
@@ -23,7 +23,7 @@ enableEmoji: true
 
 languages:
   en:
-    languageName: English
+    label: English
     weight: 1
 
 markup:
