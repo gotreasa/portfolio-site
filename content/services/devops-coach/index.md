@@ -1,7 +1,7 @@
 ---
 title: 'DevOps Coach'
 date: 2024-02-08T08:06:25+06:00
-description: Markdown rendering samples
+description: Coaching DevOps teams to improve their pipeline incrementally, from quality gates through to containerised continuous delivery.
 menu:
   sidebar:
     name: DevOps Coach
@@ -10,7 +10,11 @@ menu:
 hero: devops-coach.webp
 ---
 
-Building software is like a team sport! As a DevOps coach, I help your team work together seamlessly to build and launch software. We'll learn cool tricks to automate things and make the process smoother, so everyone can focus on creating amazing things!
+I coach DevOps teams to improve their pipeline a step at a time, from quality gates through to containerised continuous delivery, working alongside the people who will maintain it afterwards.
+
+I spent a decade doing this work myself before coaching it. I took production deployment at IBM from a manual 72 hour process to two hours, ran the first project in its CIO production portfolio to deploy through UrbanCode Deploy, and then helped other teams adopt the same approach.
+
+The constraint is usually the feedback loop rather than the tooling. A slow or unreliable pipeline makes every other engineering practice harder to hold.
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 

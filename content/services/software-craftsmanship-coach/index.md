@@ -1,18 +1,21 @@
 ---
 title: 'Software Craftsmanship Coach'
 date: 2024-02-08T08:06:25+06:00
-description: Introduction to Sample Post
+description: Coaching development teams towards test-driven development, continuous delivery and clean code, against a graded standard assessed on delivered work rather than self-report.
 menu:
   sidebar:
     name: Software Craftsmanship Coach
     identifier: software-craftsmanship-coach
     weight: 10
-tags: ['Basic', 'Multi-lingual']
 categories: ['Services']
 hero: software-craftsmanship-coach.webp
 ---
 
-Want your team to code like superheroes? I'm a coach who teaches cool tricks and teamwork skills to turn them into super-programmers! This means they can build things faster with fewer bugs, so they have more time for the fun parts of coding!
+I coach development teams towards software craftsmanship: test-driven development, clean code, pair programming and continuous delivery, worked on your own codebase rather than on exercises.
+
+The standard I coach to is graded and assessed on delivered work rather than on self-report, so a team can tell whether the practice has actually taken hold. I led that work across roughly 1,000 developers on three continents at IBM, and I have been instructor and embedded coach on it inside a Fortune 100 insurer and at Nederlandse Spoorwegen, the Dutch national railway.
+
+Most of the difficulty is not technical. Practice changes that leadership has not internalised do not survive the first delivery deadline, so I coach the managers and product people alongside the engineers.
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 

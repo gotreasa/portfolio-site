@@ -8,7 +8,7 @@ section:
 services:
   - name: Software Craftsmanship Coach
     summary: >-
-      Elevate your software development team to elite to rapidly deliver products that delight the users.
+      Elevate your software development team to elite, to rapidly deliver products that delight the users.
     url: /services/software-craftsmanship-coach
 
   - name: DevOps Coach
@@ -18,7 +18,7 @@ services:
 
   - name: Software Development Consultant
     summary: >-
-      Deliver applications in JavaScript, TypeScript, or Python through to production.
+      Deliver applications in JavaScript, TypeScript or Python through to production.
     url: /services/software-development-consultant
 
   - name: DevOps Consultant

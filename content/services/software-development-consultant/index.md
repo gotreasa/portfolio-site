@@ -1,7 +1,7 @@
 ---
 title: 'Software Development Consultant'
 date: 2024-02-08T08:06:25+06:00
-description: Markdown rendering samples
+description: Delivering applications in JavaScript, TypeScript or Python through to production, alongside your team.
 menu:
   sidebar:
     name: Software Development Consultant
@@ -10,7 +10,11 @@ menu:
 hero: software-development-consultant.webp
 ---
 
-Imagine building a giant Lego castle, but you're not sure which pieces to use. That's where I come in! I help pick the right tools and plan things out, so your software is strong and works perfectly – just like an awesome Lego creation! I enjoy getting my hands dirty and building the castle with your team.
+I deliver applications in JavaScript, TypeScript or Python through to production, working as part of your team rather than around it.
+
+Eighteen years of it, most recently on NodeJS services for a partner platform serving 200,000 users, and before that leading delivery on IBM's own sales systems. I am comfortable across the stack and I still write production code.
+
+Where there is a legacy system in the way, I would rather replace it piece by piece while it stays live than plan a cutover. I have done that three times: an abstraction that speaks to both the outgoing and the incoming system is what makes a migration survivable.
 
 To book a session, use the calendar below and we can discuss your needs.</br></br>
 
