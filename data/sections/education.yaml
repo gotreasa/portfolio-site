@@ -6,10 +6,18 @@ section:
   weight: 7
   showOnNavbar: false
 
+# The degree itself comes from the record.
+#
+# layouts/partials/sections/education.html builds it from data/presence.json,
+# fetched from github.com/gotreasa/presence before every build. The record holds
+# the degree name, dates, class of honours and thesis title; the page was showing
+# only a shortened name and the institution, so wiring it ADDED information.
+#
+# What stays below is presentation the site owns: the icon and the institution's
+# URL, looked up by school name. Changing the degree name here would do nothing.
+
 degrees:
-  - name: B.Sc. in Computing Studies
-    icon: fa-graduation-cap
-    # timeframe: 2004-2008
-    institution:
+  - institution:
       name: University of Galway
       url: https://www.universityofgalway.ie/
+    icon: fa-graduation-cap

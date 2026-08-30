@@ -1,0 +1,193 @@
+{{/* VENDORED FROM toha v4.10.0 AND MODIFIED. Re-copy from the theme and re-apply
+    the marked block when upgrading; everything below it is the theme's.
+
+    The degree comes from the record. data/presence.json is fetched from
+    github.com/gotreasa/presence before every build (see netlify.toml).
+
+    THE SPLIT: the record owns the degree name, institution, dates, class of
+    honours and thesis title. The site owns the icon and the institution URL,
+    which are presentation and a route.
+
+    THIS SECTION GAINS INFORMATION by being wired. education.yaml carried only a
+    shortened degree name and the institution. The record also holds the start
+    and end dates, the first class honours, and the thesis title, none of which
+    the page was showing.
+
+    NOTE: layouts/ is in .prettierignore. Prettier reflows Go string literals
+    across newlines, which Go forbids, and it broke about.html on 30 Aug 2026. */}}
+
+{{ $records := index site.Data.presence "education" }}
+{{ if not $records }}
+  {{ errorf "data/presence.json carries no education. Netlify fetches it before every build; locally run: npm run fetch:presence" }}
+{{ end }}
+
+{{/* The site keeps its own icon and institution URL, keyed off the school name.
+    A school the site has no entry for still renders, without them, rather than
+    failing the build: unlike the services join, a missing icon costs nothing and
+    the degree itself is the content. */}}
+{{ $presentation := dict }}
+{{ range .degrees }}
+  {{ $presentation = merge $presentation (dict .institution.name (dict
+      "icon" (default "fa-graduation-cap" .icon)
+      "url" .institution.url
+  )) }}
+{{ end }}
+
+{{ $degrees := slice }}
+{{ range $records }}
+  {{ $look := index $presentation .school }}
+  {{ $extras := slice }}
+  {{ with .honours }}
+    {{ $extras = $extras | append (dict "name" "Result" "content" .) }}
+  {{ end }}
+  {{ with .thesis }}
+    {{ $extras = $extras | append (dict "name" "Thesis" "content" .) }}
+  {{ end }}
+  {{ $degrees = $degrees | append (dict
+      "name" .degree
+      "icon" (cond (ne $look nil) (index (default (dict) $look) "icon") "fa-graduation-cap")
+      "timeframe" (printf "%s - %s" (time.Format "2006" (printf "%s-01" .start)) (time.Format "2006" (printf "%s-01" .end)))
+      "institution" (dict
+        "name" .school
+        "url" (index (default (dict) $look) "url")
+      )
+      "customSections" $extras
+  ) }}
+{{ end }}
+
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+{{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 education-section">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+    <h1 class="text-center" style="display: none">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="container">
+    <table class="education-info-table">
+        <tbody>
+            {{ $count := len .degrees }}
+            {{ range $degrees}}
+            <tr>
+                <td class="icon">
+                    {{ if gt $count 1}}
+                    <div class="hline"></div>
+                    {{ end }}
+                        <div class="icon-holder">
+                            <i class="fas {{ .icon }}"></i>
+                        </div>
+                    </td>
+                    <td class="line">
+                        <div></div>
+                    </td>
+                    <td class="details">
+                        <div class="degree-info card">
+
+                            {{ $logoImage:= resources.Get .institution.logo}}
+                            {{ $darkLogoImage:= resources.Get .institution.darkLogo}}
+                            {{ if $logoImage }}
+                            <div class="logo-holder"> 
+                                <img class="company-logo light-logo" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+                                {{ if $darkLogoImage }}
+                                <img class="company-logo dark-logo" src="{{ $darkLogoImage.RelPermalink }}" alt="{{ .name }}" />
+                                {{ end }}
+                            </div>
+                            {{ end }}
+
+                            <div class="row">
+                                <div class="col-lg-10 col-md-8">
+                                    {{ if .institution.url }}
+                                        <h5><a href="{{ .institution.url }}" title="{{ .institution.name }}" target="_blank" rel="noopener">{{ .institution.name }}</a></h5>
+                                    {{ else }}
+                                        <h5>{{ .institution.name }}</h5>
+                                    {{ end }}
+                                </div>
+                                <div class="timeframe col-lg-2 col-md-4">{{ .timeframe }}</div>
+                            </div>
+                            <h6>{{ .name }}</h6>
+                            {{ if .grade }}
+                                <h6><span class="text-heading">{{ .grade.scale }}: </span><span>{{ .grade.achieved }}</span> {{ i18n "out_of"}} <span>{{ .grade.outOf }}</span></h6>
+                            {{ end }}
+                            {{ if .publications }}
+                                <div class="publications">
+                                    <h6 class="text-heading">{{ i18n "publications"}}:</h6>
+                                    <ul>
+                                        {{ range .publications }}
+                                            {{ if .url }}
+                                                <li><a href="{{ .url }}" title="{{ .title }}" target="_blank" rel="noopener">{{ .title }}</a></li>
+                                            {{ else }}
+                                                <li>{{ .title }}</li>
+                                            {{ end }}
+                                        {{ end }}
+                                    </ul>
+                                </div>
+                            {{ end }}
+                            {{ if .takenCourses }}
+                            {{ $collapseAfter  := .takenCourses.collapseAfter | default 2 }}
+                            <div class="taken-courses">
+                                <h6 class="text-heading">{{ i18n "taken_courses"}}:</h6>
+                                {{ if .takenCourses.showGrades }}
+                                {{ $hideScale  := .takenCourses.hideScale }}
+                                <table>
+                                    <thead>
+                                        <th class="course-name-header">{{ i18n "course_name"}}</th>
+                                        {{ if not $hideScale  }}<th>{{ i18n "total_credit"}}</th>{{ end }}
+                                        <th>{{ i18n "obtained_credit"}}</th>
+                                    </thead>
+                                    <tbody>
+                                        {{ range $index,$course := .takenCourses.courses }}
+                                        <tr class="course {{ if ge $index $collapseAfter }}hidden-course{{ end}}">
+                                            <td>{{ $course.name }}</td>
+                                            {{ if not $hideScale  }}<td>{{ $course.outOf }}</td>{{ end }}
+                                            <td>{{ $course.achieved }}</td>
+                                        </tr>
+                                        {{ end }}
+                                    </tbody>
+                                </table>
+                                {{ else }}
+                                    <ul>
+                                        {{ range $index,$course := .takenCourses.courses }}
+                                        <li class="course {{ if ge $index $collapseAfter }}hidden-course{{ end}}">{{ $course.name }}</li>
+                                        {{ end }}
+                                    </ul>
+                                {{ end }}
+                                {{ if gt (len .takenCourses.courses ) $collapseAfter }}
+                                    <button type="button" class="btn btn-link show-more-btn pt-0 {{ if .takenCourses.showGrades }}ms-1{{ else }}ms-2{{ end }}"
+                                    id="show-more-btn">{{ i18n "show_more"}}</button>
+                                    <button type="button" class="btn btn-link show-more-btn hidden pt-0 {{ if .takenCourses.showGrades }}ms-1{{ else }}ms-2{{ end }}"
+                                    id="show-less-btn">{{ i18n "show_less"}}</button>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                            {{ if .extracurricularActivities }}
+                            <div class="extracurricular-activities">
+                                <h6 class="text-heading">{{ i18n "extracurricular_activities"}}:</h6>
+                                <ul>
+                                {{ range .extracurricularActivities }}
+                                    <li>{{ . | markdownify }}</li>
+                                {{ end }}
+                                </ul>
+                            </div>
+                            {{ end }}
+                            {{ if .customSections }}
+                            <div class="custom-section">
+                                {{ range .customSections }}
+                                    <h6 class="text-heading">{{ .name }}: </h6>
+                                    <div class="custom-content">{{ .content | markdownify }}</div>
+                                {{ end }}
+                            </div>
+                            {{ end }}
+                        </div>
+                    </td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
