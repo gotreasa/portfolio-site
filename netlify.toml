@@ -26,7 +26,15 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.145.0"
+  # Must be >= 0.146.0: toha v4.10.0 refuses to load below that, and the
+  # build fails with "Module github.com/hugo-toha/toha/v4 is not compatible
+  # with this Hugo version". This pinned 0.145.0 while commit 9322753
+  # upgraded the theme "for Hugo 0.165 compatibility" without bumping it, so
+  # production would have failed on the next push. Found 30 Aug 2026 by
+  # building with the pinned version rather than reasoning about it.
+  #
+  # 0.165.0 is the version the site is actually developed and tested on.
+  HUGO_VERSION = "0.165.0"
 
 [context.production]
   command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v1/presence.json && hugo -b https://gearoid.eu --minify"
