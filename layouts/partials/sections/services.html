@@ -1,3 +1,36 @@
+{{/* Service names and summaries come from the career record.
+
+    data/presence.json is fetched from github.com/gotreasa/presence before every
+    build (see netlify.toml). The wording there and the wording here were
+    identical word for word, which is exactly the kind of duplication that stops
+    being identical the moment one of them is edited.
+
+    THE SPLIT: the RECORD owns each service's name and summary. The SITE owns
+    which services appear, in what order, at which route, with which logo.
+    Routes and ordering are site structure, and that is the intake contract's
+    third rule.
+
+    Matched BY NAME, and a name the record does not know fails the build. The
+    alternative, skipping it, renders one card fewer than there are services and
+    says nothing.
+
+    NOTE: layouts/ is in .prettierignore. Prettier reflows Go string literals
+    across newlines, which Go forbids, and it broke about.html on 30 Aug 2026. */}}
+{{ $records := dict }}
+{{ range (index site.Data.presence "services") }}
+  {{ $records = merge $records (dict .name .summary) }}
+{{ end }}
+{{ if not $records }}
+  {{ errorf "data/presence.json carries no services. Netlify fetches it before every build; locally run: npm run fetch:presence" }}
+{{ end }}
+{{ $merged := slice }}
+{{ range .services }}
+  {{ $summary := index $records .name }}
+  {{ if not $summary }}
+    {{ errorf "services.yaml lists %q but the record has no service with that name. Names are the join between the two, so fix whichever is wrong rather than letting a card render without its summary." .name }}
+  {{ end }}
+  {{ $merged = $merged | append (merge . (dict "summary" $summary)) }}
+{{ end }}
 {{ $sectionID := replace (lower .section.name) " " "-" }} {{ if .section.id }}
 {{ $sectionID = .section.id }} {{ end }}
 
@@ -13,7 +46,7 @@
   {{ end }}
   <div class="container d-flex-block">
     <div class="row" id="primary-skills" style="text-align: center">
-      {{ range .services }} {{ partial "cards/services.html" . }} {{ end }}
+      {{ range $merged }} {{ partial "cards/services.html" . }} {{ end }}
     </div>
   </div>
 </div>

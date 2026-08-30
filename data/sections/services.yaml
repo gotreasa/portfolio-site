@@ -5,23 +5,30 @@ section:
   weight: 2
   showOnNavbar: true
 
+# The summaries USED TO LIVE HERE and now come from the record.
+#
+# layouts/partials/sections/services.html merges each name below with the
+# summary carried in data/presence.json, fetched from
+# github.com/gotreasa/presence before every build. The wording was identical in
+# both places, which is the kind of duplication that stops being identical the
+# moment one of them is edited.
+#
+# THE SPLIT: this file decides WHICH services appear, in what ORDER and at which
+# ROUTE. The record decides what each is CALLED and what it SAYS. Changing a
+# summary here would do nothing; change it in the record and publish a new tag.
+#
+# `name` is the join between the two. A name the record does not know FAILS THE
+# BUILD rather than rendering a card with no summary.
+
 services:
   - name: Software Craftsmanship Coach
-    summary: >-
-      Elevate your software development team to elite, to rapidly deliver products that delight the users.
     url: /services/software-craftsmanship-coach
 
   - name: DevOps Coach
-    summary: >-
-      Coach your DevOps team to incrementally improve your pipeline to elite.
     url: /services/devops-coach
 
   - name: Software Development Consultant
-    summary: >-
-      Deliver applications in JavaScript, TypeScript or Python through to production.
     url: /services/software-development-consultant
 
   - name: DevOps Consultant
-    summary: >-
-      Work with your team on improving the pipeline and building out the functionality needed.
     url: /services/devops-consultant
