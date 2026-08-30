@@ -1,0 +1,113 @@
+{{/* VENDORED FROM toha v4.10.0 AND MODIFIED. Re-copy from the theme and re-apply
+    the marked block when upgrading; everything below the fold is the theme's.
+
+    The career history now comes from the record. data/presence.json is fetched
+    from github.com/gotreasa/presence before every build (see netlify.toml), and
+    data/sections/experiences.yaml no longer carries the history.
+
+    THE SHAPE PROBLEM THIS SOLVES. The artifact stores experience FLAT, one entry
+    per role, each carrying `via`: the id of the entry whose employer made it
+    possible. The theme wants two levels, company then positions. Rendering the
+    flat array as-is is exactly the defect found on 30 Aug 2026, where BriX
+    Consulting appeared as two separate employers both ending "Present" and IBM
+    appeared as nine. Grouping here is what stops that.
+
+    THE SPLIT: the record owns employers, role titles, dates and what each role
+    did. The site owns section config, ordering rules and logos.
+
+    NOTE: layouts/ is in .prettierignore. Prettier reflows Go string literals
+    across newlines, which Go forbids, and it broke about.html on 30 Aug 2026. */}}
+
+{{ $records := index site.Data.presence "experience" }}
+{{ if not $records }}
+  {{ errorf "data/presence.json carries no experience. Netlify fetches it before every build; locally run: npm run fetch:presence" }}
+{{ end }}
+
+{{/* Newest first, by start date. The artifact is stored oldest-first because it
+    was generated from the record's Career at a Glance table, and a record reads
+    forward while a CV does not. */}}
+{{ $sorted := sort $records "start" "desc" }}
+
+{{/* Group by employer, keeping first-seen order, which is newest-first after the
+    sort above. A company's own date range spans its earliest start to its latest
+    end, so the heading is true of the group rather than of one role in it. */}}
+{{/* Distinct employers in first-seen order, then `where` to collect each one's
+    roles. An accumulating dict was tried first and `merge` deep-merges, so the
+    slice of roles came back as a map. `where` preserves the sorted order and
+    mutates nothing. */}}
+{{ $order := slice }}
+{{ range $sorted }}
+  {{ if not (in $order .employer) }}
+    {{ $order = $order | append .employer }}
+  {{ end }}
+{{ end }}
+
+{{ $experiences := slice }}
+{{ range $order }}
+  {{ $roles := where $sorted "employer" . }}
+  {{ $positions := slice }}
+  {{ range $roles }}
+    {{/* "2024-05" to "May 2024". An empty end makes the theme print its own
+        "present" string, which is already translated. */}}
+    {{ $start := time.Format "Jan 2006" (printf "%s-01" .start) }}
+    {{ $end := "" }}
+    {{ if ne .end "present" }}
+      {{ $end = time.Format "Jan 2006" (printf "%s-01" .end) }}
+    {{ end }}
+    {{ $positions = $positions | append (dict
+        "designation" .role
+        "start" $start
+        "end" $end
+        "responsibilities" .portfolio_prose
+    ) }}
+  {{ end }}
+  {{/* The newest role's location. A company line holds one value and IBM spans
+      Dublin then London, so something is lost either way; the most recent is
+      the one a reader is asking about, and every role's own dates are listed
+      underneath it. */}}
+  {{ $newest := index $roles 0 }}
+  {{ $oldest := index $roles (sub (len $roles) 1) }}
+  {{ $experiences = $experiences | append (dict
+      "company" (dict
+        "name" $newest.employer
+        "location" $newest.meta
+        "start" (time.Format "Jan 2006" (printf "%s-01" $oldest.start))
+      )
+      "positions" $positions
+  ) }}
+{{ end }}
+
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 experiences-section">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+    <h1 class="text-center" style="display: none">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="container timeline text-justify">
+   {{ $totalExperiences:= len $experiences }}
+   {{ range $index,$experience:= $experiences }}
+     {{ if eq (mod $index 2) 0 }}
+       <div class="row align-items-center  d-flex">
+         {{ partial "sections/experiences/vertical-line.html" $index }}
+         {{ partial "sections/experiences/positions.html" $experience }}
+       </div>
+     {{else}}
+       <div class="row align-items-center justify-content-end d-flex">
+         {{ partial "sections/experiences/positions.html" $experience }}
+         {{ partial "sections/experiences/vertical-line.html" $index }}
+       </div>
+     {{ end }}
+     {{ if lt $index (sub $totalExperiences 1) }}
+       {{ partial "sections/experiences/horizontal-line.html" $index }}
+     {{ end }}
+   {{ end }}
+  </div>
+</div>

@@ -5,137 +5,22 @@ section:
   weight: 3
   showOnNavbar: true
 
-experiences:
-  - company:
-      name: Untangled Code Ltd.
-      # No url: untangledcode.com is deliberately not linked while its identity is
-      # undecided (Gearoid, 30 Aug 2026). The company NAME is a fact and stays; the
-      # link is a recommendation to go and look, and there is nothing settled to
-      # look at. The theme renders the name as plain text when url is absent.
-      start: Dec 2023
-      location: London, United Kingdom
-    positions:
-      - designation: Founder | Technical Coach
-        start: Dec 2023
-        responsibilities:
-          - Founded and run the practice through which all coaching and consulting engagements are delivered, sub-contracting to BriX Consulting.
-          - Coach teams from mediocre development practices to elite software craftsmanship, and on culture and ways of working.
-          - Contribute to nWave, an AI-agent delivery framework, on packaging correctness, CI, hooks and test infrastructure.
-
-  - company:
-      name: BriX Consulting s.r.o.
-      url: https://brix.consulting
-      start: Dec 2023
-      location: London, United Kingdom
-    positions:
-      - designation: Technical Agile Coach | Partner
-        start: Dec 2023
-        responsibilities:
-          - Iteratively develop and improve the curriculum based on experimentation.
-          - Train and coach teams on how to apply Extreme Programming.
-          - Instructor and embedded coach on a two-year Extreme Programming transformation for a Fortune 100 insurer, a programme that trained over 3,000 engineers and product managers across three continents.
-          - The client's published outcomes for that programme cover three of the four DORA measures. They went from monthly deployments to daily releases, cut production timelines from weeks to under 48 hours, and increased change success rates above 90 percent. Those are the client's results, achieved by the teams I was coaching.
-          - Delivered the Software Craftsmanship Dojo to one team of 15 at Nederlandse Spoorwegen over three months, taking 13 of the 15 to Yellow Belt against a graduation bar assessed on delivered work rather than self-report. It was one of two teams in a pilot that went on to a multi-year contract, which other instructors delivered.
-          - Took a train driver through that same programme alongside the developers, from not believing he could write code to doing it beside them while the whole team learned software craftsmanship.
-
-  - company:
-      name: IBM United Kingdom
-      url: https://ibm.com
-      location: London, United Kingdom
-    positions:
-      - designation: Technical Agile Coach
-        start: Jan 2022
-        end: Jun 2023
-        responsibilities:
-          - Led a software craftsmanship transformation across roughly 1,000 developers in London, Brazil and Mexico, taking teams to green belt on IBM's XP Farm scale, a graded standard assessed on delivered work rather than self-report.
-          - Created a course on basic data analysis using Jupyter Notebooks which enabled both technical and non-technical participants to make more informed decsions building their applications. This improved their ability to build the right features for users.
-          - Organised outward mindset classes and a guild for an oganisation of over 260 people which had an impact on teams ability to focus on outcome and achieve their OKRs.
-          - Received the Peer-to-Peer - Growth Minded award for transforming the organisation.
-
-      - designation: Implementation Architect | Software Engineering Lead
-        start: Oct 2020
-        end: Dec 2021
-        responsibilities:
-          - Migrated the deal registration process used by business partners from a NodeJS application to Salesforce.  The business partner community consists of 200k users across 10k partner organisations, and the migration enabled 11 billion USD worth of transactions.
-          - Simplified the deal registration to one simple process instead of a multi step process they previously experienced.
-
-      - designation: Senior JavaScript Full Stack Development Lead
-        start: May 2019
-        end: Oct 2020
-        responsibilities:
-          - Transformed the software deal registration process which lead to an increase in the NPS score and ensured the entire process was automated within the NodeJS application.
-          - Mentored a group of 3 development leads in squad leadership and agile refinement.
-          - Led and mentored a tribe of 18 developers.
-
-  - company:
-      name: IBM Ireland
-      url: https://ibm.com
-      location: Dublin, Ireland
-    positions:
-      - designation: JavaScript Full Stack Development Lead
-        start: Jan 2017
-        end: May 2019
-        responsibilities:
-          - Created an AngularJS application with a NodeJS backend that automated opportunity and incentive creation for 10k business partners and their 200k users.
-          - The transformation lead to users instantly recording the opportunities and products that they were selling from an old process that could take them days as they waited for each step to complete.
-          - Led a team of 6 people as part of the agile tribe.
-          - Earned an Outstanding Technical Achievement award for transforming and simplifying the partners registering their deals.
-
-      - designation: DevOps and Web Development Lead
-        start: Mar 2011
-        end: Dec 2016
-        responsibilities:
-          - Transformed the deployment process for an on-premise instance which previously took 72 hours to be able to run, to within 2 hours, saving a maximum of 2000 hours over the course of the year for the business.
-          - Continuously sought areas that were not automated and led the team to be able to transform and automate the deployments.
-          - Earned an Outstanding Technical Achievement Award for being the first team to introduce Urban Code Deployment and use it to deploy to production.
-
-      - designation: Web Developer
-        start: May 2009
-        end: Mar 2011
-        responsibilities:
-          - Web developer on a number of enterprise collaboration applications using Java and C for the backend with HTML, Dojo, JavaScript and CSS for the frontend.
-
-      - designation: Web Application Graduate
-        start: Jun 2008
-        end: May 2009
-        responsibilities:
-          - Java developer on the XPages application which provided users the ability to create Domino applications in a fraction of the time using a drag and drop interface.
-
-  - company:
-      name: Galway City Community Forum
-      location: Galway, Ireland
-
-    positions:
-      - designation: Community Forum Webmaster
-        start: Apr 2007
-        end: Dec 2010
-
-  - company:
-      name: Western Theological Institute
-      url: https://www.theologywest.ie/
-      location: Galway, Ireland
-
-    positions:
-      - designation: Webmaster & IT consultant
-        start: Dec 2004
-        end: Jun 2008
-
-  - company:
-      name: University of Galway
-      url: https://www.universityofgalway.ie/
-      location: Galway, Ireland
-
-    positions:
-      - designation: Lab Demonstrator
-        start: Sep 2007
-        end: Apr 2008
-
-  - company:
-      name: Dublin City University
-      url: https://www.dcu.ie/
-      location: Dublin, Ireland
-
-    positions:
-      - designation: ODCSSS Student Researcher
-        start: Jun 2007
-        end: Aug 2007
+# THE CAREER HISTORY USED TO LIVE HERE. It now comes from the record.
+#
+# layouts/partials/sections/experiences.html builds it from data/presence.json,
+# fetched from github.com/gotreasa/presence before every build. Twelve roles were
+# duplicated between this file and the career record, and duplicated values
+# drift: this file carried a Freelance role that never existed, two wrong start
+# dates and a superseded 2,000% figure until 29 Aug 2026.
+#
+# THE SPLIT: the record owns employers, role titles, dates and what each role
+# did. This file owns the section's own settings below, and the template owns
+# ordering and grouping.
+#
+# WHY THE TEMPLATE HAS TO GROUP. The artifact stores experience FLAT, one entry
+# per role, each carrying `via`: the id of the entry whose employer made it
+# possible. Rendered as-is that shows BriX Consulting as two separate employers
+# and IBM as eight. The template groups by employer, which is the whole reason it
+# is vendored.
+#
+# Adding a role here would do nothing. Add it to the record and publish a new tag.
