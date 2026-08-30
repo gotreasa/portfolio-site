@@ -1,0 +1,98 @@
+{{/* VENDORED FROM toha v4.10.0 AND MODIFIED. Re-copy from the theme and
+    re-apply the marked changes when upgrading; the rest is the theme's.
+
+    WHY: the links below were duplicated between data/sections/about.yaml and the
+    career record. Six URLs in two places drift, and one already had: the blog
+    link pointed at a dead host until 29 Aug 2026. They now come from
+    data/presence.json, fetched from github.com/gotreasa/presence before every
+    build (see netlify.toml).
+
+    The SITE owns presentation: which links appear, their order, icon and label.
+    The RECORD owns the values. That is the intake contract's third rule, and it
+    is why icons are written here rather than travelling in the artifact.
+
+    NOTE FOR ANYONE RUNNING PRETTIER: layouts/ is in .prettierignore because
+    prettier reflows Go string literals across newlines, which Go templates
+    forbid. It broke this exact file on 30 Aug 2026. */}}
+{{/* site.Data, not .Site.Data: this partial is called with the about section's
+    data as its context, so .Site does not resolve. The first version used it and
+    the guard below fired on a build where the artifact was present. */}}
+{{ $presence := site.Data.presence }}
+{{ if not $presence }}{{ errorf "data/presence.json is missing. Netlify fetches it before every build; locally run: npm run fetch:presence" }}{{ end }}
+{{ $id := $presence.identity }}
+{{ if not $id.github_short_url }}{{ errorf "data/presence.json lacks identity.github_short_url, so it is not the shape this template expects. Check which tag netlify.toml pins." }}{{ end }}
+{{ $social := slice
+  (dict "name" "Blog"     "icon" "fas fa-pen-nib"  "url" $id.blog_url)
+  (dict "name" "GitHub"   "icon" "fab fa-github"   "url" $id.github_short_url)
+  (dict "name" "GitLab"   "icon" "fab fa-gitlab"   "url" $id.gitlab_short_url)
+  (dict "name" "LinkedIn" "icon" "fab fa-linkedin" "url" $id.linkedin_short_url)
+}}
+{{ $resources := slice
+  (dict "title" "My Resume"           "url" $id.cv_short_url)
+  (dict "title" "Book an Appointment" "url" $id.appointment_url)
+}}
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+{{ $author:= site.Data.author }}
+{{ if (index site.Data site.Language.Lang).author }}
+  {{ $author = (index site.Data site.Language.Lang).author }}
+{{ end }}
+
+<div class="container anchor p-lg-5 about-section" id="{{ $sectionID }}">
+  <div class="row pt-sm-2 pt-md-4 align-self-center">
+    <!-- summary -->
+    <!-- takes up full section width if no badges/soft skills are specified -->
+    {{ if or (.softSkills) (.badges) }} <div class="col-sm-6"> {{ else }} <div class="col-sm-12"> {{ end }}
+      <h3 class="p-1">{{ $author.name }}</h3>
+      {{ if .designation }}
+      <h5 class="p-1">
+        {{ .designation }}
+        {{ if .company }}
+        {{ i18n "at"}} <a href="{{ .company.url }}" title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>
+        {{ end }}
+      </h5>
+      {{ end }}
+      <p class="p-1 text-justify">
+        {{ .summary | markdownify }}
+      </p>
+      <div class="text-container ms-auto">
+        <ul class="social-link d-flex">
+          {{/* The theme branched on Email and phone and defaulted rel. All
+              three are dead: these links come from the record and carry neither
+              an address nor a rel, and the email came off this site on
+              30 Aug 2026. */}}
+          {{ range $social }}
+          <li>
+            <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><i class="{{ .icon }}"></i></a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{/* The theme's .resume button is removed: about.yaml has no resume
+          key, so it never rendered. The CV is reached through the resource
+          button below, built from the record. */}}
+      {{/* relURL would rewrite these absolute external links as site-relative. */}}
+      {{ range $resources }}
+      <a href="{{ .url }}" title="{{ .title }}" target="_blank" rel="noopener"
+        ><button class="btn btn-dark">{{ .title }}</button></a
+      >
+      {{ end }}
+    </div>
+    <!-- soft skills circular-progressbar -->
+    <div class="col-sm-6 pt-5 ps-md-4 ps-sm-3 pt-sm-0">
+      <div class="row">
+        {{ range .badges }}
+          {{ partial "misc/badge.html" . }}
+        {{ end }}
+        <!-- TODO: Remove this part in version v4+ -->
+        <!-- Keep backward compatibility with old configuration -->
+        {{ range .softSkills }}
+          {{ partial "misc/soft-skills.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>

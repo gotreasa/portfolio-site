@@ -17,25 +17,17 @@ summary: >-
   Looking for a digital transformation?  Struggling with rapidly delivering new features for your product that truly delight users?
   Below you can see the services that I offer to address these problems.
 
-socialLinks:
-  - name: Blog
-    icon: fas fa-pen-nib
-    url: https://l.gearoid.eu/blog
-  - name: GitHub
-    icon: fab fa-github
-    url: https://l.gearoid.eu/github
-  - name: GitLab
-    icon: fab fa-gitlab
-    url: https://l.gearoid.eu/gitlab
-  - name: LinkedIn
-    icon: fab fa-linkedin
-    url: https://l.gearoid.eu/linkedin
-
-resourceLinks:
-  - title: My Resume
-    url: https://l.gearoid.eu/cv
-  - title: Book an Appointment
-    url: https://l.gearoid.eu/appointment
+# socialLinks and resourceLinks USED TO LIVE HERE and now come from the record.
+#
+# They are built in layouts/partials/sections/about.html from data/presence.json,
+# which is fetched from github.com/gotreasa/presence before every build. Six URLs
+# were duplicated between this file and the career record, and duplicated values
+# drift: the blog link here pointed at a dead host until 29 Aug 2026.
+#
+# The site still decides WHICH links appear, in what order, with which icon and
+# label. The record decides what they point at. To change an address, change it
+# in the record and publish a new tag; changing it here would do nothing, which
+# is exactly why these keys are gone rather than left behind as dead data.
 
 badges:
   - type: certification

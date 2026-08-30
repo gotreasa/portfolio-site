@@ -1,0 +1,9 @@
+# Hugo layouts are Go templates, not HTML.
+#
+# Prettier's HTML parser cannot read them, and worse, when it can it
+# REFLOWS them: on 30 Aug 2026 it wrapped a Go string literal across a
+# newline in layouts/partials/sections/about.html, which Go templates
+# forbid, and turned a working template into `unterminated quoted string`.
+#
+# This is not a style opt-out. The tool corrupts these files.
+layouts/

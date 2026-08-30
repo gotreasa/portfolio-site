@@ -1,15 +1,38 @@
+# THE PRESENCE ARTIFACT IS FETCHED BEFORE EVERY BUILD.
+#
+# `data/presence.json` carries the values this site shares with the CV and the
+# LinkedIn profile: identity, prose blocks and the career record. It is generated
+# from a private source of truth and published at github.com/gotreasa/presence.
+#
+# PINNED TO A TAG, NEVER A BRANCH TIP (PS-015). A build must produce the same
+# site tomorrow as it does today from the same commit, and `main` would make that
+# false. Moving to a newer artifact is an edit to this file, which is the point:
+# it is a decision with a diff, not something that happens while nobody is
+# looking.
+#
+# `-f` IS LOAD-BEARING. Without it curl writes a 404 body to the output file and
+# exits 0, so the build would carry on and deploy a site whose data file contains
+# an HTML error page. With it, a fetch failure fails the build. A deploy that
+# stops is recoverable; one that silently ships wrong data is not.
+#
+# `--retry` covers a transient network blip without covering a wrong URL: retries
+# apply to transient failures, and a 404 still fails.
+#
+# TO UPDATE: publish a new tag in the presence repository, change the tag here,
+# commit. To check what a tag holds before pointing at it, fetch that URL by hand.
+
 [build]
-  command = "hugo"
+  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v1/presence.json && hugo"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.145.0"
 
 [context.production]
-  command = "hugo -b https://gearoid.eu --minify"
+  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v1/presence.json && hugo -b https://gearoid.eu --minify"
 
 [context.deploy-preview]
-  command = "hugo -b $DEPLOY_PRIME_URL --minify"
+  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v1/presence.json && hugo -b $DEPLOY_PRIME_URL --minify"
 
 [build.processing]
   skip_processing = false

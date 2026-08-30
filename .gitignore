@@ -15,3 +15,9 @@ hugo_stats.json
 # Generated folder
 generated/
 go.sum
+
+# Fetched from github.com/gotreasa/presence before every build, pinned to a
+# tag in netlify.toml. Deliberately NOT committed: it has one home, and a
+# copy here would be a second source of the same file that drifts the moment
+# the pinned tag moves. Run `npm run fetch:presence` for local development.
+data/presence.json
