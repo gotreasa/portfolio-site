@@ -10,7 +10,9 @@ section:
 designation: Founder & Technical Coach
 company:
   name: Untangled Code Ltd.
-  url: https://untangledcode.com
+  # No url while untangledcode.com's identity is undecided (Gearoid,
+  # 30 Aug 2026). The name is a fact; the link is an invitation to go and
+  # look, and there is nothing settled to look at.
 
 # A summary about you
 summary: >-

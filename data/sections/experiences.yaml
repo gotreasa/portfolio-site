@@ -8,7 +8,10 @@ section:
 experiences:
   - company:
       name: Untangled Code Ltd.
-      url: https://untangledcode.com
+      # No url: untangledcode.com is deliberately not linked while its identity is
+      # undecided (Gearoid, 30 Aug 2026). The company NAME is a fact and stays; the
+      # link is a recommendation to go and look, and there is nothing settled to
+      # look at. The theme renders the name as plain text when url is absent.
       start: Dec 2023
       location: London, United Kingdom
     positions:
