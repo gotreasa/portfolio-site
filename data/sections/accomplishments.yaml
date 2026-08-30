@@ -6,64 +6,21 @@ section:
   weight: 6
   showOnNavbar: true
 
-# THE AWARDS THEMSELVES ARE NOT YET FED FROM THE RECORD, and this file says so
-# rather than looking finished.
+# The awards come from the record.
 #
-# The record holds six awards as {title, issuer, year} and NO description field,
-# while every entry here carries a written courseOverview. Wiring this section
-# would therefore delete six descriptions. Moving them into the record instead is
-# the right fix and is authoring work, not template work: the descriptions have
-# never been checked against the register, and the 2017 Outstanding Technical
-# Achievement one is already known to contradict it on three points.
+# layouts/partials/sections/accomplishments.html builds them from
+# data/presence.json, fetched from github.com/gotreasa/presence before every
+# build. The descriptions were authored into ssot/awards.md on 30 Aug 2026 from
+# the citations in section 6 of career-history.md, which is how the 2017 one got
+# fixed: the version that used to live here credited that award with a
+# deal-registration time and a 90% cost cut belonging to two different pieces of
+# work in different years.
 #
-# WHAT HAS BEEN APPLIED FROM THE RECORD, 30 Aug 2026:
-#   - IBM Corporate Service Corps removed. presence/ssot/awards.md:68-75 records
-#     that it stopped being an award on 27 Aug 2026 at Gearoid's instruction; it
-#     is an experience entry and already renders in the Experience timeline.
-#   - XP Farm Coach Red Belt removed. It is a certification, and already renders
-#     as a badge in the About section under the same Credly id.
-#   - Five timelines corrected from a month to the year the record actually
-#     holds. The months were never in the record.
+# THE SPLIT: the record owns the title, issuer, year and description. What stays
+# below is the issuer URL, which is a route the site owns. Editing an award here
+# would do nothing.
 
 accomplishments:
-  - name: Peer-to-Peer Recognition - Growth Minded
-    timeline: 2023
-    organization:
+  - organization:
       name: IBM
       url: https://ibm.com/
-    courseOverview: Gearoid is Growth Minded because he is always willing to learn and grow, and he is committed to helping others do the same. He has demonstrated this by sharing his experience and software craftsmanship expertise with others, encouraging teams to adopt an outward mindset culture, and educating individuals in using data analysis to improve software delivery outcomes.
-
-  - name: Manager's Choice Award
-    timeline: 2017
-    organization:
-      name: IBM
-      url: https://ibm.com/
-    courseOverview: Awarded for sharing Test-Driven Development, Pair Programming and Clean Code expertise through delivering code retreats, run for groups of up to 20 developers alongside a full-stack delivery lead role.
-
-  - name: Outstanding Technical Achievement Award
-    timeline: 2017
-    organization:
-      name: IBM
-      url: https://ibm.com/
-    courseOverview: This is an award for tranforming the Partner Relationship Managment from being a clunky process spread across a number of tools to being a single application - My Sales Activity - that can complete a deal registration in 5 minutes instead of taking a number of hours.  This was built as an AngularJS application that cut development cost by almost 90%.
-
-  - name: Outstanding Technical Achievement
-    timeline: 2014
-    organization:
-      name: IBM
-      url: https://ibm.com/
-    courseOverview: Received for being the first application to use uDeploy in a production application, deploying SugarCRM and other microservices as part of a Customer Relationship Management application. Along with developing a custom command line tool - uCommand to enable easier deployments using uDeploy.
-
-  - name: People's Innovation Choice
-    timeline: 2014
-    organization:
-      name: IBM
-      url: https://ibm.com/
-    courseOverview: Awarded the people's choice award for the Connections toolbar for Firefox which was developed during my spare time, and voted on globally, by IBM employees. The project was open source and available on https://github.com/OpenNTF/ConnectionsToolbarForFirefox/.
-
-  - name: Leadership Excellence
-    timeline: 2013
-    organization:
-      name: IBM
-      url: https://ibm.com/
-    courseOverview: Lead and developed the people on the SalesConnect team in Dublin to deliver a rich collaboration experience within the application.

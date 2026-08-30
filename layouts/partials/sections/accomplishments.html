@@ -1,0 +1,73 @@
+{{/* VENDORED FROM toha v4.10.0 AND MODIFIED. Re-copy from the theme and re-apply
+    the marked block when upgrading; everything below it is the theme's.
+
+    The awards come from the record. data/presence.json is fetched from
+    github.com/gotreasa/presence before every build (see netlify.toml).
+
+    WHY THIS WAS THE LAST SECTION WIRED. The record held six awards with no
+    description field while this page carried one for each, so wiring it earlier
+    would have deleted six descriptions. The field was added to the awards kind
+    on 30 Aug 2026 and the descriptions authored from the citations in section 6
+    of career-history.md, which is also how the 2017 one got fixed: the version
+    that used to be here credited that award with a deal-registration time and a
+    90% cost cut that belong to two different pieces of work in different years.
+
+    THE SPLIT: the record owns the title, issuer, year and description. The site
+    owns the organisation URL and the certificate link, which are routes.
+
+    One award has no description yet. Peer-to-Peer Recognition, Growth Minded has
+    no citation text anywhere in the record, so it renders with its title and
+    year alone rather than with prose nobody could verify. See the private note
+    on that entry in ssot/awards.md.
+
+    NOTE: layouts/ is in .prettierignore. Prettier reflows Go string literals
+    across newlines, which Go forbids, and it broke about.html on 30 Aug 2026. */}}
+
+{{ $records := index site.Data.presence "awards" }}
+{{ if not $records }}
+  {{ errorf "data/presence.json carries no awards. Netlify fetches it before every build; locally run: npm run fetch:presence" }}
+{{ end }}
+
+{{/* The site keeps the issuer URL and any certificate link, keyed off the issuer
+    name. Those are routes, not content. */}}
+{{ $links := dict }}
+{{ range .accomplishments }}
+  {{ if .organization }}
+    {{ $links = merge $links (dict .organization.name .organization.url) }}
+  {{ end }}
+{{ end }}
+
+{{ $accomplishments := slice }}
+{{ range $records }}
+  {{ $prose := "" }}
+  {{ with .portfolio }}{{ $prose = delimit . " " }}{{ end }}
+  {{ $accomplishments = $accomplishments | append (dict
+      "name" .title
+      "timeline" .year
+      "organization" (dict "name" .issuer "url" (index $links .issuer))
+      "courseOverview" $prose
+  ) }}
+{{ end }}
+
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 accomplishments-section">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+    <h1 class="text-center" style="display: none">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+  
+  <div class="container">
+    <div class="row" id="accomplishment-card-holder">
+      {{ range $accomplishments }}
+        {{ partial "cards/accomplishments" . }}
+      {{ end }}
+    </div>
+  </div>
+</div>
