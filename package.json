@@ -75,7 +75,7 @@
     "prettier": "^3.9.8",
     "sort-package-json": "^4.0.0",
     "standard": "^17.1.2",
-    "string-strip-html": "^13.7.4"
+    "string-strip-html": "^13.7.5"
   },
   "comments": {
     "dependencies": {},
