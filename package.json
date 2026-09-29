@@ -64,7 +64,7 @@
     "include-media": "^1.4.10",
     "ityped": "^1.0.3",
     "katex": "^0.18.9",
-    "lint-staged": "^17.5.1",
+    "lint-staged": "^17.6.0",
     "mark.js": "^8.11.1",
     "mermaid": "^12.0.0",
     "netlify-plugin-minify-html": "^0.3.1",
