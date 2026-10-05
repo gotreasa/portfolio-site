@@ -46,7 +46,7 @@
     "autoprefixer": "^10.6.1",
     "bootstrap": "^5.3.8",
     "commitlint": "^21.2.3",
-    "eslint": "^10.11.0",
+    "eslint": "^10.12.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^18.4.0",
