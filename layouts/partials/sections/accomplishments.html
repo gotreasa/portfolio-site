@@ -41,9 +41,15 @@
 {{ range $records }}
   {{ $prose := "" }}
   {{ with .portfolio }}{{ $prose = delimit . " " }}{{ end }}
+  {{/* `year` is "2017" or, from presence v9, "2017-11"; a month shows as
+      "Nov 2017", the way experiences.html formats its dates. */}}
+  {{ $timeline := .year }}
+  {{ if in .year "-" }}
+    {{ $timeline = time.Format "Jan 2006" (printf "%s-01" .year) }}
+  {{ end }}
   {{ $accomplishments = $accomplishments | append (dict
       "name" .title
-      "timeline" .year
+      "timeline" $timeline
       "organization" (dict "name" .issuer "url" (index $links .issuer))
       "courseOverview" $prose
   ) }}
