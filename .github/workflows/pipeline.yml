@@ -98,6 +98,9 @@ jobs:
           go-version: '1.24'
           cache: false
       - name: Build
+        # data/presence.json is fetched, never committed (it is gitignored), so
+        # CI fetches the same pinned tag Netlify does before building.
         run: |
           npm install 
+          npm run fetch:presence
           npm run build
