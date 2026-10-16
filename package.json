@@ -8,7 +8,7 @@
   "main": "index.js",
   "scripts": {
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --buildDrafts --buildExpired --buildFuture --forceSyncStatic",
-    "fetch:presence": "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v7/presence.json",
+    "fetch:presence": "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v8/presence.json",
     "lint:fix": "eslint --fix",
     "lint:verify": "eslint .",
     "lint:verifyfile": "eslint",
