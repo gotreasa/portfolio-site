@@ -67,11 +67,30 @@
       underneath it. */}}
   {{ $newest := index $roles 0 }}
   {{ $oldest := index $roles (sub (len $roles) 1) }}
+  {{/* The company's end is the latest end among its roles, or "present" if any
+      role is ongoing. The theme used the end of the role listed first, the one
+      that STARTED last, so Untangled Code read "Dec 2023 - Sep 2026" while two
+      of its roles were still running (16 Oct 2026). "YYYY-MM" compares
+      correctly as a string. An empty end tells positions.html "present". */}}
+  {{ $ongoing := false }}
+  {{ $latestEnd := "" }}
+  {{ range $roles }}
+    {{ if eq .end "present" }}
+      {{ $ongoing = true }}
+    {{ else if gt .end $latestEnd }}
+      {{ $latestEnd = .end }}
+    {{ end }}
+  {{ end }}
+  {{ $companyEnd := "" }}
+  {{ if not $ongoing }}
+    {{ $companyEnd = time.Format "Jan 2006" (printf "%s-01" $latestEnd) }}
+  {{ end }}
   {{ $experiences = $experiences | append (dict
       "company" (dict
         "name" $newest.employer
         "location" $newest.meta
         "start" (time.Format "Jan 2006" (printf "%s-01" $oldest.start))
+        "end" $companyEnd
       )
       "positions" $positions
   ) }}

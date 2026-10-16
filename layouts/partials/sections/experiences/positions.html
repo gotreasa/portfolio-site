@@ -31,8 +31,12 @@
         >{{ else }}{{ .company.name }}{{ end }}
       </h5>
       <p class="text-muted">
-        {{ $oldestPosition.start }} - {{ if $mostRecentPosition.end }}{{
-        $mostRecentPosition.end }}{{ else }}{{ i18n "present" }}{{ end }}
+        {{/* experiences.html computes the company's end across all its roles;
+            fall back to the first role's end only if it did not. */}}
+        {{ $companyEnd := $mostRecentPosition.end }}
+        {{ if isset .company "end" }}{{ $companyEnd = .company.end }}{{ end }}
+        {{ $oldestPosition.start }} - {{ if $companyEnd }}{{ $companyEnd }}{{
+        else }}{{ i18n "present" }}{{ end }}
       </p>
     </div>
     <p class="text-muted">
