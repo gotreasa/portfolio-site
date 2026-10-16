@@ -1,0 +1,83 @@
+name: Presence Pin
+
+# Opens a PR that moves the presence pin when gotreasa/presence has a newer
+# vN tag. The site never tracks a branch tip (reproducible builds; a bad
+# export cannot change the live site on its own), so this only proposes the
+# bump: Netlify builds a deploy preview for the PR, and merging it publishes.
+# It needs no cross-repository token: the presence repository is public, and
+# the PR is opened in this repository with its own GITHUB_TOKEN.
+
+env:
+  NODE_VERSION: 24.7
+  PRESENCE_REPO: https://github.com/gotreasa/presence
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  bump_presence_pin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '${{ env.NODE_VERSION }}'
+      - name: Test the pin script
+        run: node --test scripts/presence-pin.test.js
+
+      - name: Compare the pin with the latest presence tag
+        id: pin
+        run: |
+          git ls-remote --tags --refs "$PRESENCE_REPO.git" > "$RUNNER_TEMP/tags.txt"
+          node scripts/presence-pin.js check "$RUNNER_TEMP/tags.txt" >> "$GITHUB_OUTPUT"
+          cat "$GITHUB_OUTPUT"
+
+      - name: Skip when a PR branch for this tag already exists
+        id: branch
+        if: steps.pin.outputs.latest != '' && steps.pin.outputs.latest != steps.pin.outputs.current
+        run: |
+          branch="presence/${{ steps.pin.outputs.latest }}"
+          echo "name=$branch" >> "$GITHUB_OUTPUT"
+          if git ls-remote --exit-code --heads origin "$branch" > /dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check the new artefact before proposing it
+        if: steps.branch.outputs.exists == 'false'
+        run: |
+          url="https://raw.githubusercontent.com/gotreasa/presence/${{ steps.pin.outputs.latest }}/presence.json"
+          curl -fsSL --retry 3 --retry-delay 2 "$url" \
+            | jq -e '.target == "portfolio" and (.experience | length > 0) and (.identity | length > 0)' > /dev/null
+
+      - name: Open the pin PR
+        if: steps.branch.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CURRENT: ${{ steps.pin.outputs.current }}
+          LATEST: ${{ steps.pin.outputs.latest }}
+          BRANCH: ${{ steps.branch.outputs.name }}
+        run: |
+          node scripts/presence-pin.js apply "$LATEST"
+          git config --local user.email "presence-pin+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git checkout -b "$BRANCH"
+          git commit -am "chore: pin the presence artifact to $LATEST"
+          git push origin "$BRANCH"
+          gh pr create --base main --head "$BRANCH" \
+            --title "chore: pin the presence artifact to $LATEST" \
+            --body "Moves every presence pin (netlify.toml and the fetch:presence script) from $CURRENT to $LATEST.
+
+          What changed in the artefact: $PRESENCE_REPO/compare/$CURRENT...$LATEST
+
+          Check the Netlify deploy preview on this PR, then merge to publish. Opened by the Presence Pin workflow."
