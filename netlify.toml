@@ -22,7 +22,7 @@
 # commit. To check what a tag holds before pointing at it, fetch that URL by hand.
 
 [build]
-  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v9/presence.json && hugo"
+  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v10/presence.json && hugo"
   publish = "public"
 
 [build.environment]
@@ -37,10 +37,10 @@
   HUGO_VERSION = "0.165.0"
 
 [context.production]
-  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v9/presence.json && hugo -b https://gearoid.eu --minify"
+  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v10/presence.json && hugo -b https://gearoid.eu --minify"
 
 [context.deploy-preview]
-  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v9/presence.json && hugo -b $DEPLOY_PRIME_URL --minify"
+  command = "curl -fsSL --retry 3 --retry-delay 2 -o data/presence.json https://raw.githubusercontent.com/gotreasa/presence/v10/presence.json && hugo -b $DEPLOY_PRIME_URL --minify"
 
 [build.processing]
   skip_processing = false
