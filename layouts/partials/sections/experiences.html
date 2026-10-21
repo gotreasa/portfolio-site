@@ -56,15 +56,18 @@
     {{ end }}
     {{ $positions = $positions | append (dict
         "designation" .role
+        "location" .meta
         "start" $start
         "end" $end
         "responsibilities" .portfolio_prose
     ) }}
   {{ end }}
-  {{/* The newest role's location. A company line holds one value and IBM spans
-      Dublin then London, so something is lost either way; the most recent is
-      the one a reader is asking about, and every role's own dates are listed
-      underneath it. */}}
+  {{/* Location is shown per role, not per company (21 Oct 2026). The company
+      line showed the newest role's location, which put all fifteen IBM years in
+      London against the CV and LinkedIn (Vita audit). Joining every role's
+      location was tried the same day and read worse: the record writes places
+      at different grain ("Dublin", "Dublin, Ireland") and includes a one-month
+      Cape Town secondment. Each role's own location is what the record holds. */}}
   {{ $newest := index $roles 0 }}
   {{ $oldest := index $roles (sub (len $roles) 1) }}
   {{/* The company's end is the latest end among its roles, or "present" if any
@@ -88,7 +91,6 @@
   {{ $experiences = $experiences | append (dict
       "company" (dict
         "name" $newest.employer
-        "location" $newest.meta
         "start" (time.Format "Jan 2006" (printf "%s-01" $oldest.start))
         "end" $companyEnd
       )

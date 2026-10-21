@@ -1,6 +1,7 @@
 ---
 title: 'DevOps Consultant'
 date: 2024-02-08T08:06:25+06:00
+hideDate: true
 description: Working alongside your team on the delivery pipeline and the functionality around it, hands on rather than advisory.
 menu:
   sidebar:
@@ -12,7 +13,7 @@ hero: devops-consultant.webp
 
 I work alongside your team on the pipeline and the functionality around it, hands on in the codebase rather than advising from beside it.
 
-That has meant deployment automation and orchestration, moving deployment onto a container platform, building fail closed release gates, and the less visible work of making a build tell you the truth: static analysis that closes a defect class rather than its instances, and failure modes distinguishable enough that a machine can act on them.
+That has meant deployment automation and orchestration, building continuous deployment through to production, overseeing the move of deployment onto a container platform, and hardening the continuous integration pipeline of nWave, an AI-agent delivery method, across its releases.
 
 If the pipeline is the thing slowing your team down, that is usually a fixable problem and often a smaller one than it looks.
 

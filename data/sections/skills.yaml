@@ -15,13 +15,14 @@ skills:
   - name: Extreme Programming
     logo: /images/sections/skills/xp.svg
     summary: >-
-      Applies and trains XP techniques, such as direct client communication, pair programming, TDD,
-      BDD, CI/CD, team code ownership, and coding standards.
+      Applies and trains Extreme Programming (XP) techniques, such as direct client communication, pair
+      programming, test-driven development (TDD), behaviour-driven development (BDD), continuous
+      integration and continuous delivery (CI/CD), team code ownership, and coding standards.
 
   - name: Cloud
     logo: /images/sections/skills/cloud.png
     summary: >-
-      Fond of distributed architectural patterns and technologies. Worked with AWS, and IBM Cloud.
+      Fond of distributed architectural patterns and technologies. Worked with IBM Cloud.
 
   - name: Docker
     logo: /images/sections/skills/docker.svg
@@ -39,11 +40,11 @@ skills:
   - name: Git
     logo: /images/sections/skills/git.png
     summary: >-
-      Experienced with git-based development (using the CLI). Mostly uses GitHub.
+      Experienced with git-based development (using the command-line interface). Mostly uses GitHub.
     url: 'https://git-scm.com/'
 
   - name: Other technologies
     logo: /images/sections/skills/technology.svg
     summary: >-
-      Varying experience in HTML, CSS, JavaScript, TypeScript, Java
+      Varying experience in HTML, CSS, JavaScript, TypeScript, Java,
       Python, C, C++, and SQL.

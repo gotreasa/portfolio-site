@@ -1,6 +1,7 @@
 ---
 title: 'DevOps Coach'
 date: 2024-02-08T08:06:25+06:00
+hideDate: true
 description: Coaching DevOps teams to improve their pipeline incrementally, from quality gates through to containerised continuous delivery.
 menu:
   sidebar:
@@ -12,7 +13,7 @@ hero: devops-coach.webp
 
 I coach DevOps teams to improve their pipeline a step at a time, from quality gates through to containerised continuous delivery, working alongside the people who will maintain it afterwards.
 
-I spent a decade doing this work myself before coaching it. I took production deployment at IBM from a manual 72 hour process to two hours, ran the first project in its CIO production portfolio to deploy through UrbanCode Deploy, and then helped other teams adopt the same approach.
+I spent a decade doing this work myself before coaching it. I took production deployment at IBM from a manual process of up to 72 hours to two hours, ran the first project in its CIO production portfolio to deploy through UrbanCode Deploy, and then helped other teams adopt the same approach.
 
 The constraint is usually the feedback loop rather than the tooling. A slow or unreliable pipeline makes every other engineering practice harder to hold.
 
