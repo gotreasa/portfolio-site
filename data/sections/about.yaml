@@ -7,7 +7,7 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
-designation: Founder & Technical Coach
+designation: Software engineer, technical coach and trainer
 company:
   name: Untangled Code Ltd.
   # No url while untangledcode.com's identity is undecided (Gearoid,
@@ -16,8 +16,8 @@ company:
 
 # A summary about you
 summary: >-
-  Looking for a digital transformation?  Struggling with rapidly delivering new features for your product that truly delight users?
-  Below you can see the services that I offer to address these problems.
+  I take contract work in agentic engineering and AI developer tooling, principal software engineering,
+  technical coaching and training, and DevOps. Below you can see what each of them involves.
 
 # socialLinks and resourceLinks USED TO LIVE HERE and now come from the record.
 #

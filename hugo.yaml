@@ -41,7 +41,7 @@ outputs:
 
 params:
   background: /images/site/gradient_background.webp
-  description: Portfolio for Gearóid Ó Treasaigh (Gearoid O'Treasaigh). Software Craftsmanship Coach, Extreme Programming Coach, Technical Agile Coach.
+  description: "Gearóid Ó Treasaigh (Gearoid O'Treasaigh): software engineer, technical coach and trainer, open to contracts in agentic engineering, AI developer tooling and principal software engineering."
   logo:
     favicon: /images/author/gearoid.webp
   # gitRepo: https://github.com/hugo-toha/hugo-toha.github.io
