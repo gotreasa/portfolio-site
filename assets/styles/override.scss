@@ -1,0 +1,29 @@
+// Site overrides, imported last by toha (application.template.scss). The theme's
+// own override.scss is an empty placeholder; this file replaces it.
+
+// Skills card icon (docs/acumen/home/component-skill-card-icons.md, 21 Oct 2026).
+// Pinned to the heading token, not inherited: the icon sits inside the card's
+// <a>, which would otherwise give it the link accent and its hover colour.
+// Font Awesome glyphs take this colour, so they read in light and dark mode.
+.skills-section .card .card-head .card-icon-xs {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: get-light-color('heading-color');
+
+  svg {
+    width: 1.25em;
+    height: 1em;
+  }
+}
+
+html[data-theme='dark'] .skills-section .card .card-head .card-icon-xs {
+  color: get-dark-color('heading-color');
+}

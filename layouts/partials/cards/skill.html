@@ -1,0 +1,41 @@
+{{/* VENDORED FROM toha v4.10.0 AND MODIFIED (21 Oct 2026): a link to a page on
+    this site opens in the same tab; only an external link opens a new one
+    (Anvil's Skills audit, R9). The icon is decorative (alt=""), because the
+    title beside it already names the card and a screen reader read it twice.
+    The icon branch (21 Oct 2026, docs/acumen/home/component-skill-card-icons.md)
+    puts a Font Awesome glyph and the title side by side; the glyph takes the
+    heading colour in both themes (assets/styles/override.scss). */}}
+<div class="col-xs-12 col-sm-6 col-lg-4 pt-2 filtr-item"
+  data-category='all, {{ with .categories }}{{ delimit . ","}}{{ end }}'
+>
+  <a class="text-decoration-none" {{ with .url }}href="{{ . }}" title="{{ $.name }}"{{ if or (hasPrefix . "http://") (hasPrefix . "https://") }} target="_blank" rel="noopener"{{ end }}{{ end }}>
+    <div class="card">
+      <div class="card-head d-flex">
+        {{ if .logo }}
+          {{ $logoImage := resources.Get .logo }}
+          {{/*  svg don't support "Fit" operation   */}}
+          {{ if ne $logoImage.MediaType.SubType "svg" }}
+            {{ $logoImage = $logoImage.Fit "24x24" }}
+          {{ end }}
+        
+          <img class="card-img-xs" src="{{ $logoImage.RelPermalink }}" alt="" />
+          <h5 class="card-title">{{ .name }}</h5>
+        {{ else if .icon }}
+          <span class="card-icon-xs" aria-hidden="true"><i class="{{ .icon }}"></i></span>
+          <h5 class="card-title">{{ .name }}</h5>
+        {{ else }}
+          <h5 class="card-title">{{ .name }}</h5>
+        {{ end }}
+      </div>
+      <div class="card-body text-justify pt-1 pb-1">
+        <p class="card-text">{{ .summary | markdownify }}</p>
+        {{/* A visible prompt on cards that open one of this site's pages, so the
+            link is noticed without hover, which touch screens lack (Anvil's
+            Skills validation, 21 Oct 2026, Fogg: a prompt must be noticed). */}}
+        {{ with .url }}{{ if not (or (hasPrefix . "http://") (hasPrefix . "https://")) }}
+        <p class="card-text"><strong>How this engagement works &rsaquo;</strong></p>
+        {{ end }}{{ end }}
+      </div>
+    </div>
+  </a>
+</div>

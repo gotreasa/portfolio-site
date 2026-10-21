@@ -1,0 +1,61 @@
+{{/* VENDORED FROM toha v4.10.0 AND MODIFIED (21 Oct 2026). Re-copy from the
+    theme and re-apply the marked block when upgrading.
+
+    Skill card text comes from the career record, like services.html: the
+    record's `site_skills` block reaches data/presence.json as `site_skills`
+    [{name, summary}]. Skills was the one section not sourced from the record
+    (A3), and it drifted. THE SPLIT: the record owns each card's name and
+    summary; data/sections/skills.yaml owns which cards appear, their order,
+    logo and link. Matched BY NAME, and an unknown name fails the build.
+
+    NOTE: layouts/ is in .prettierignore (Go string literals). */}}
+{{ $records := dict }}
+{{ range (index site.Data.presence "site_skills") }}
+  {{ $records = merge $records (dict .name .summary) }}
+{{ end }}
+{{ if not $records }}
+  {{ errorf "data/presence.json carries no site_skills. Netlify fetches it before every build; locally run: npm run fetch:presence" }}
+{{ end }}
+{{ $merged := slice }}
+{{ range .skills }}
+  {{ $summary := index $records .name }}
+  {{ if not $summary }}
+    {{ errorf "skills.yaml lists %q but the record has no skills card with that name. Names are the join between the two, so fix whichever is wrong rather than letting a card render without its summary." .name }}
+  {{ end }}
+  {{ $merged = $merged | append (merge . (dict "summary" $summary)) }}
+{{ end }}
+{{ $sectionID := replace (lower .section.name) " " "-"  }}
+{{ if .section.id }}
+  {{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 skills-section" id="{{ $sectionID }}">
+  {{ if not (.section.hideTitle) }}
+    <h1 class="text-center">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+    <h1 class="text-center" style="display: none">
+        <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+  {{ if .section.filter }}
+  <div class="container ms-auto text-center">
+    <div class="btn-group flex-wrap" role="group" id="skill-filter-buttons">
+      {{ range .buttons }}
+      <button type="button" class="btn btn-dark skill-filtr-control" data-filter="{{ .filter }}">
+        {{ .name }}
+      </button>
+      {{ end }}
+    </div>
+  </div>
+  <div class="container d-flex-block filtr-skills">
+    <div class="row" id="skill-card-holder" style="margin-left:unset">
+  {{ else }}
+  <div class="container d-flex-block">
+    <div class="row" id="primary-skills">
+  {{ end }}
+      {{ range $merged }}
+      {{ partial "cards/skill.html" . }}
+    {{ end }}
+    </div>
+  </div>
+</div>
