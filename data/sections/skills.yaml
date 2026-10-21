@@ -13,28 +13,31 @@ section:
 # sourced from the record, and it drifted (A3; Anvil's audit in
 # docs/acumen/home/audit-section-skills.md scored it 29.5/100).
 #
-# THE SPLIT: this file decides WHICH cards appear, in what ORDER, with which
-# LOGO and LINK. The record decides what each is CALLED and what it SAYS. `name`
-# is the join, and a name the record does not know FAILS THE BUILD. The four
-# offer cards follow the Services order and link to their pages; Languages has
-# no link (Anvil's R9).
+# THE SPLIT: this file decides WHICH cards appear, in what ORDER and with which
+# ICON. The record decides what each is CALLED and what it SAYS. `name` is the
+# join, and a name the record does not know FAILS THE BUILD.
+#
+# Since 21 Oct 2026 the cards describe skill areas, not the Services offers, at
+# Gearoid's word ("The skills is meant to describe the skills that I have"), so
+# they carry no links. Icons are Font Awesome glyphs that take the heading
+# colour in light and dark mode (docs/acumen/home/component-skill-card-icons.md);
+# a `logo:` key would win over `icon:`, so none is set.
 
 skills:
-  - name: Agentic engineering and AI developer tooling
-    logo: /images/sections/skills/technology.svg
-    url: /services/agentic-engineering/
+  - name: Agentic engineering and AI-assisted development
+    icon: fa-solid fa-robot
 
-  - name: Principal software engineering
-    logo: /images/sections/skills/oop.svg
-    url: /services/principal-software-engineering/
+  - name: Software craftsmanship and Extreme Programming
+    icon: fa-solid fa-hammer
 
-  - name: Technical coaching and training
-    logo: /images/sections/skills/xp.svg
-    url: /services/technical-coaching-and-training/
+  - name: Software architecture and API design
+    icon: fa-solid fa-diagram-project
 
-  - name: DevOps
-    logo: /images/sections/skills/docker.svg
-    url: /services/devops/
+  - name: Continuous delivery and DevOps
+    icon: fa-solid fa-infinity
+
+  - name: Coaching, mentoring and training
+    icon: fa-solid fa-chalkboard-user
 
   - name: Languages
-    logo: /images/sections/skills/tools.svg
+    icon: fa-solid fa-code
