@@ -78,3 +78,12 @@
   to = "https://glimpsingza.wordpress.com/:splat"
   status = 302
   force = true
+
+# The website CV was served as resume.pdf until 21 Oct 2026; it now carries his
+# name (Vita audit, G9). Kept permanent so old links and the l.gearoid.eu/cv
+# short link, which Short.io serves, still land on the file.
+[[redirects]]
+  from = "/files/resume.pdf"
+  to = "/files/OTreasaigh_Gearoid_CV.pdf"
+  status = 301
+  force = true

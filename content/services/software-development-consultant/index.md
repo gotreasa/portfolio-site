@@ -1,6 +1,7 @@
 ---
 title: 'Software Development Consultant'
 date: 2024-02-08T08:06:25+06:00
+hideDate: true
 description: Delivering applications in JavaScript, TypeScript or Python through to production, alongside your team.
 menu:
   sidebar:

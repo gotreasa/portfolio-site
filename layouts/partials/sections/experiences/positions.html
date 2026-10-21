@@ -39,9 +39,11 @@
         else }}{{ i18n "present" }}{{ end }}
       </p>
     </div>
+    {{ with .company.location }}
     <p class="text-muted">
-      <i class="fa-solid fa-location-dot"></i> {{ .company.location }}
+      <i class="fa-solid fa-location-dot"></i> {{ . }}
     </p>
+    {{ end }}
     <!-- Add company overview -->
     <p>{{ .company.overview | markdownify }}</p>
   </div>
@@ -54,6 +56,11 @@
         {{ $position.start }} - {{if $position.end }} {{ $position.end }}
         {{else}} {{ i18n "present" }} {{end}}
       </p>
+      {{ with $position.location }}
+      <p class="text-muted">
+        <i class="fa-solid fa-location-dot"></i> {{ . }}
+      </p>
+      {{ end }}
     </div>
     <!-- Add the responsibilities handled at this position -->
     {{ if $position.responsibilities }}
