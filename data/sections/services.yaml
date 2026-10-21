@@ -21,14 +21,14 @@ section:
 # BUILD rather than rendering a card with no summary.
 
 services:
-  - name: Software Craftsmanship Coach
-    url: /services/software-craftsmanship-coach
+  - name: Agentic engineering and AI developer tooling
+    url: /services/agentic-engineering
 
-  - name: DevOps Coach
-    url: /services/devops-coach
+  - name: Principal software engineering
+    url: /services/principal-software-engineering
 
-  - name: Software Development Consultant
-    url: /services/software-development-consultant
+  - name: Technical coaching and training
+    url: /services/technical-coaching-and-training
 
-  - name: DevOps Consultant
-    url: /services/devops-consultant
+  - name: DevOps
+    url: /services/devops
